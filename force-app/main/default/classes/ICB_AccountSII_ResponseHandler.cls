@@ -3,13 +3,16 @@
  * Procesa resultado de validación y respuesta HTTP del servicio SII; actualiza Account origen.
  * Ticket: 00025935 — SEIDOR
  * TODO: Mapear campos custom (Estado_Integracion_SII__c, etc.) cuando existan en metadata.
+ * COMPLETAR: Implementar la lógica de procesamiento de la respuesta HTTP y actualización del Account.
  **********************************************************************************/
 public with sharing class ICB_AccountSII_ResponseHandler {
 
     private static final String LOG_PREFIX = '[ICB_AccountSII_ResponseHandler]';
 
     /**
-     * Cuenta con datos incompletos antes del callout.
+     * Registra en log (y más adelante en Account) cuando la validación corta antes del HTTP.
+     * @param accountId Cuenta objetivo; si es null no hace nada.
+     * @param vr Resultado con missingFields; si viene null se asume mensaje genérico.
      */
     public static void applyValidationFailure(Id accountId, ICB_AccountSII_IntegrationService.ValidationResult vr) {
         if (accountId == null) {
@@ -23,14 +26,20 @@ public with sharing class ICB_AccountSII_ResponseHandler {
     }
 
     /**
-     * Respuesta del servicio (o null mientras el callout en ICB_CalloutAPI_SII no esté implementado).
+     * Delega en applyResponse; punto de extensión si más adelante se loguea request/response aquí.
+     * @param accountId Cuenta a actualizar tras el callout.
+     * @param res Respuesta del HTTP client; null si aún no hay integración.
+     * @param requestPayloadJson Body enviado (auditoría); opcional.
      */
     public static void applyHttpResponse(Id accountId, HttpResponse res, String requestPayloadJson) {
         applyResponse(accountId, res, requestPayloadJson);
     }
 
     /**
-     * Punto único para parsear cuerpo y persistir en Account.
+     * Interpreta la respuesta HTTP (o ausencia de ella) y aplica updates al Account cuando existan campos.
+     * @param accountId Cuenta origen de la integración.
+     * @param res Null mientras no haya callout: camino “pendiente”, no se interpreta status.
+     * @param requestPayloadJson Reservado para logging o correlación con el request.
      */
     public static void applyResponse(Id accountId, HttpResponse res, String requestPayloadJson) {
         if (accountId == null) {
@@ -61,6 +70,11 @@ public with sharing class ICB_AccountSII_ResponseHandler {
         }
     }
 
+    /**
+     * Corta strings largos para debug; no altera null.
+     * @param maxLen Longitud máxima del prefijo conservado; si es null o menor o igual a 0 devuelve s sin cambios.
+     * @return Mismo texto o prefijo + sufijo elipsis Unicode.
+     */
     private static String truncar(String s, Integer maxLen) {
         if (String.isBlank(s) || maxLen == null || maxLen <= 0) {
             return s;
