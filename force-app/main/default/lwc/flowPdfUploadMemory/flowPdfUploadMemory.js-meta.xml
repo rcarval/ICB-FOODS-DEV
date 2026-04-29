@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>65.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Subir PDF en memoria (Firma Digital)</masterLabel>
+    <description>Selecciona un PDF sin guardarlo en Salesforce; expone base64 y nombre para el flujo.</description>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="pdfBase64" type="String" label="PDF en base64" description="Contenido del PDF en base64" role="outputOnly" />
+            <property name="pdfFileName" type="String" label="Nombre del archivo PDF" description="Nombre del archivo seleccionado" role="outputOnly" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

@@ -1,0 +1,11 @@
+<template>
+    <div onfocusout={handleFocusOut} onmousedown={handleMouseDownOnCell}>
+        <lightning-combobox
+            data-inputable="true"
+            value={value}
+            options={options}
+            placeholder="Seleccionar motivo"
+            onchange={handleChange}>
+        </lightning-combobox>
+    </div>
+</template>

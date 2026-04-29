@@ -1,0 +1,57 @@
+<template>
+    <template if:true={mostrarModal}>
+        <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open slds-modal_medium" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Cerrar" onclick={handleCloseModal}>
+                        <lightning-icon icon-name="utility:close" alternative-text="cerrar" size="small"></lightning-icon>
+                        <span class="slds-assistive-text">Cerrar</span>
+                    </button>
+                    <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate">
+                        Confirmar Cambio de Estado
+                    </h2>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <div class="slds-text-align_center">
+                        <lightning-icon icon-name="utility:warning" alternative-text="advertencia" size="large" class="slds-icon slds-icon-text-warning slds-var-m-bottom_small"></lightning-icon>
+                        <h3 class="slds-text-heading_medium slds-var-m-vertical_small">
+                            ¿Está seguro de cambiar el estado a "Congelado"?
+                        </h3>
+                        <p class="slds-text-body_regular slds-var-m-vertical_small">
+                            Si el lead ya pasó por el estado "Cliente Creado", la cuenta ya fue creada.
+                        </p>
+                        <p class="slds-text-body_regular slds-var-m-vertical_small">
+                            <strong>Una vez que el estado cambie a "Congelado", no podrá revertirse</strong> debido a la validación de RUT duplicado en la cuenta.
+                        </p>
+                        <div class="slds-var-m-top_medium slds-text-align_left">
+                            <div class="slds-box slds-theme_warning slds-var-p-around_small">
+                                <p class="slds-text-body_small">
+                                    <strong>Estado anterior: </strong> <span>{estadoAnterior}</span>
+                                </p>
+                                <p class="slds-text-body_small">
+                                    <strong>Nuevo estado: </strong> <span class="slds-text-color_error">Congelado</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="slds-modal__footer">
+                    <lightning-button 
+                        variant="neutral" 
+                        label="Cancelar" 
+                        onclick={handleCancelar}
+                        disabled={isLoading}
+                        class="slds-var-m-right_small">
+                    </lightning-button>
+                    <lightning-button 
+                        variant="destructive" 
+                        label="Confirmar Cambio" 
+                        onclick={handleConfirmar}
+                        disabled={isLoading}>
+                    </lightning-button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+</template>

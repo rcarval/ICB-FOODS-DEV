@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtlClntAppOauthSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <commaSeparatedOauthScopes>Api</commaSeparatedOauthScopes>
+    <externalClientApplication>AWS_Firma_Digital_Integration</externalClientApplication>
+    <label>AWS_Firma_Digital_Integration_oauth</label>
+    <oauthLink>00D7z00000ZVxE9:8887z000000SmHp</oauthLink>
+</ExtlClntAppOauthSettings>

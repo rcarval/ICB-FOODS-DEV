@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExternalServiceRegistration xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>CrearHoldingV3</label>
+    <namedCredentialReference>Crear_Holding_SAP</namedCredentialReference>
+    <operations>
+        <active>true</active>
+        <name>crearx20holdingx20sap</name>
+    </operations>
+    <registrationProviderType>SchemaInferred</registrationProviderType>
+    <schema>{&quot;openapi&quot;:&quot;3.0.1&quot;,&quot;info&quot;:{&quot;title&quot;:&quot;CrearHoldingV3&quot;,&quot;description&quot;:&quot;&quot;},&quot;paths&quot;:{&quot;/clientes/v1/crear-holding&quot;:{&quot;post&quot;:{&quot;description&quot;:&quot;&quot;,&quot;operationId&quot;:&quot;Crear Holding SAP&quot;,&quot;requestBody&quot;:{&quot;description&quot;:&quot;&quot;,&quot;content&quot;:{&quot;application/json&quot;:{&quot;schema&quot;:{&quot;type&quot;:&quot;object&quot;,&quot;properties&quot;:{&quot;Nombre&quot;:{&quot;type&quot;:&quot;string&quot;},&quot;Sector&quot;:{&quot;type&quot;:&quot;string&quot;},&quot;OrganizacionVentas&quot;:{&quot;type&quot;:&quot;string&quot;},&quot;GrupoCuentas&quot;:{&quot;type&quot;:&quot;string&quot;},&quot;OficinaVentas&quot;:{&quot;type&quot;:&quot;string&quot;},&quot;CanalDistribucion&quot;:{&quot;type&quot;:&quot;string&quot;},&quot;Rappel&quot;:{&quot;type&quot;:&quot;string&quot;},&quot;DeterminacionPrecio&quot;:{&quot;type&quot;:&quot;string&quot;},&quot;Idioma&quot;:{&quot;type&quot;:&quot;string&quot;},&quot;GrupoVendedores&quot;:{&quot;type&quot;:&quot;string&quot;},&quot;ConceptoBusqueda&quot;:{&quot;type&quot;:&quot;string&quot;},&quot;EsquemaCliente&quot;:{&quot;type&quot;:&quot;string&quot;},&quot;Sociedad&quot;:{&quot;type&quot;:&quot;string&quot;},&quot;Deudor&quot;:{&quot;type&quot;:&quot;string&quot;},&quot;Pais&quot;:{&quot;type&quot;:&quot;string&quot;}}}}},&quot;required&quot;:true},&quot;responses&quot;:{&quot;2XX&quot;:{&quot;description&quot;:&quot;&quot;,&quot;content&quot;:{&quot;application/json&quot;:{&quot;schema&quot;:{&quot;type&quot;:&quot;object&quot;,&quot;properties&quot;:{&quot;Deudor&quot;:{&quot;type&quot;:&quot;string&quot;}}}}}}}}}}}</schema>
+    <schemaType>OpenApi3</schemaType>
+    <serviceBinding>{&quot;host&quot;:&quot;&quot;,&quot;basePath&quot;:&quot;/&quot;,&quot;allowedSchemes&quot;:[],&quot;requestMediaTypes&quot;:[],&quot;responseMediaTypes&quot;:[],&quot;compatibleMediaTypes&quot;:{},&quot;extensions&quot;:{}}</serviceBinding>
+    <status>Complete</status>
+    <systemVersion>5</systemVersion>
+</ExternalServiceRegistration>

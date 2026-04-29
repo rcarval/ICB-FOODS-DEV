@@ -1,0 +1,70 @@
+<template>
+    <lightning-card>
+        <!-- Sección de Encabezado con fondo gris y estructura similar a Salesforce -->
+        <div class="custom-header slds-grid slds-grid_align-spread slds-grid_vertical-align-center slds-p-around_medium">
+            <div class="slds-media slds-media_center">
+                <div class="slds-media__figure">
+                    <span class="slds-icon_container slds-icon-standard-quotes">
+                        <lightning-icon icon-name="standard:quotes" size="small" alternative-text="Cotizaciones"></lightning-icon>
+                    </span>
+                </div>
+                <div class="slds-media__body">
+                    <h2 class="slds-text-heading_medium slds-m-bottom_none"><b>Partidas de presupuesto ({itemCount})</b></h2>
+                </div>
+            </div>
+            <div class="slds-no-flex">
+                <div class="slds-button-group">
+                    <lightning-button variant="neutral" label="Agregar Productos" onclick={handleAddProduct}></lightning-button>
+                    <lightning-button variant="brand" label="Guardar Cambios" onclick={handleGuardar}></lightning-button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Spinner mientras se cargan los datos -->
+        <template if:true={showSpinner}>
+            <lightning-spinner alternative-text="Cargando..." size="medium"></lightning-spinner>
+        </template>
+
+        <!-- Tabla de Registros usando lightning-datatable -->
+        <template if:false={showSpinner}>
+            <div class="table-container slds-m-around_medium">
+                <lightning-datatable
+                    key-field="id"
+                    data={productDataDraft}
+                    columns={columns}
+                    hide-checkbox-column="true"
+                    suppress-bottom-bar="true"
+                    oncellchange={handleCellChange}
+                    draft-values={draftValues}
+                    >
+                ></lightning-datatable>
+            </div>
+        </template>
+
+        <!-- Modal Structure -->
+        <template if:true={showModal}>
+            <section role="dialog" class="slds-modal slds-fade-in-open full-screen-modal">
+                <div class="slds-modal__container">
+                    <header class="slds-modal__header">
+                        <button class="slds-button slds-button_icon slds-button_icon-inverse slds-modal__close" title="Close" onclick={closeModal}>
+                            <lightning-icon icon-name="utility:close" alternative-text="close" size="small"></lightning-icon>
+                            <span class="slds-assistive-text">Close</span>
+                        </button>
+                        <h2 class="slds-text-heading_medium">Seleccionar Productos</h2>
+                    </header>
+                    <div class="slds-modal__content slds-p-around_medium">
+                        <c-lookup-datatable
+                            selected-account-id={accountId}
+                            onrecorddatachange={handleSelectProducts}
+                        ></c-lookup-datatable>
+                    </div>
+                    <footer class="slds-modal__footer">
+                        <lightning-button variant="neutral" label="Cancelar" onclick={handleCloseModal}></lightning-button>
+                        <lightning-button variant="brand" label="Continuar" onclick={handleModalContinue}></lightning-button>
+                    </footer>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+        </template>
+    </lightning-card>
+</template>

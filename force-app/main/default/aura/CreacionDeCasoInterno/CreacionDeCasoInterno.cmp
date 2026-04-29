@@ -1,0 +1,7 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <!-- Botón para redirigir -->
+    <lightning:button 
+        label="Ir a Base de conocimientos y Creación de casos" 
+        onclick="{!c.redirectToCommunity}" 
+        variant="brand" />
+</aura:component>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Teléfono de de Contacto de Pagos --></label>
+    <name>Tel_fono_de_de_Contacto_de_Pagos__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ControlDuplicidadDeRut</fullName>
+    <active>false</active>
+    <errorConditionFormula>RUT__c = Negocio_Gastronomico__r.RUT__c &amp;&amp;  Name  = Negocio_Gastronomico__r.Raz_n_Social__c</errorConditionFormula>
+    <errorMessage>Rut Duplicado, por favor revisar los clientes ya creados.</errorMessage>
+</ValidationRule>

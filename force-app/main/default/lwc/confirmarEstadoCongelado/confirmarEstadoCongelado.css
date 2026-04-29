@@ -1,0 +1,11 @@
+.slds-modal__container {
+    max-width: 500px;
+}
+
+.slds-modal__content {
+    padding: 1.5rem;
+}
+
+.slds-icon-text-warning {
+    fill: #ffb75d;
+}

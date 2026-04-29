@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>64.0</apiVersion>
+    <description>v7</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>DespachoVacio</name>
+        <dataType>String</dataType>
+        <expression>IF(
+  ISBLANK({!$Record.Cliente_Despacho__c}),
+  IF(
+    ISBLANK({!$Record.C_digo_de_cliente__c}),
+    &quot;Sin código&quot;,
+    {!$Record.C_digo_de_cliente__c} &amp; &quot;-1&quot;
+  ),
+  &quot;0&quot;
+)</expression>
+    </formulas>
+    <formulas>
+        <name>FormulaCanal</name>
+        <dataType>String</dataType>
+        <expression>IF(
+  {!$Record.CanalAuxiliar__c} = &quot;102&quot;, &quot;102 - Cadenas&quot;,
+  IF(
+    {!$Record.CanalAuxiliar__c} = &quot;103&quot;, &quot;103 - Catering&quot;,
+    IF(
+      {!$Record.CanalAuxiliar__c} = &quot;105&quot;, &quot;105 - Institucional&quot;,
+      IF(
+        {!$Record.CanalAuxiliar__c} = &quot;108&quot;, &quot;108 - Mayorista&quot;,
+        IF(
+          {!$Record.CanalAuxiliar__c} = &quot;107&quot;, &quot;107 - Personas&quot;,
+          IF(
+            {!$Record.CanalAuxiliar__c} = &quot;112&quot;, &quot;112 - Industria&quot;,
+            IF(
+              {!$Record.CanalAuxiliar__c} = &quot;113&quot;, &quot;113 - Otros&quot;,
+              IF(
+                {!$Record.CanalAuxiliar__c} = &quot;115&quot;, &quot;115 - Punto a Punto&quot;,
+                IF(
+                  {!$Record.CanalAuxiliar__c} = &quot;116&quot;, &quot;116 - Cliente Hogar&quot;,
+                  &quot;Código desconocido&quot;
+                )
+              )
+            )
+          )
+        )
+      )
+    )
+  )
+)</expression>
+    </formulas>
+    <formulas>
+        <name>FormulaCentroDeAbastecimiento</name>
+        <dataType>String</dataType>
+        <expression>IF(
+  {!$Record.CentroAuxiliar__c} = &quot;FS00&quot;, &quot;FS00 - Santiago Maulén&quot;, 
+  IF(
+    {!$Record.CentroAuxiliar__c} = &quot;FS02&quot;, &quot;FS02 - Coquimbo&quot;,
+    IF(
+      {!$Record.CentroAuxiliar__c} = &quot;FS03&quot;, &quot;FS03 - Temuco&quot;,
+      IF(
+        {!$Record.CentroAuxiliar__c} = &quot;FS04&quot;, &quot;FS04 - Concepción&quot;,
+        IF(
+          {!$Record.CentroAuxiliar__c} = &quot;FS05&quot;, &quot;FS05 - Antofagasta&quot;,
+          IF(
+            {!$Record.CentroAuxiliar__c} = &quot;FS08&quot;, &quot;FS08 - Curicó / Puerto Montt&quot;,
+            IF(
+              {!$Record.CentroAuxiliar__c} = &quot;FS07&quot;, &quot;FS07 - Iquique&quot;,
+              IF(
+                {!$Record.CentroAuxiliar__c} = &quot;FS09&quot;, &quot;FS09 - Calama&quot;,
+                IF(
+                  {!$Record.CentroAuxiliar__c} = &quot;FS10&quot;, &quot;FS10 - Paine&quot;,
+                  IF(
+                    {!$Record.CentroAuxiliar__c} = &quot;FS11&quot;, &quot;FS11 - Tienda Vitacura&quot;,
+                    IF(
+                      {!$Record.CentroAuxiliar__c} = &quot;FS12&quot;, &quot;FS12 - Tienda Rendic&quot;,
+                      IF(
+                        {!$Record.CentroAuxiliar__c} = &quot;FS13&quot;, &quot;FS13 - Tienda Calama&quot;,
+                        IF(
+                          {!$Record.CentroAuxiliar__c} = &quot;FSE1&quot;, &quot;FSE1 - Bodegas Externas&quot;,
+                          IF(
+                            {!$Record.CentroAuxiliar__c} = &quot;FSE2&quot;, &quot;FSE2 - Operador Logístico \&quot;Loginsa\&quot;&quot;,
+                            IF(
+                              {!$Record.CentroAuxiliar__c} = &quot;FSE3&quot;, &quot;FSE3 - Frigorífico Icestar&quot;,
+                              IF(
+                                {!$Record.CentroAuxiliar__c} = &quot;FSEX&quot;, &quot;FSEX - FS Express&quot;,
+                                &quot;Código de centro desconocido&quot;
+                              )
+                            )
+                          )
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+    )
+  )
+)</expression>
+    </formulas>
+    <formulas>
+        <name>FormulaSucursal</name>
+        <dataType>String</dataType>
+        <expression>IF(
+  {!$Record.SucursalAuxiliar__c} = &quot;S001&quot;, &quot;S001 - Suc Santiago&quot;,
+  IF(
+     {!$Record.SucursalAuxiliar__c}  = &quot;S005&quot;, &quot;S005 - Suc Antofagasta&quot;,
+    IF(
+      {!$Record.SucursalAuxiliar__c}  = &quot;S002&quot;, &quot;S002 - Suc Coquimbo&quot;,
+      IF(
+        {!$Record.SucursalAuxiliar__c}  = &quot;S009&quot;, &quot;S009 - Suc Calama&quot;,
+        IF(
+           {!$Record.SucursalAuxiliar__c}  = &quot;S004&quot;, &quot;S004 - Suc Concepción&quot;,
+          IF(
+             {!$Record.SucursalAuxiliar__c}  = &quot;S007&quot;, &quot;S007 - Suc Iquique&quot;,
+            IF(
+              {!$Record.SucursalAuxiliar__c}  = &quot;S008&quot;, &quot;S008 - Suc Curicó&quot;,
+              IF(
+                 {!$Record.SucursalAuxiliar__c}  = &quot;S015&quot;, &quot;S015 - Suc Viña del Mar&quot;,
+                IF(
+                   {!$Record.SucursalAuxiliar__c} = &quot;S003&quot;, &quot;S003 - Suc Temuco&quot;,
+                  IF(
+                    {!$Record.SucursalAuxiliar__c}  = &quot;S006&quot;, &quot;S006 - Suc Puerto Montt&quot;,
+                    &quot;Código de sucursal desconocido&quot;
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+    )
+  )
+)</expression>
+    </formulas>
+    <formulas>
+        <name>TraduccionEspecialidad</name>
+        <dataType>String</dataType>
+        <expression>IF(
+  {!$Record.EspecialidadAuxiliar__c} = &quot;A0&quot;, &quot;A0 - Carnes&quot;, 
+  IF(
+    {!$Record.EspecialidadAuxiliar__c} = &quot;A1&quot;, &quot;A1 - Pollo&quot;,
+    IF(
+      {!$Record.EspecialidadAuxiliar__c} = &quot;A2&quot;, &quot;A2 - Hamburguesa&quot;,
+      IF(
+        {!$Record.EspecialidadAuxiliar__c} = &quot;A3&quot;, &quot;A3 - Sándwich y Hotdog&quot;,
+        IF(
+          {!$Record.EspecialidadAuxiliar__c} = &quot;A4&quot;, &quot;A4 - Pescados y Mariscos&quot;,
+          IF(
+            {!$Record.EspecialidadAuxiliar__c} = &quot;A5&quot;, &quot;A5 - Pastelería&quot;,
+            IF(
+              {!$Record.EspecialidadAuxiliar__c} = &quot;A6&quot;, &quot;A6 - Panadería&quot;,
+              IF(
+                {!$Record.EspecialidadAuxiliar__c} = &quot;A7&quot;, &quot;A7 - Empanadas&quot;,
+                IF(
+                  {!$Record.EspecialidadAuxiliar__c} = &quot;A8&quot;, &quot;A8 - Pizza&quot;,
+                  IF(
+                    {!$Record.EspecialidadAuxiliar__c} = &quot;A9&quot;, &quot;A9 - Cafetería&quot;,
+                    IF(
+                      {!$Record.EspecialidadAuxiliar__c} = &quot;B0&quot;, &quot;B0 - Heladería&quot;,
+                      IF(
+                        {!$Record.EspecialidadAuxiliar__c} = &quot;B1&quot;, &quot;B1 - Pastas&quot;,
+                        IF(
+                          {!$Record.EspecialidadAuxiliar__c} = &quot;B2&quot;, &quot;B2 - Internacional&quot;,
+                          IF(
+                            {!$Record.EspecialidadAuxiliar__c} = &quot;B3&quot;, &quot;B3 - Peruano&quot;,
+                            IF(
+                              {!$Record.EspecialidadAuxiliar__c} = &quot;B4&quot;, &quot;B4 - Español&quot;,
+                              IF(
+                                {!$Record.EspecialidadAuxiliar__c} = &quot;B5&quot;, &quot;B5 - Americano&quot;,
+                                IF(
+                                  {!$Record.EspecialidadAuxiliar__c} = &quot;B6&quot;, &quot;B6 - Chino&quot;,
+                                  IF(
+                                    {!$Record.EspecialidadAuxiliar__c} = &quot;B7&quot;, &quot;B7 - Sushi&quot;,
+                                    IF(
+                                      {!$Record.EspecialidadAuxiliar__c} = &quot;B8&quot;, &quot;B8 - Almacén / Tienda&quot;,
+                                      IF(
+                                        {!$Record.EspecialidadAuxiliar__c} = &quot;B9&quot;, &quot;B9 - Naturista&quot;,
+                                        IF(
+                                          {!$Record.EspecialidadAuxiliar__c} = &quot;C7&quot;, &quot;C7 - CLIENTE BOLETA&quot;,
+                                          &quot;Código desconocido&quot;
+                                        )
+                                      )
+                                    )
+                                  )
+                                )
+                              )
+                            )
+                          )
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+    )
+  )
+)</expression>
+    </formulas>
+    <formulas>
+        <name>traduccionFacturacion</name>
+        <dataType>String</dataType>
+        <expression>IF(
+  {!$Record.RegionFacturaci_nAuxiliar__c} = &quot;01&quot;, &quot;01 - Iquique&quot;,
+  IF(
+    {!$Record.RegionFacturaci_nAuxiliar__c} = &quot;02&quot;, &quot;02 - Antofagasta&quot;,
+    IF(
+      {!$Record.RegionFacturaci_nAuxiliar__c} = &quot;03&quot;, &quot;03 - Copiapo&quot;,
+      IF(
+        {!$Record.RegionFacturaci_nAuxiliar__c} = &quot;04&quot;, &quot;04 - La Serena&quot;,
+        IF(
+          {!$Record.RegionFacturaci_nAuxiliar__c} = &quot;05&quot;, &quot;05 - Valparaiso&quot;,
+          IF(
+            {!$Record.RegionFacturaci_nAuxiliar__c} = &quot;06&quot;, &quot;06 - Rancagua&quot;,
+            IF(
+              {!$Record.RegionFacturaci_nAuxiliar__c} = &quot;07&quot;, &quot;07 - Talca&quot;,
+              IF(
+                {!$Record.RegionFacturaci_nAuxiliar__c} = &quot;08&quot;, &quot;08 - Concepción&quot;,
+                IF(
+                  {!$Record.RegionFacturaci_nAuxiliar__c} = &quot;09&quot;, &quot;09 - Temuco&quot;,
+                  IF(
+                    {!$Record.RegionFacturaci_nAuxiliar__c} = &quot;10&quot;, &quot;10 - Puerto Montt&quot;,
+                    IF(
+                      {!$Record.RegionFacturaci_nAuxiliar__c} = &quot;11&quot;, &quot;11 - Coyhaique&quot;,
+                      IF(
+                        {!$Record.RegionFacturaci_nAuxiliar__c} = &quot;12&quot;, &quot;12 - Punta Arenas&quot;,
+                        IF(
+                          {!$Record.RegionFacturaci_nAuxiliar__c} = &quot;13&quot;, &quot;13 - Región Metropolitana&quot;,
+                          IF(
+                            {!$Record.RegionFacturaci_nAuxiliar__c} = &quot;14&quot;, &quot;14 - Los Ríos&quot;,
+                            IF(
+                              {!$Record.RegionFacturaci_nAuxiliar__c} = &quot;15&quot;, &quot;15 - Arica&quot;,
+                              &quot;Código desconocido&quot;
+                            )
+                          )
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+    )
+  )
+)</expression>
+    </formulas>
+    <formulas>
+        <name>TraduccionRegion</name>
+        <dataType>String</dataType>
+        <expression>IF(
+  {!$Record.RegionDespachoAuxiliar__c} = &quot;01&quot;, &quot;01 - Iquique&quot;, 
+  IF(
+    {!$Record.RegionDespachoAuxiliar__c} = &quot;02&quot;, &quot;02 - Antofagasta&quot;,
+    IF(
+      {!$Record.RegionDespachoAuxiliar__c} = &quot;03&quot;, &quot;03 - Copiapo&quot;,
+      IF(
+        {!$Record.RegionDespachoAuxiliar__c}= &quot;04&quot;, &quot;04 - La Serena&quot;,
+        IF(
+          {!$Record.RegionDespachoAuxiliar__c} = &quot;05&quot;, &quot;05 - Valparaiso&quot;,
+          IF(
+            {!$Record.RegionDespachoAuxiliar__c} = &quot;06&quot;, &quot;06 - Rancagua&quot;,
+            IF(
+              {!$Record.RegionDespachoAuxiliar__c} = &quot;07&quot;, &quot;07 - Talca&quot;,
+              IF(
+                {!$Record.RegionDespachoAuxiliar__c} = &quot;08&quot;, &quot;08 - Concepción&quot;,
+                IF(
+                  {!$Record.RegionDespachoAuxiliar__c}= &quot;09&quot;, &quot;09 - Temuco&quot;,
+                  IF(
+                    {!$Record.RegionDespachoAuxiliar__c} = &quot;10&quot;, &quot;10 - Puerto Montt&quot;,
+                    IF(
+                      {!$Record.RegionDespachoAuxiliar__c} = &quot;11&quot;, &quot;11 - Coyhaique&quot;,
+                      IF(
+                        {!$Record.RegionDespachoAuxiliar__c} = &quot;12&quot;, &quot;12 - Punta Arenas&quot;,
+                        IF(
+                          {!$Record.RegionDespachoAuxiliar__c} = &quot;13&quot;, &quot;13 - Región Metropolitana&quot;,
+                          IF(
+                            {!$Record.RegionDespachoAuxiliar__c} = &quot;14&quot;, &quot;14 - Los Ríos&quot;,
+                            IF(
+                             {!$Record.RegionDespachoAuxiliar__c} = &quot;15&quot;, &quot;15 - Arica&quot;,
+                              &quot;Código desconocido&quot;
+                            )
+                          )
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+    )
+  )
+)</expression>
+    </formulas>
+    <interviewLabel>FlowBeforeAPI_Insert {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FlowBeforeAPI_Insert</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Actualiza_picklist</name>
+        <label>Actualiza picklist</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Centro_de_Abastecimiento__c</field>
+            <value>
+                <elementReference>FormulaCentroDeAbastecimiento</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Especialidad__c</field>
+            <value>
+                <elementReference>TraduccionEspecialidad</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Gerencia__c</field>
+            <value>
+                <elementReference>FormulaCanal</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Region_Despacho__c</field>
+            <value>
+                <elementReference>TraduccionRegion</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Region__c</field>
+            <value>
+                <elementReference>traduccionFacturacion</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Sucursal__c</field>
+            <value>
+                <elementReference>FormulaSucursal</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Actualiza_picklist</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>C_digo_de_cliente__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Cliente_Despacho__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </filters>
+        <object>Account</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

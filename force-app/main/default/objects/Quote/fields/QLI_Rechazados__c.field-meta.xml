@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QLI_Rechazados__c</fullName>
+    <description>Cuenta cantidad de QLIs que hayan sido rechazados.</description>
+    <label>QLI Rechazados</label>
+    <summaryFilterItems>
+        <field>QuoteLineItem.Estado__c</field>
+        <operation>equals</operation>
+        <value>Rechazado</value>
+    </summaryFilterItems>
+    <summaryForeignKey>QuoteLineItem.QuoteId</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,115 @@
+<template>
+    <lightning-card title={title} icon-name={iconName}>
+        <div class="slds-p-around_small">
+            <div class="slds-grid">
+                <div class="slds-col slds-size_3-of-3">
+                    <lightning-record-picker
+                        label="Productos"
+                        placeholder="Buscar Productos..."
+                        object-api-name="PricebookEntry"
+                        disabled={disableProductPicker}
+                        filter={filter}
+                        display-info={displayInfo}
+                        matching-info={matchingInfo}
+                        onchange={handleChange}
+                    >
+                    </lightning-record-picker>
+                </div>
+            </div>
+
+            <!-- Mostrar formulario solo si showProductInfo es true -->
+            <template if:true={showProductInfo}>
+                <div class="slds-box slds-m-top_medium">
+                    <lightning-layout>
+                        <lightning-layout-item size="6" padding="around-small">
+                            <lightning-input
+                                label="Precio Lista"
+                                type="number"
+                                step="0.01"
+                                value={product.listaPrecio}
+                                readonly
+                                data-field="listaPrecio">
+                            </lightning-input>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="6" padding="around-small">
+                            <lightning-input
+                                label="Descuento"
+                                value={product.descuento}
+                                type="number"
+                                step="0.01"
+                                data-field="descuento"
+                                onchange={handleDescuento}>
+                            </lightning-input>
+                        </lightning-layout-item>
+                    </lightning-layout>
+                    <lightning-layout>
+                        <lightning-layout-item size="6" padding="around-small">
+                            <lightning-input
+                                label="Precio Neto"
+                                type="number"
+                                step="0.01"
+                                value={product.precioClienteNeto}
+                                data-field="precioClienteNeto"
+                                onchange={handlePrecioClienteNeto}>
+                            </lightning-input>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="6" padding="around-small">
+                            <lightning-input
+                                label="Margen"
+                                value={product.margen}
+                                type="number"
+                                step="0.01"
+                                readonly>
+                            </lightning-input>
+                        </lightning-layout-item>
+                    </lightning-layout>
+                    <lightning-layout>
+                        <lightning-layout-item size="6" padding="around-small">
+                            <lightning-input
+                                label="Margen Contribución Kilo"
+                                value={product.margenContribucionKilo}
+                                type="number"
+                                step="0.01"
+                                readonly>
+                            </lightning-input>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="6" padding="around-small">
+                            <lightning-input
+                                label="Fecha de Vencimiento"
+                                type="date"
+                                value={product.fechaVencimientoDescuento}
+                                data-field="fechaVencimientoDescuento"
+                                onchange={handleFecha}>
+                            </lightning-input>
+                        </lightning-layout-item>
+                    </lightning-layout>
+                    <lightning-layout>
+                        <lightning-layout-item size="6" padding="around-small">
+                            <lightning-input
+                                label="% Autónomo"
+                                value={product.descuentoAutonomo}
+                                type="number"
+                                step="0.01"
+                                readonly>
+                            </lightning-input>
+                        </lightning-layout-item>
+                    </lightning-layout>
+                </div>
+            </template>
+
+            <!-- Botones Añadir y Setear -->
+            <div class="slds-grid slds-m-top_medium slds-grid_align-end">
+                <lightning-button
+                    label="Añadir"
+                    class="slds-m-right_small slds-button slds-button_neutral"
+                    onclick={handleAdd}>
+                </lightning-button>
+                <lightning-button
+                    label="Setear"
+                    variant="brand"
+                    onclick={handleSet}>
+                </lightning-button>
+            </div>
+        </div>
+    </lightning-card>
+</template>

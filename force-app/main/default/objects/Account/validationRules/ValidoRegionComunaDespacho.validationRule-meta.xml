@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValidoRegionComunaDespacho</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+  NOT(ISBLANK(ShippingStreet)),
+  OR(
+    ISNULL(Comuna_Despacho__c),
+    ISBLANK(TEXT(Region_Despacho__c))
+  ),
+  NOT(
+    OR(
+      $Profile.Name = &quot;Medio Campo&quot;,
+      $Profile.Name = &quot;Administrador&quot;
+    )
+  ),
+  RecordType.Name &lt;&gt; &quot;Holding&quot;,
+  NOT(ISBLANK(C_digo_de_cliente__c))
+)</errorConditionFormula>
+    <errorDisplayField>Comuna_Despacho__c</errorDisplayField>
+    <errorMessage>Debe completar Region y Comuna</errorMessage>
+</ValidationRule>

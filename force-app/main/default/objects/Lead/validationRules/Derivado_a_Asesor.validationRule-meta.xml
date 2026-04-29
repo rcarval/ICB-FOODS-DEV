@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Derivado_a_Asesor</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISCHANGED(Derivado_a_Asesor__c) &amp;&amp;
+NOT(
+OR(
+$User.Username = &apos;mceruli@icbfs.cl&apos;,
+$Profile.Name = &quot;System Administrator&quot;,
+$User.Username = &apos;bnavarrete@icbfs.cl&apos;
+)
+)</errorConditionFormula>
+    <errorDisplayField>Derivado_a_Asesor__c</errorDisplayField>
+    <errorMessage>Este campo solo puede ser modificado por Gerencia Superior y el Administrador</errorMessage>
+</ValidationRule>

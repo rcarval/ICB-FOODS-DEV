@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Nombre_de_Fantasia__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Gerencia__c</field>
+    </columns>
+    <columns>
+        <field>Account$Especialidad__c</field>
+    </columns>
+    <columns>
+        <field>Account$Sucursal__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account$Sucursal__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>S001 - Suc Santiago</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Especialidad__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>C0 - Hotel</value>
+        </criteriaItems>
+        <language>es_MX</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$C_digo_de_cliente__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Reporte Hoteles Marcia</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Cuentas_con_facturas__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Negocio_Gastronomico__c$Nombre_de_Fantasia__c</field>
+    </columns>
+    <columns>
+        <field>Negocio_Gastronomico__c$Name</field>
+    </columns>
+    <columns>
+        <field>Negocio_Gastronomico__c$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Negocio_Gastronomico__c$Fuente_del_Lead__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Negocio_Gastronomico__c$Fuente_del_Lead__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Web Hablemos,Web Contactanos,Catalogo web</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Leads con/sin dias de conversion</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>NegocioGastonomicoAccount__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Negocio_Gastronomico__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURY</interval>
+    </timeFrameFilter>
+</Report>

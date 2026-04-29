@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Grupo Permisos TuFirma Digital</label>
+    <permissionSets>HTTP_Callout_AWS</permissionSets>
+    <permissionSets>Permisos_Contrato_Digital_Tu_Firma</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

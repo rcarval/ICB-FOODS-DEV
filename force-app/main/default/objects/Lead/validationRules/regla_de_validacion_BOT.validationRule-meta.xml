@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>regla_de_validacion_BOT</fullName>
+    <active>false</active>
+    <errorConditionFormula>NOT(CONTAINS(RUT__c, &quot;-&quot;))</errorConditionFormula>
+    <errorMessage>Bot Detectado!!</errorMessage>
+</ValidationRule>

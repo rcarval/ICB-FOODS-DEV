@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Precios__r$Unidad_de_Medida__c</field>
+    </columns>
+    <columns>
+        <field>Account.Precios__r$Detalle_de_producto__c.Codigo__c</field>
+    </columns>
+    <columns>
+        <field>Account.Precios__r$Detalle_de_producto__c.Name</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Precios__r$Precio_de_lista__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Precios__r$Detalle_de_producto__c.Descuento_Autonomo_de_Asesor__c</field>
+    </columns>
+    <columns>
+        <field>Account.Precios__r$Detalle_de_producto__c.Fecha_maxima_de_descuento__c</field>
+    </columns>
+    <description>Yo como usuario quiero visualizar  Listas de Precios por especialidad de cliente (GRUPO DE CLIENTE) para poder dar foco solo mix de la especialidad , en este caso generar LP por especialidad o por cliente de especialidad.</description>
+    <filter>
+        <criteriaItems>
+            <column>Account$Grupo_Cliente__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,Grupo 1,Grupo 2,Grupo 3</value>
+        </criteriaItems>
+        <language>es</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$Grupo_Cliente__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Listas de Precio por Tipo de Clientes</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Precio_de_productopor_T_Cliente__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account.Precios__r$Detalle_de_producto__c.Fecha_maxima_de_descuento__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

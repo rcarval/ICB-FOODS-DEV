@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Canal__c</fullName>
+    <label>Canal Openday</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Auto Inscripción</fullName>
+                <default>false</default>
+                <label>Auto Inscripción</label>
+            </value>
+            <value>
+                <fullName>Meta</fullName>
+                <default>false</default>
+                <label>Meta</label>
+            </value>
+            <value>
+                <fullName>FFVV Temuco</fullName>
+                <default>false</default>
+                <label>FFVV Temuco</label>
+            </value>
+            <value>
+                <fullName>FFVV Iquique</fullName>
+                <default>false</default>
+                <label>FFVV Iquique</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

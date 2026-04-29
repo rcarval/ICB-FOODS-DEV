@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ICBFS</letterhead>
+    <name>Auto respuesta WebToCase</name>
+    <style>formalLetter</style>
+    <subject>Respuesta Automatica de Creación de caso</subject>
+    <textOnly>Asunto: Confirmación de creación de caso #{!Case.CaseNumber} Estimado/a 
+
+{!Case.Usuario__c}, Gracias por contactarnos.
+
+Hemos recibido tu solicitud y estamos trabajando en ello.
+Número de caso: {!Case.CaseNumber}
+Asunto: {!Case.Subject}
+
+Nuestro equipo se pondrá en contacto contigo lo antes posible.
+
+
+Saludos Cordiales,</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

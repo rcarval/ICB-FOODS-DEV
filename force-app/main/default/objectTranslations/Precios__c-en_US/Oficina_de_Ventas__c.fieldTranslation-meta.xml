@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Oficina de Ventas --></label>
+    <name>Oficina_de_Ventas__c</name>
+    <picklistValues>
+        <masterLabel>S001 - Suc Santiago</masterLabel>
+        <translation><!-- S001 - Suc Santiago --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S002 - Suc Coquimbo</masterLabel>
+        <translation><!-- S002 - Suc Coquimbo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S003 - Suc Temuco</masterLabel>
+        <translation><!-- S003 - Suc Temuco --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S004 - Suc Concepción</masterLabel>
+        <translation><!-- S004 - Suc Concepción --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S005 - Suc Antofagasta</masterLabel>
+        <translation><!-- S005 - Suc Antofagasta --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S006 - Suc Puerto Montt</masterLabel>
+        <translation><!-- S006 - Suc Puerto Montt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S007 - Suc Iquique</masterLabel>
+        <translation><!-- S007 - Suc Iquique --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S008 - Suc Curicó</masterLabel>
+        <translation><!-- S008 - Suc Curicó --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S009 - Suc Calama</masterLabel>
+        <translation><!-- S009 - Suc Calama --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S015 - Suc Viña del Mar</masterLabel>
+        <translation><!-- S015 - Suc Viña del Mar --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

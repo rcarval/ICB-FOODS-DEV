@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tipo de Contacto --></label>
+    <name>Tipo_de_Contacto__c</name>
+    <picklistValues>
+        <masterLabel>Administrador</masterLabel>
+        <translation><!-- Administrador --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chef</masterLabel>
+        <translation><!-- Chef --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Comercial</masterLabel>
+        <translation><!-- Comercial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Comprador</masterLabel>
+        <translation><!-- Comprador --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Comprador Pedido por Voz</masterLabel>
+        <translation><!-- Comprador Pedido por Voz --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dueño</masterLabel>
+        <translation><!-- Dueño --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Finanzas</masterLabel>
+        <translation><!-- Finanzas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gerente General</masterLabel>
+        <translation><!-- Gerente General --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gestión calidad</masterLabel>
+        <translation><!-- Gestión calidad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Logística</masterLabel>
+        <translation><!-- Logística --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing</masterLabel>
+        <translation><!-- Marketing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pagador</masterLabel>
+        <translation><!-- Pagador --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Representante Legal</masterLabel>
+        <translation><!-- Representante Legal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Usuario PIA</masterLabel>
+        <translation><!-- Usuario PIA --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

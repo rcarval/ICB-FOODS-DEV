@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Descuento a aprobar</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Descuentos a aprobar</value>
+    </caseValues>
+    <layouts>
+        <layout>Desc Oportunidad Asesor</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Datos del producto --></label>
+            <section>Datos del producto</section>
+        </sections>
+        <sections>
+            <label><!-- Solicitado --></label>
+            <section>Solicitado</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Desc Oportunidad Mediocampo</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Datos del producto --></label>
+            <section>Datos del producto</section>
+        </sections>
+        <sections>
+            <label><!-- Solicitado --></label>
+            <section>Solicitado</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Desc Oportunidad Subgerente</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Datos del producto --></label>
+            <section>Datos del producto</section>
+        </sections>
+        <sections>
+            <label><!-- Solicitado --></label>
+            <section>Solicitado</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Descuento Oportunidad Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Datos del producto --></label>
+            <section>Datos del producto</section>
+        </sections>
+        <sections>
+            <label><!-- Solicitado --></label>
+            <section>Solicitado</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

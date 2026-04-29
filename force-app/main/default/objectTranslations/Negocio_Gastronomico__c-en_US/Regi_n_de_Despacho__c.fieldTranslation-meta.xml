@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Regiòn de Despacho --></label>
+    <name>Regi_n_de_Despacho__c</name>
+    <picklistValues>
+        <masterLabel>01 - Iquique</masterLabel>
+        <translation><!-- 01 - Iquique --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>02 - Antofagasta</masterLabel>
+        <translation><!-- 02 - Antofagasta --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>03 - Copiapo</masterLabel>
+        <translation><!-- 03 - Copiapo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>04 - La Serena</masterLabel>
+        <translation><!-- 04 - La Serena --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>05 - Valparaiso</masterLabel>
+        <translation><!-- 05 - Valparaiso --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>06 - Rancagua</masterLabel>
+        <translation><!-- 06 - Rancagua --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>07 - Talca</masterLabel>
+        <translation><!-- 07 - Talca --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>08 - Concepción</masterLabel>
+        <translation><!-- 08 - Concepción --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>09 - Temuco</masterLabel>
+        <translation><!-- 09 - Temuco --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>10 - Puerto Montt</masterLabel>
+        <translation><!-- 10 - Puerto Montt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>11 - Coyhaique</masterLabel>
+        <translation><!-- 11 - Coyhaique --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>12 - Punta Arenas</masterLabel>
+        <translation><!-- 12 - Punta Arenas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>13 - Región Metropolitana</masterLabel>
+        <translation><!-- 13 - Región Metropolitana --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>14 - Los Ríos</masterLabel>
+        <translation><!-- 14 - Los Ríos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>15 - Arica</masterLabel>
+        <translation><!-- 15 - Arica --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

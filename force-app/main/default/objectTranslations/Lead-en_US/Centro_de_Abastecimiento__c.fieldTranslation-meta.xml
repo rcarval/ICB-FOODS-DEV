@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Centro de Abastecimiento --></label>
+    <name>Centro_de_Abastecimiento__c</name>
+    <picklistValues>
+        <masterLabel>FS00 - Santiago Maulen</masterLabel>
+        <translation><!-- FS00 - Santiago Maulen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FS02 - Coquimbo</masterLabel>
+        <translation><!-- FS02 - Coquimbo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FS03 - Temuco</masterLabel>
+        <translation><!-- FS03 - Temuco --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FS04 - Concepción</masterLabel>
+        <translation><!-- FS04 - Concepción --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FS05 - Antofagasta</masterLabel>
+        <translation><!-- FS05 - Antofagasta --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FS06 - Puerto Montt</masterLabel>
+        <translation><!-- FS06 - Puerto Montt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FS07 - Iquique</masterLabel>
+        <translation><!-- FS07 - Iquique --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FS08 - Curicó</masterLabel>
+        <translation><!-- FS08 - Curicó --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FS09 - Calama</masterLabel>
+        <translation><!-- FS09 - Calama --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FS10 - Paine</masterLabel>
+        <translation><!-- FS10 - Paine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FS11 - Tienda Vitacura</masterLabel>
+        <translation><!-- FS11 - Tienda Vitacura --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FS12 - Tienda Rendic</masterLabel>
+        <translation><!-- FS12 - Tienda Rendic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FS13 - Tienda Calama</masterLabel>
+        <translation><!-- FS13 - Tienda Calama --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSE1 - Bodegas Externas</masterLabel>
+        <translation><!-- FSE1 - Bodegas Externas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSE2 - Operador Logístico &quot;Loginsa&quot;</masterLabel>
+        <translation><!-- FSE2 - Operador Logístico &quot;Loginsa&quot; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSE3 - Frigorífico Icestar</masterLabel>
+        <translation><!-- FSE3 - Frigorífico Icestar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSEX - FS Express</masterLabel>
+        <translation><!-- FSEX - FS Express --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

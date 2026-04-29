@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Comuna de despacho --></label>
+    <name>Comuna_de_despacho__c</name>
+    <relationshipLabel><!-- Leads (Comuna de despacho) --></relationshipLabel>
+</CustomFieldTranslation>

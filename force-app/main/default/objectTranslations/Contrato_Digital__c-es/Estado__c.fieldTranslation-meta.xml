@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Estado --></label>
+    <name>Estado__c</name>
+    <picklistValues>
+        <masterLabel>Enviado</masterLabel>
+        <translation><!-- Enviado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Expirado</masterLabel>
+        <translation><!-- Expirado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Firmado</masterLabel>
+        <translation><!-- Firmado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pendiente</masterLabel>
+        <translation><!-- Pendiente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rechazado</masterLabel>
+        <translation><!-- Rechazado --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

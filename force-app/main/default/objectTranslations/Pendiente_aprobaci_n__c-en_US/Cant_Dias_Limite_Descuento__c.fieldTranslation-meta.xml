@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Cant Dias Limite Descuento --></label>
+    <name>Cant_Dias_Limite_Descuento__c</name>
+</CustomFieldTranslation>

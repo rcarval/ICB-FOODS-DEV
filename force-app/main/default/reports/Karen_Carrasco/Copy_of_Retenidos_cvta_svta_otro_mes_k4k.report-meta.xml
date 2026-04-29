@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>SUM(Venta__c.Total_Venta__c:SUM) / RowCount/1000</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>ventas/total</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>Donut</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>User$Name</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>true</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>User.Account$OwnerId$Name</field>
+    </columns>
+    <columns>
+        <field>User.Account$OwnerId$C_digo_de_cliente__c</field>
+    </columns>
+    <crossFilters>
+        <criteriaItems>
+            <column>Fecha_de_Venta__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>THIS_MONTH</value>
+        </criteriaItems>
+        <operation>with</operation>
+        <primaryTableColumn>User.Account$OwnerId$Id</primaryTableColumn>
+        <relatedTable>Venta__c</relatedTable>
+        <relatedTableJoinColumn>Cliente__c</relatedTableJoinColumn>
+    </crossFilters>
+    <customDetailFormulas>
+        <calculatedFormula>IF(User.UserRole.Name = &quot;Asesores Comerciales 1&quot;, &quot;Albert Fresco&quot;,
+  IF(User.UserRole.Name = &quot;Asesores Comerciales 2&quot;, &quot;Patricia Gomez&quot;,
+    IF(User.UserRole.Name = &quot;Asesores Comerciales 3&quot;, &quot;Jimena Fau&quot;,
+      IF(User.UserRole.Name = &quot;Asesores Comerciales 4&quot;, &quot;Pedro Salgado&quot;,
+        IF(User.UserRole.Name = &quot;Asesores Comerciales 5&quot;, &quot;Andres Ortiz&quot;,
+          IF(User.UserRole.Name = &quot;Asesores Comerciales 6&quot;, &quot;Leonardo Flores&quot;,
+            IF(User.UserRole.Name = &quot;Asesores Comerciales 7&quot;, &quot;Rene Avila&quot;,
+              IF(User.UserRole.Name = &quot;Asesores Comerciales 8&quot;, &quot;Mariana Pizarro&quot;,
+                IF(User.UserRole.Name = &quot;Asesores Comerciales 9&quot;, &quot;Paulo Artal&quot;,
+                  IF(User.UserRole.Name = &quot;Asesores Comerciales 10&quot;, &quot;Ian Rojas&quot;,
+                    IF(User.UserRole.Name = &quot;Asesores Comerciales 11&quot;, &quot;Tomas Aravena&quot;,
+                      IF(User.UserRole.Name = &quot;Asesores Comerciales 12&quot;, &quot;Rodrigo Medina&quot;,
+                        IF(User.UserRole.Name = &quot;Asesores Comerciales 13&quot;, &quot;Francisco Lopez&quot;, &quot;&quot;)
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+    )
+  )
+)</calculatedFormula>
+        <dataType>Text</dataType>
+        <developerName>CDF1</developerName>
+        <label>Medio Campo</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <filter>
+        <criteriaItems>
+            <column>User.Account$OwnerId$Owner</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Jose Parra</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Activos: Cte c/venta mes curso</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>usuarios_cuentas__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>User.Account$OwnerId$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

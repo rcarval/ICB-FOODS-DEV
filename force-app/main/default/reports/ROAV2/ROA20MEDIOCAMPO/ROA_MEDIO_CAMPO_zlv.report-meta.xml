@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>SalesKPI__c$Name</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>SalesKPI__c$ActiveCount__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>SalesKPI__c$ChurnedCount__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>SalesKPI__c$RetainedCount__c</field>
+    </columns>
+    <description>Informe del ROA mensual por asesor</description>
+    <filter>
+        <criteriaItems>
+            <column>SalesKPI__c$Owner</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Albert Fresco,Patricia Gómez,Jimena Fau,Andrés Ortiz,Pedro Salgado,Rodrigo Medina,Tomás Aravena,Leonardo Flores,Mariana Pizarro,Paulo Artal,René Ávila,María de los Ángeles Cofré</value>
+        </criteriaItems>
+        <language>es</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>SalesKPI__c$Owner</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>SalesKPI__c$Month__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>ROA MEDIO CAMPO</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>KPI_ROA__c</reportType>
+    <scope>team</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>SalesKPI__c$LastModifiedDate</dateColumn>
+        <interval>INTERVAL_TODAY</interval>
+    </timeFrameFilter>
+</Report>

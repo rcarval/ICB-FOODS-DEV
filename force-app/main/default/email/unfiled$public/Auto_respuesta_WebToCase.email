@@ -1,0 +1,14 @@
+<table border="0" cellpadding="5" width="600" cellspacing="5" height="400" >
+<tr valign="top" height="50" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<span style="font-family: Arial, Helvetica, sans-serif; font-size: 11.36px; background-color: rgb(255, 255, 255);">Asunto: Confirmación de creación de caso #{!Case.CaseNumber}</span>]]></td>
+</tr>
+<tr valign="top" height="300" >
+<td tEditID="c1r2" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r2" locked="0" >
+<![CDATA[<span style="font-family: Arial, Helvetica, sans-serif; font-size: 11.36px; background-color: rgb(255, 255, 255);">Estimado/a {!Case.Usuario__c}, Gracias por contactarnos.</span><br style="font-family: Arial, Helvetica, sans-serif; font-size: 11.36px;"><br style="font-family: Arial, Helvetica, sans-serif; font-size: 11.36px;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 11.36px; background-color: rgb(255, 255, 255);">Hemos recibido tu solicitud y estamos trabajando en ello.</span><br style="font-family: Arial, Helvetica, sans-serif; font-size: 11.36px;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 11.36px; background-color: rgb(255, 255, 255);">Número de caso: {!Case.CaseNumber}</span><br style="font-family: Arial, Helvetica, sans-serif; font-size: 11.36px;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 11.36px; background-color: rgb(255, 255, 255);">Asunto: {!Case.Subject}</span><br style="font-family: Arial, Helvetica, sans-serif; font-size: 11.36px;"><br style="font-family: Arial, Helvetica, sans-serif; font-size: 11.36px;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 11.36px; background-color: rgb(255, 255, 255);">Nuestro equipo se pondrá en contacto contigo lo antes posible.</span><br style="font-family: Arial, Helvetica, sans-serif; font-size: 11.36px;"><br style="font-family: Arial, Helvetica, sans-serif; font-size: 11.36px;"><br>]]></td>
+</tr>
+<tr valign="top" height="50" >
+<td tEditID="c1r3" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r3" locked="0" >
+<![CDATA[<span style="font-family: Arial, Helvetica, sans-serif; font-size: 11.36px; background-color: rgb(255, 255, 255);">Saludos Cordiales,</span>]]></td>
+</tr>
+</table>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Leads_OpenDay</fullName>
+    <booleanFilter>1 OR 2 OR 3</booleanFilter>
+    <columns>FULL_NAME</columns>
+    <columns>Canal__c</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>RUT__c</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.PHONE</columns>
+    <columns>FS_Openday__c</columns>
+    <columns>Nombre_de_asesor__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LEAD.LEAD_SOURCE</field>
+        <operation>equals</operation>
+        <value>OpenDay</value>
+    </filters>
+    <filters>
+        <field>Lead_Source__c</field>
+        <operation>equals</operation>
+        <value>OpenDay</value>
+    </filters>
+    <filters>
+        <field>Canal__c</field>
+        <operation>equals</operation>
+        <value>Auto Inscripción,FFVV,Meta</value>
+    </filters>
+    <label>Leads OpenDay</label>
+    <sharedTo>
+        <role>SubGerente_Negocios</role>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Oficina de Venta --></label>
+    <name>Oficina_de_Venta__c</name>
+    <picklistValues>
+        <masterLabel>Oficina   1</masterLabel>
+        <translation><!-- Oficina   1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oficina   2</masterLabel>
+        <translation><!-- Oficina   2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oficina   3</masterLabel>
+        <translation><!-- Oficina   3 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

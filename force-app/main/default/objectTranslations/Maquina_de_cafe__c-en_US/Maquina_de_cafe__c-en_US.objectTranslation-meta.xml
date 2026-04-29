@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Máquina de café</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Máquinas de café</value>
+    </caseValues>
+    <layouts>
+        <layout>Máquina de café Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Consulta_R_pida --></label>
+        <name>Consulta_R_pida</name>
+    </webLinks>
+</CustomObjectTranslation>

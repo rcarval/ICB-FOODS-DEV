@@ -1,0 +1,69 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height:auto; min-height:auto;">
+<table border="0" cellpadding="0" cellspacing="0" style="background:#f5f5f5; padding:30px 0; font-family:Arial, Helvetica, sans-serif;" width="100%">
+	
+		<tr>
+			<td align="center">
+			<table border="0" cellpadding="0" cellspacing="0" style="width:600px; max-width:600px; background:#ffffff; border-radius:12px; overflow:hidden;" width="600">
+				
+					<tr>
+						<td align="center"><img alt="OP_MAILING_INVITACION_HEADER" src="" style="max-width: 640px" title="OP_MAILING_INVITACION_HEADER" /></td>
+					</tr>
+					<tr>
+						<td align="center" style="padding:0 32px 10px 32px; font-size:26px; line-height:1.3; font-weight:700; color:#000000;"><br />
+						BIENVENIDO(A)</td>
+					</tr>
+					<tr>
+						<td style="padding:0 32px 10px 32px; color:#2B2B2B; font-size:16px; line-height:1.6; text-align:justify;">
+						<p style="margin:0 0 16px 0; text-align:justify;"><br />
+						👋 Hola <strong style="color:#000000;">{{{Account.Nombre_de_contacto__c}}}</strong>, nos alegra darte la bienvenida a <span style="color:#2B2B2B; text-decoration:none;">ICB Food Service</span>. Tu cuenta <strong style="color:#000000;">“{{{Account.Name}}}”</strong> ya está habilitada. ⚡</p>
+
+						<p style="text-align:justify;"><strong style="color:#000000;">A partir de hoy podrás:</strong></p>
+
+						<ul style="margin:0; margin-left:25px; padding:0; color:#2B2B2B; list-style:none; text-align:justify;">
+							<li style="margin-bottom:14px; padding-left:0; text-align:justify;"><span style="font-size:18px; line-height:1; color:#000000; padding-right:8px;">●</span> 💻 <b style="color:#000000;">Acceder a PIA</b>: Nuestra Plataforma Integral de Atención para hacer tus pedidos las 24 horas, conocer todo nuestro catálogo de productos y revisar todos los detalles de tu cuenta y despachos.</li>
+							<li style="margin-bottom:14px; padding-left:0; text-align:justify;"><span style="font-size:18px; line-height:1; color:#000000; padding-right:8px;">●</span> 🎧 <b style="color:#000000;">Contactar a un ejecutivo del Centro de Contacto de Clientes (CCC)</b> para atender cualquier consulta.</li>
+							<li style="margin-bottom:14px; padding-left:0; text-align:justify;"><span style="font-size:18px; line-height:1; color:#000000; padding-right:8px;">●</span> 🤝 <b style="color:#000000;">Contar con un asesor de negocios</b> que te ayude a potenciar el crecimiento de tu negocio.</li>
+						</ul>
+
+						<p style="text-align:justify;"><strong style="color:#000000;">Próximos pasos:</strong></p>
+
+						<ol style="margin:0; margin-left:25px; padding:0; color:#2B2B2B; text-align:justify;">
+							<li style="margin-bottom:8px; padding-left:5px; color:#000000; text-align:justify;"><b style="color:#000000;">Completa tu proceso de enrolamiento en PIA</b> en el siguiente enlace:</li>
+						</ol>
+
+						<table align="center" border="0" cellpadding="0" cellspacing="0" style="margin:4px auto 22px auto; text-align:center;">
+							
+								<tr>
+									<td align="center" bgcolor="#E40046" style="border-radius:8px;"><a href="https://pia.icbfs.cl/register" style="display:block; padding:12px 20px; font-size:14px; line-height:1.2; color:#ffffff; font-weight:700; text-decoration:none;" target="_blank">Completar registro en PIA</a></td>
+								</tr>
+							
+						</table>
+
+						<ol start="2" style="margin:0; margin-left:25px; padding:0; color:#2B2B2B; text-align:justify;">
+							<li style="margin-bottom:8px; padding-left:5px; color:#000000; text-align:justify;"><b style="color:#000000;">Contáctanos ante cualquier duda</b> al Centro de Contacto de Clientes:</li>
+						</ol>
+
+						<ul style="margin:6px 0 0 45px; padding:0; color:#2B2B2B; list-style:none; text-align:justify;">
+							<li style="padding-left:0; margin-bottom:4px; text-align:justify;"><span style="font-size:16px; line-height:1; color:#000000; padding-right:8px;">●</span> <strong style="color:#000000;">📩 <a href="mailto:ccc@icbfs.cl" style="color:#000000; text-decoration:underline; vertical-align:middle;">ccc@icbfs.cl</a></strong></li>
+							<li style="padding-left:0; text-align:justify;"><span style="font-size:16px; line-height:1; color:#000000; padding-right:8px;">●</span> <strong style="color:#000000;">📞 <a href="https://wa.me/56927308510" style="color:#000000; text-decoration:underline; vertical-align:middle;" target="_blank">+56 9 2730 8510</a></strong></li>
+						</ul>
+						</td>
+					</tr>
+					<tr>
+						<td align="center"><img alt="ICBFS_MAILING_BIENVENIDOS_F" src="" style="max-width: 640px" title="ICBFS_MAILING_BIENVENIDOS_F" /></td>
+					</tr>
+					<tr>
+						<td style="padding:10px 24px 20px 24px; text-align:center; color:#8c8c8c; font-size:12px; line-height:1.4;">Este mensaje ha sido enviado automáticamente, por favor no respondas.</td>
+					</tr>
+				
+			</table>
+			</td>
+		</tr>
+	
+</table>
+</body>
+</html>

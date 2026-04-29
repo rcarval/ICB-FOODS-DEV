@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comuna_Region_Validar</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    ISPICKVAL(Status, &quot;Lead Contactado&quot;),
+    OR(
+        ISBLANK(Comunas__c),
+        ISBLANK(TEXT(Regi_n__c))
+    )
+)</errorConditionFormula>
+    <errorDisplayField>Comunas__c</errorDisplayField>
+    <errorMessage>Debe ingresar Región y Comuna</errorMessage>
+</ValidationRule>

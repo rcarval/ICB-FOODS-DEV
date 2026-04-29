@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>C_mo_se_enter_de_ICB_Food_Service__c</fullName>
+    <label>Cómo se enteró de ICB Food Service</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Asesor de Ventas</fullName>
+                <default>false</default>
+                <label>Asesor de Ventas</label>
+            </value>
+            <value>
+                <fullName>Página Web</fullName>
+                <default>false</default>
+                <label>Página Web</label>
+            </value>
+            <value>
+                <fullName>Recomendación de un Amigo</fullName>
+                <default>false</default>
+                <label>Recomendación de un Amigo</label>
+            </value>
+            <value>
+                <fullName>Redes Sociales</fullName>
+                <default>false</default>
+                <label>Redes Sociales</label>
+            </value>
+            <value>
+                <fullName>Tiendas</fullName>
+                <default>false</default>
+                <label>Tiendas</label>
+            </value>
+            <value>
+                <fullName>Otros</fullName>
+                <default>false</default>
+                <label>Otros</label>
+            </value>
+            <value>
+                <fullName>--Ninguno--</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>--Ninguno--</label>
+            </value>
+            <value>
+                <fullName>--Seleccione--</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>--Seleccione--</label>
+            </value>
+            <value>
+                <fullName>Recomendacion de un Amigo</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Recomendacion de un Amigo</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

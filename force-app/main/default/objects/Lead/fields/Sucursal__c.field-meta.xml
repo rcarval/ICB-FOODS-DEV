@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sucursal__c</fullName>
+    <label>Sucursal</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>S001 - Suc Santiago</fullName>
+                <default>false</default>
+                <label>S001 - Suc Santiago</label>
+            </value>
+            <value>
+                <fullName>S002 - Suc Coquimbo</fullName>
+                <default>false</default>
+                <label>S002 - Suc Coquimbo</label>
+            </value>
+            <value>
+                <fullName>S003 - Suc Temuco</fullName>
+                <default>false</default>
+                <label>S003 - Suc Temuco</label>
+            </value>
+            <value>
+                <fullName>S004 - Suc Concepción</fullName>
+                <default>false</default>
+                <label>S004 - Suc Concepción</label>
+            </value>
+            <value>
+                <fullName>S005 - Suc Antofagasta</fullName>
+                <default>false</default>
+                <label>S005 - Suc Antofagasta</label>
+            </value>
+            <value>
+                <fullName>S006 - Suc Puerto Montt</fullName>
+                <default>false</default>
+                <label>S006 - Suc Puerto Montt</label>
+            </value>
+            <value>
+                <fullName>S007 - Suc Iquique</fullName>
+                <default>false</default>
+                <label>S007 - Suc Iquique</label>
+            </value>
+            <value>
+                <fullName>S008 - Suc Curicó</fullName>
+                <default>false</default>
+                <label>S008 - Suc Curicó</label>
+            </value>
+            <value>
+                <fullName>S009 - Suc Calama</fullName>
+                <default>false</default>
+                <label>S009 - Suc Calama</label>
+            </value>
+            <value>
+                <fullName>S015 - Suc Viña del Mar</fullName>
+                <default>false</default>
+                <label>S015 - Suc Viña del Mar</label>
+            </value>
+            <value>
+                <fullName>Sucursal 1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sucursal 1</label>
+            </value>
+            <value>
+                <fullName>Sucursal 2</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sucursal 2</label>
+            </value>
+            <value>
+                <fullName>Sucursal 3</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sucursal 3</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

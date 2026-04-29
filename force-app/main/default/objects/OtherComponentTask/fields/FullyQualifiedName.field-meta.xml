@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FullyQualifiedName</fullName>
+    <inlineHelpText>Nombre de componente con el prefijo para el espacio de nombres. Por ejemplo, el componente xyz en el espacio de nombres c se le asigna el nombre c__xyz.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

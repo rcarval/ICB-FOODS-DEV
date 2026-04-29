@@ -1,0 +1,4753 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customApplications>
+        <label><!-- Inside Sales --></label>
+        <name>Inside_Sales</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Mobile ICBFS --></label>
+        <name>Mobile_ICBFS</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Sales Leader --></label>
+        <name>Sales_Leader</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Sales Operations --></label>
+        <name>Sales_Operations</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- SubGerentes ICBFS --></label>
+        <name>SubGerentes_ICBFS</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Success Manager --></label>
+        <name>Success_Manager</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Team Café --></label>
+        <name>Team_Caf</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Ventas ICBFS --></label>
+        <name>Ventas_ICBFS</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Ventas ICB Food Service --></label>
+        <name>Ventas_ICBFS_clone</name>
+    </customApplications>
+    <customTabs>
+        <label><!-- Dashboard Quicksight --></label>
+        <name>Dashboard_Quicksight</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Módulo de Aprobación --></label>
+        <name>Modulo_de_Aprobacion</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- ROA Domicilios --></label>
+        <name>ROA_Domicilios</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- scanner --></label>
+        <name>scanner</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Lead Capture --></label>
+        <name>sfleadcaphfprod__Lead_Capture</name>
+    </customTabs>
+    <flowDefinitions>
+        <flows/>
+        <fullName>ActualizaCanalOpenDay</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Actualiza_Costo</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Actualiza_Gerencia_en_domicilios</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Actualizaci_n_domicilio_editable</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Actualizacion_de_Cliente</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Actualizar_Cotizacion_con_AccountName</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Actualizar_Descuentos</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Actualizar_Domicilio_de_Cliente</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Actualizar_Oportunidad</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Actualizar_Precio</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Actualizar_Venta_Detalle</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>ActualizoPricebookEntry</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <textTemplates>
+                <name>IDSAPCLIENTE</name>
+            </textTemplates>
+        </flows>
+        <fullName>Alerta_Chatter_Id_SAP</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <textTemplates>
+                <name>AlertaBodyEmail</name>
+            </textTemplates>
+            <textTemplates>
+                <name>TxtSubject</name>
+            </textTemplates>
+        </flows>
+        <fullName>Alerta_Cotizacion_Completa</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>AltaDescuentoBach</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Auto_Crear_Cliente_SAP</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Auto_Crear_Cliente_SAP_sin_Despacho</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Auto_Crear_Descuento</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Auto_Crear_Holding</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Auto_crear_cliente_full_v1</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Cambio_a_prospecto_mediante_cambio_de_estado</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>flyer_navidad</name>
+                </fields>
+                <name>campana_navide_a</name>
+            </screens>
+        </flows>
+        <fullName>Campana_navidad</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>ComunaTemporal_API</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Con_Holding_update_Despacho_desde_Update_Cliente</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <choices>
+                <name>ALMACEN</name>
+            </choices>
+            <choices>
+                <name>ALPASO</name>
+            </choices>
+            <choices>
+                <name>AL_PASO</name>
+            </choices>
+            <choices>
+                <name>BANQUETERIA</name>
+            </choices>
+            <choices>
+                <name>BARES</name>
+            </choices>
+            <choices>
+                <name>Bajo_14_400</name>
+            </choices>
+            <choices>
+                <name>Bajo_20_600</name>
+            </choices>
+            <choices>
+                <name>CADENAS</name>
+            </choices>
+            <choices>
+                <name>CAFETERIAS</name>
+            </choices>
+            <choices>
+                <name>CAPSULA</name>
+            </choices>
+            <choices>
+                <name>CLUB</name>
+            </choices>
+            <choices>
+                <name>GRANO_ENTERO</name>
+            </choices>
+            <choices>
+                <name>GRANO_MOLIDO</name>
+            </choices>
+            <choices>
+                <name>HOTELES</name>
+            </choices>
+            <choices>
+                <name>Hotel</name>
+            </choices>
+            <choices>
+                <name>Lecha_Liquida</name>
+            </choices>
+            <choices>
+                <name>Leche_Liquida</name>
+            </choices>
+            <choices>
+                <name>Leche_Liquida_choise</name>
+            </choices>
+            <choices>
+                <name>Leche_Soluble</name>
+            </choices>
+            <choices>
+                <name>MINIMARKET</name>
+            </choices>
+            <choices>
+                <name>No_encuentro_una_combinacion_conctactar_a_ejcutiva</name>
+            </choices>
+            <choices>
+                <name>OFICINAS</name>
+            </choices>
+            <choices>
+                <name>RESTAURANTES</name>
+            </choices>
+            <choices>
+                <name>Static_Choices</name>
+            </choices>
+            <choices>
+                <name>TOGO</name>
+            </choices>
+            <choices>
+                <name>Tasasdiarias100Kilos24</name>
+            </choices>
+            <choices>
+                <name>Tasasdiarias150Kilos36</name>
+            </choices>
+            <choices>
+                <name>Tasasdiarias34Capsulas1000</name>
+            </choices>
+            <choices>
+                <name>Tasasdiarias40Capsulas1200</name>
+            </choices>
+            <choices>
+                <name>Tasasdiarias75Kilos18</name>
+            </choices>
+            <choices>
+                <name>TipoNegocio</name>
+            </choices>
+            <choices>
+                <name>X12_Kilos_Mes</name>
+            </choices>
+            <choices>
+                <name>X18_Kilos_Mes</name>
+            </choices>
+            <choices>
+                <name>X24_Kilos_Mes</name>
+            </choices>
+            <choices>
+                <name>X96_Tasas_diarias_18_Kilos</name>
+            </choices>
+            <choices>
+                <name>X96_Tasas_diarias_24_Kilos</name>
+            </choices>
+            <choices>
+                <name>tiponegociov2</name>
+            </choices>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Copy_1_of_Copy_1_of_Copy_2_of_Copy_1_of_Tipo_de_Cafe</name>
+                </fields>
+                <name>Banqueteria_Tipo</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_2_of_Copy_1_of_Tipo_de_Cafe</name>
+                </fields>
+                <name>Cafeteria_Tipo</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Cantidad_de_Tasas_Diarias_Capsulas_Mes</name>
+                </fields>
+                <name>Cantidad_Consumida</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Hoteles_Tipo_de_Cafe</name>
+                </fields>
+                <name>ClubTipoD</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Cantidad_de_consumo</name>
+                </fields>
+                <fields>
+                    <name>Tipo_TipodeNegocioEjecutiva</name>
+                </fields>
+                <fields>
+                    <name>Tipo_de_Cafe_requerido</name>
+                </fields>
+                <fields>
+                    <name>texto_ejecuiva</name>
+                </fields>
+                <name>Contaco_Ejecutivo</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_1_of_Copy_2_of_Copy_3_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_10_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_1_of_Copy_2_of_Copy_4_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_11_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Cantidad_de_consumo</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Tipo_TipodeNegocioEjecutiva</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Tipo_de_Cafe_requerido</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_texto_ejecuiva</name>
+                </fields>
+                <fields>
+                    <name>Tipo_de_leche</name>
+                </fields>
+                <name>Copy_1_of_Contaco_Ejecutivo</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_2_of_Copy_1_of_Cantidad_de_consumo</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Copy_2_of_Copy_1_of_Tipo_TipodeNegocioEjecutiva</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Copy_2_of_Copy_1_of_Tipo_de_Cafe_requerido</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Copy_2_of_Copy_1_of_texto_ejecuiva</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Copy_2_of_Tipo_de_leche</name>
+                </fields>
+                <name>Copy_1_of_Contacto_Ejecutivo</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Cantidad_de_consumo</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Tipo_TipodeNegocioEjecutiva</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Tipo_de_Cafe_requerido</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_texto_ejecuiva</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Tipo_de_leche</name>
+                </fields>
+                <name>Copy_1_of_Copy_1_of_Contaco_Ejecutivo</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_1_of_Copy_1_of_Copy_1_of_Copy_1_of_Copy_1_of_Copy_1_of_Copy_3_of_AL_PASO_CA</name>
+                </fields>
+                <name>Copy_1_of_Copy_1_of_Copy_1_of_Copy_1_of_Copy_1_of_Copy_1_of_Copy_3_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_1_of_Copy_1_of_Copy_1_of_Copy_1_of_Copy_1_of_Copy_3_of_AL_PASO_CAPSULA_PROP</name>
+                </fields>
+                <name>Copy_1_of_Copy_1_of_Copy_1_of_Copy_1_of_Copy_1_of_Copy_3_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_1_of_Copy_1_of_Copy_1_of_Copy_1_of_Copy_3_of_Copy_1_of_Copy_1_of_AL_PASO_CA</name>
+                </fields>
+                <name>Copy_1_of_Copy_1_of_Copy_1_of_Copy_1_of_Copy_3_of_Copy_1_of_Copy_1_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Copy_1_of_Copy_1_of_Copy_3_of_Copy_1_of_Copy_2_of_Leche</name>
+                </fields>
+                <name>Copy_1_of_Copy_1_of_Copy_1_of_Copy_1_of_Copy_3_of_Copy_1_of_Copy_2_of_Paso_5_Tip</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_1_of_Copy_1_of_Copy_1_of_Copy_1_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_1_of_Copy_1_of_Copy_1_of_Copy_1_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Copy_1_of_Copy_2_of_Leche</name>
+                </fields>
+                <name>Copy_1_of_Copy_1_of_Copy_1_of_Copy_2_of_Paso_5_Tipo_de_leche</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_1_of_Copy_1_of_Copy_1_of_Copy_3_of_Copy_1_of_Copy_1_of_AL_PASO_CAPSULA_PROP</name>
+                </fields>
+                <name>Copy_1_of_Copy_1_of_Copy_1_of_Copy_3_of_Copy_1_of_Copy_1_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Copy_1_of_Copy_3_of_Copy_1_of_Copy_2_of_Leche</name>
+                </fields>
+                <name>Copy_1_of_Copy_1_of_Copy_1_of_Copy_3_of_Copy_1_of_Copy_2_of_Paso_5_Tipo_de_leche</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Copy_1_of_Copy_4_of_Cantidad_de_consumo</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Copy_1_of_Copy_4_of_Tipo_TipodeNegocioEjecutiva</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Copy_1_of_Copy_4_of_Tipo_de_Cafe_requerido</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Copy_1_of_Copy_4_of_texto_ejecuiva</name>
+                </fields>
+                <name>Copy_1_of_Copy_1_of_Copy_1_of_Copy_4_of_Contaco_Ejecutivo</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Copy_1_of_Copy_4_of_fin1</name>
+                </fields>
+                <name>Copy_1_of_Copy_1_of_Copy_1_of_Copy_4_of_fin12</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_1_of_Copy_1_of_Copy_1_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_1_of_Copy_1_of_Copy_1_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Copy_2_of_Leche</name>
+                </fields>
+                <name>Copy_1_of_Copy_1_of_Copy_2_of_Paso_5_Tipo_de_leche</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Copy_3_of_Cantidad_de_consumo</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Copy_3_of_Tipo_TipodeNegocioEjecutiva</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Copy_3_of_Tipo_de_Cafe_requerido</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Copy_3_of_texto_ejecuiva</name>
+                </fields>
+                <name>Copy_1_of_Copy_1_of_Copy_3_of_Contaco_Ejecutivo</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Copy_3_of_Copy_1_of_Cantidad_de_consumo</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Copy_3_of_Copy_1_of_Tipo_TipodeNegocioEjecutiva</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Copy_3_of_Copy_1_of_Tipo_de_Cafe_requerido</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Copy_3_of_Copy_1_of_texto_ejecuiva</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Copy_3_of_Tipo_de_leche</name>
+                </fields>
+                <name>Copy_1_of_Copy_1_of_Copy_3_of_Copy_1_of_Contaco_Ejecutivo</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_1_of_Copy_1_of_Copy_3_of_Copy_1_of_Copy_1_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_1_of_Copy_1_of_Copy_3_of_Copy_1_of_Copy_1_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Copy_3_of_Copy_1_of_Copy_2_of_Leche</name>
+                </fields>
+                <name>Copy_1_of_Copy_1_of_Copy_3_of_Copy_1_of_Copy_2_of_Paso_5_Tipo_de_leche</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Copy_3_of_Copy_1_of_Leche</name>
+                </fields>
+                <name>Copy_1_of_Copy_1_of_Copy_3_of_Copy_1_of_Paso_5_Tipo_de_leche</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_1_of_Copy_1_of_Copy_3_of_Copy_1_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_1_of_Copy_1_of_Copy_3_of_Copy_1_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Copy_3_of_Copy_1_of_fin1</name>
+                </fields>
+                <name>Copy_1_of_Copy_1_of_Copy_3_of_Copy_1_of_fin12</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_1_of_Copy_1_of_Copy_3_of_Copy_2_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_1_of_Copy_1_of_Copy_3_of_Copy_2_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Copy_3_of_Copy_4_of_Leche</name>
+                </fields>
+                <name>Copy_1_of_Copy_1_of_Copy_3_of_Copy_4_of_Paso_5_Tipo_de_leche</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_1_of_Copy_1_of_Copy_3_of_Copy_4_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_1_of_Copy_1_of_Copy_3_of_Copy_4_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Copy_3_of_fin1</name>
+                </fields>
+                <name>Copy_1_of_Copy_1_of_Copy_3_of_fin12</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Copy_4_of_Cantidad_de_consumo</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Copy_4_of_Tipo_TipodeNegocioEjecutiva</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Copy_4_of_Tipo_de_Cafe_requerido</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Copy_4_of_texto_ejecuiva</name>
+                </fields>
+                <name>Copy_1_of_Copy_1_of_Copy_4_of_Contaco_Ejecutivo</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Copy_4_of_fin1</name>
+                </fields>
+                <name>Copy_1_of_Copy_1_of_Copy_4_of_fin12</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_1_of_Copy_1_of_Copy_6_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_1_of_Copy_1_of_Copy_6_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Cantidad_de_Tasas_Diarias_Capsulas_Mes</name>
+                </fields>
+                <name>Copy_1_of_Copy_1_of_Paso_3_Cantidad_Consumida</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Leche</name>
+                </fields>
+                <name>Copy_1_of_Copy_1_of_Paso_5_Tipo_de_leche</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_1_of_Copy_1_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_1_of_Copy_1_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_fin1</name>
+                </fields>
+                <name>Copy_1_of_Copy_1_of_fin12</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_1_of_Copy_2_of_Copy_1_of_Copy_1_of_Copy_1_of_Copy_3_of_AL_PASO_CAPSULA_PROP</name>
+                </fields>
+                <name>Copy_1_of_Copy_2_of_Copy_1_of_Copy_1_of_Copy_1_of_Copy_3_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_2_of_Copy_1_of_Copy_2_of_Leche</name>
+                </fields>
+                <name>Copy_1_of_Copy_2_of_Copy_1_of_Copy_2_of_Paso_5_Tipo_de_leche</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_2_of_Copy_1_of_fin1</name>
+                </fields>
+                <name>Copy_1_of_Copy_2_of_Copy_1_of_fin12</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_2_of_Leche</name>
+                </fields>
+                <name>Copy_1_of_Copy_2_of_Paso_5_Tipo_de_leche</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_1_of_Copy_2_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_1_of_Copy_2_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_3_of_Cantidad_de_consumo</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Copy_3_of_Tipo_TipodeNegocioEjecutiva</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Copy_3_of_Tipo_de_Cafe_requerido</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Copy_3_of_texto_ejecuiva</name>
+                </fields>
+                <name>Copy_1_of_Copy_3_of_Contaco_Ejecutivo</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_3_of_Copy_1_of_Cantidad_de_consumo</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Copy_3_of_Copy_1_of_Tipo_TipodeNegocioEjecutiva</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Copy_3_of_Copy_1_of_Tipo_de_Cafe_requerido</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Copy_3_of_Copy_1_of_texto_ejecuiva</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Copy_3_of_Tipo_de_leche</name>
+                </fields>
+                <name>Copy_1_of_Copy_3_of_Copy_1_of_Contaco_Ejecutivo</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_1_of_Copy_3_of_Copy_1_of_Copy_1_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_1_of_Copy_3_of_Copy_1_of_Copy_1_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_3_of_Copy_1_of_Copy_2_of_Leche</name>
+                </fields>
+                <name>Copy_1_of_Copy_3_of_Copy_1_of_Copy_2_of_Paso_5_Tipo_de_leche</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_3_of_Copy_1_of_Cantidad_de_Tasas_Diarias_Capsulas_Mes</name>
+                </fields>
+                <name>Copy_1_of_Copy_3_of_Copy_1_of_Paso_3_Cantidad_Consumida</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_3_of_Copy_1_of_Leche</name>
+                </fields>
+                <name>Copy_1_of_Copy_3_of_Copy_1_of_Paso_5_Tipo_de_leche</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_1_of_Copy_3_of_Copy_1_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_1_of_Copy_3_of_Copy_1_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_3_of_Copy_1_of_fin1</name>
+                </fields>
+                <name>Copy_1_of_Copy_3_of_Copy_1_of_fin12</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_3_of_Copy_2_of_Leche</name>
+                </fields>
+                <name>Copy_1_of_Copy_3_of_Copy_2_of_Paso_5_Tipo_de_leche</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_1_of_Copy_3_of_Copy_2_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_1_of_Copy_3_of_Copy_2_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_3_of_Copy_4_of_Leche</name>
+                </fields>
+                <name>Copy_1_of_Copy_3_of_Copy_4_of_Paso_5_Tipo_de_leche</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_1_of_Copy_3_of_Copy_4_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_1_of_Copy_3_of_Copy_4_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Copy_3_of_Cantidad_de_Tasas_Diarias_Capsulas_Mes</name>
+                </fields>
+                <name>Copy_1_of_Copy_3_of_Paso_3_Cantidad_Consumida</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_3_of_Leche</name>
+                </fields>
+                <name>Copy_1_of_Copy_3_of_Paso_5_Tipo_de_leche</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_1_of_Copy_3_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_1_of_Copy_3_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_3_of_fin1</name>
+                </fields>
+                <name>Copy_1_of_Copy_3_of_fin12</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_4_of_Cantidad_de_consumo</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Copy_4_of_Tipo_TipodeNegocioEjecutiva</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Copy_4_of_Tipo_de_Cafe_requerido</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Copy_4_of_texto_ejecuiva</name>
+                </fields>
+                <name>Copy_1_of_Copy_4_of_Contaco_Ejecutivo</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_4_of_Leche</name>
+                </fields>
+                <name>Copy_1_of_Copy_4_of_Paso_5_Tipo_de_leche</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_1_of_Copy_4_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_1_of_Copy_4_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_4_of_fin1</name>
+                </fields>
+                <name>Copy_1_of_Copy_4_of_fin12</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_4_of_Cantidad_de_Tasas_Diarias_Capsulas_Mes</name>
+                </fields>
+                <name>Copy_1_of_Copy_6_of_Paso_3_Cantidad_Consumida</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_1_of_Copy_6_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_1_of_Copy_6_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_1_of_Copy_1_of_Copy_2_of_Copy_1_of_Copy_1_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_1_of_Copy_7_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Copy_2_of_Copy_1_of_Tipo_de_Cafe</name>
+                </fields>
+                <name>Copy_1_of_Minimarket_Tipo</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Cantidad_de_Tasas_Diarias_Capsulas_Mes</name>
+                </fields>
+                <name>Copy_1_of_Paso_3_Cantidad_Consumida</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Leche</name>
+                </fields>
+                <name>Copy_1_of_Paso_5_Tipo_de_leche</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_1_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_1_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Tipo_de_Cafe</name>
+                </fields>
+                <name>Copy_1_of_Restaurant_Tipo</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Tipo_de_Cafe</name>
+                </fields>
+                <name>Copy_1_of_Tipo</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_fin1</name>
+                </fields>
+                <name>Copy_1_of_fin12</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_2_of_Cantidad_de_consumo</name>
+                </fields>
+                <fields>
+                    <name>Copy_2_of_Tipo_TipodeNegocioEjecutiva</name>
+                </fields>
+                <fields>
+                    <name>Copy_2_of_Tipo_de_Cafe_requerido</name>
+                </fields>
+                <fields>
+                    <name>Copy_2_of_texto_ejecuiva</name>
+                </fields>
+                <name>Copy_2_of_Contaco_Ejecutivo</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_2_of_Copy_1_of_Cantidad_de_consumo</name>
+                </fields>
+                <fields>
+                    <name>Copy_2_of_Copy_1_of_Tipo_TipodeNegocioEjecutiva</name>
+                </fields>
+                <fields>
+                    <name>Copy_2_of_Copy_1_of_Tipo_de_Cafe_requerido</name>
+                </fields>
+                <fields>
+                    <name>Copy_2_of_Copy_1_of_texto_ejecuiva</name>
+                </fields>
+                <fields>
+                    <name>Copy_2_of_Tipo_de_leche</name>
+                </fields>
+                <name>Copy_2_of_Copy_1_of_Contaco_Ejecutivo</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_2_of_Copy_1_of_Copy_1_of_Copy_1_of_Copy_1_of_Copy_3_of_AL_PASO_CAPSULA_PROP</name>
+                </fields>
+                <name>Copy_2_of_Copy_1_of_Copy_1_of_Copy_1_of_Copy_1_of_Copy_3_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_2_of_Copy_1_of_Copy_1_of_Copy_1_of_Copy_3_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_2_of_Copy_1_of_Copy_1_of_Copy_1_of_Copy_3_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_2_of_Copy_1_of_Copy_1_of_Copy_3_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_2_of_Copy_1_of_Copy_1_of_Copy_3_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_2_of_Copy_1_of_Copy_1_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_2_of_Copy_1_of_Copy_1_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_2_of_Copy_1_of_Copy_2_of_Leche</name>
+                </fields>
+                <name>Copy_2_of_Copy_1_of_Copy_2_of_Paso_5_Tipo_de_leche</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_2_of_Copy_1_of_Copy_3_of_Cantidad_de_consumo</name>
+                </fields>
+                <fields>
+                    <name>Copy_2_of_Copy_1_of_Copy_3_of_Tipo_TipodeNegocioEjecutiva</name>
+                </fields>
+                <fields>
+                    <name>Copy_2_of_Copy_1_of_Copy_3_of_Tipo_de_Cafe_requerido</name>
+                </fields>
+                <fields>
+                    <name>Copy_2_of_Copy_1_of_Copy_3_of_texto_ejecuiva</name>
+                </fields>
+                <name>Copy_2_of_Copy_1_of_Copy_3_of_Contaco_Ejecutivo</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_2_of_Copy_1_of_Copy_3_of_Copy_1_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_2_of_Copy_1_of_Copy_3_of_Copy_1_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_2_of_Copy_1_of_Copy_3_of_fin1</name>
+                </fields>
+                <name>Copy_2_of_Copy_1_of_Copy_3_of_fin12</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_2_of_Copy_1_of_Copy_6_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_2_of_Copy_1_of_Copy_6_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_2_of_Copy_1_of_Cantidad_de_Tasas_Diarias_Capsulas_Mes</name>
+                </fields>
+                <name>Copy_2_of_Copy_1_of_Paso_3_Cantidad_Consumida</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_2_of_Copy_1_of_Leche</name>
+                </fields>
+                <name>Copy_2_of_Copy_1_of_Paso_5_Tipo_de_leche</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_2_of_Copy_1_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_2_of_Copy_1_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_2_of_Copy_1_of_fin1</name>
+                </fields>
+                <name>Copy_2_of_Copy_1_of_fin12</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_2_of_Copy_2_of_Leche</name>
+                </fields>
+                <name>Copy_2_of_Copy_2_of_Paso_5_Tipo_de_leche</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_2_of_Copy_2_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_2_of_Copy_2_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_2_of_Copy_3_of_Cantidad_de_consumo</name>
+                </fields>
+                <fields>
+                    <name>Copy_2_of_Copy_3_of_Tipo_TipodeNegocioEjecutiva</name>
+                </fields>
+                <fields>
+                    <name>Copy_2_of_Copy_3_of_Tipo_de_Cafe_requerido</name>
+                </fields>
+                <fields>
+                    <name>Copy_2_of_Copy_3_of_texto_ejecuiva</name>
+                </fields>
+                <name>Copy_2_of_Copy_3_of_Contaco_Ejecutivo</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_2_of_Copy_3_of_Copy_1_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_2_of_Copy_3_of_Copy_1_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_2_of_Copy_1_of_Copy_3_of_Cantidad_de_Tasas_Diarias_Capsulas_Mes</name>
+                </fields>
+                <name>Copy_2_of_Copy_3_of_Paso_3_Cantidad_Consumida</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_2_of_Copy_3_of_Leche</name>
+                </fields>
+                <name>Copy_2_of_Copy_3_of_Paso_5_Tipo_de_leche</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_2_of_Copy_3_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_2_of_Copy_3_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_2_of_Copy_3_of_fin1</name>
+                </fields>
+                <name>Copy_2_of_Copy_3_of_fin12</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_2_of_Copy_4_of_Leche</name>
+                </fields>
+                <name>Copy_2_of_Copy_4_of_Paso_5_Tipo_de_leche</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_2_of_Copy_4_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_2_of_Copy_4_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_2_of_Copy_1_of_Copy_2_of_Copy_1_of_Copy_1_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_2_of_Copy_7_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_2_of_Cantidad_de_Tasas_Diarias_Capsulas_Mes</name>
+                </fields>
+                <name>Copy_2_of_Paso_3_Cantidad_Consumida</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_2_of_Leche</name>
+                </fields>
+                <name>Copy_2_of_Paso_5_Tipo_de_leche</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_2_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_2_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_2_of_fin1</name>
+                </fields>
+                <name>Copy_2_of_fin12</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_3_of_Cantidad_de_consumo</name>
+                </fields>
+                <fields>
+                    <name>Copy_3_of_Tipo_TipodeNegocioEjecutiva</name>
+                </fields>
+                <fields>
+                    <name>Copy_3_of_Tipo_de_Cafe_requerido</name>
+                </fields>
+                <fields>
+                    <name>Copy_3_of_texto_ejecuiva</name>
+                </fields>
+                <name>Copy_3_of_Contaco_Ejecutivo</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_3_of_Copy_1_of_Cantidad_de_consumo</name>
+                </fields>
+                <fields>
+                    <name>Copy_3_of_Copy_1_of_Tipo_TipodeNegocioEjecutiva</name>
+                </fields>
+                <fields>
+                    <name>Copy_3_of_Copy_1_of_Tipo_de_Cafe_requerido</name>
+                </fields>
+                <fields>
+                    <name>Copy_3_of_Copy_1_of_texto_ejecuiva</name>
+                </fields>
+                <fields>
+                    <name>Copy_3_of_Tipo_de_leche</name>
+                </fields>
+                <name>Copy_3_of_Copy_1_of_Contaco_Ejecutivo</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_3_of_Copy_1_of_Copy_1_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_3_of_Copy_1_of_Copy_1_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_3_of_Copy_1_of_Copy_2_of_Leche</name>
+                </fields>
+                <name>Copy_3_of_Copy_1_of_Copy_2_of_Paso_5_Tipo_de_leche</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_3_of_Copy_1_of_Cantidad_de_Tasas_Diarias_Capsulas_Mes</name>
+                </fields>
+                <name>Copy_3_of_Copy_1_of_Paso_3_Cantidad_Consumida</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_3_of_Copy_1_of_Leche</name>
+                </fields>
+                <name>Copy_3_of_Copy_1_of_Paso_5_Tipo_de_leche</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_3_of_Copy_1_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_3_of_Copy_1_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_3_of_Copy_1_of_fin1</name>
+                </fields>
+                <name>Copy_3_of_Copy_1_of_fin12</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_3_of_Copy_2_of_Leche</name>
+                </fields>
+                <name>Copy_3_of_Copy_2_of_Paso_5_Tipo_de_leche</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_3_of_Copy_2_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_3_of_Copy_2_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_3_of_Copy_3_of_Leche</name>
+                </fields>
+                <name>Copy_3_of_Copy_3_of_Paso_5_Tipo_de_leche</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_3_of_Copy_3_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_3_of_Copy_3_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_3_of_Copy_4_of_Leche</name>
+                </fields>
+                <name>Copy_3_of_Copy_4_of_Paso_5_Tipo_de_leche</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_3_of_Copy_4_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_3_of_Copy_4_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_3_of_Cantidad_de_Tasas_Diarias_Capsulas_Mes</name>
+                </fields>
+                <name>Copy_3_of_Paso_3_Cantidad_Consumida</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_3_of_Leche</name>
+                </fields>
+                <name>Copy_3_of_Paso_5_Tipo_de_leche</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_3_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_3_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_3_of_fin1</name>
+                </fields>
+                <name>Copy_3_of_fin12</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_4_of_Cantidad_de_consumo</name>
+                </fields>
+                <fields>
+                    <name>Copy_4_of_Tipo_TipodeNegocioEjecutiva</name>
+                </fields>
+                <fields>
+                    <name>Copy_4_of_Tipo_de_Cafe_requerido</name>
+                </fields>
+                <fields>
+                    <name>Copy_4_of_texto_ejecuiva</name>
+                </fields>
+                <name>Copy_4_of_Contaco_Ejecutivo</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_4_of_Copy_1_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_4_of_Copy_1_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_4_of_Copy_2_of_Leche</name>
+                </fields>
+                <name>Copy_4_of_Copy_2_of_Paso_5_Tipo_de_leche</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_2_of_Copy_1_of_Cantidad_de_Tasas_Diarias_Capsulas_Mes</name>
+                </fields>
+                <name>Copy_4_of_Paso_3_Cantidad_Consumida</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_4_of_Leche</name>
+                </fields>
+                <name>Copy_4_of_Paso_5_Tipo_de_leche</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_4_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_4_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_4_of_fin1</name>
+                </fields>
+                <name>Copy_4_of_fin12</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_2_of_Copy_3_of_Cantidad_de_Tasas_Diarias_Capsulas_Mes</name>
+                </fields>
+                <name>Copy_5_of_Paso_3_Cantidad_Consumida</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_5_of_Leche</name>
+                </fields>
+                <name>Copy_5_of_Paso_5_Tipo_de_leche</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_5_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_5_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_4_of_Cantidad_de_Tasas_Diarias_Capsulas_Mes</name>
+                </fields>
+                <name>Copy_6_of_Paso_3_Cantidad_Consumida</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_6_of_Leche</name>
+                </fields>
+                <name>Copy_6_of_Paso_5_Tipo_de_leche</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_6_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_6_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Copy_1_of_Copy_4_of_Cantidad_de_Tasas_Diarias_Capsulas_Mes</name>
+                </fields>
+                <name>Copy_7_of_Paso_3_Cantidad_Consumida</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_2_of_Copy_1_of_Leche</name>
+                </fields>
+                <name>Copy_7_of_Paso_5_Tipo_de_leche</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_1_of_Copy_2_of_Copy_1_of_Copy_1_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_7_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_2_of_Copy_3_of_Leche</name>
+                </fields>
+                <name>Copy_8_of_Paso_5_Tipo_de_leche</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_2_of_Copy_2_of_Copy_1_of_Copy_1_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_8_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_2_of_Copy_4_of_Leche</name>
+                </fields>
+                <name>Copy_9_of_Paso_5_Tipo_de_leche</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Copy_1_of_Copy_2_of_Copy_2_of_AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <name>Copy_9_of_Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_3_of_Cantidad_de_Tasas_Diarias_Capsulas_Mes</name>
+                </fields>
+                <name>HotelCapsulaPaso_3_Cantidad_Consumida</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Hoteles_Tipo_de_Cafe</name>
+                </fields>
+                <name>HotelesTipo</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>losentimos</name>
+                </fields>
+                <name>Lo_sentimos</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_2_of_Copy_1_of_Tipo_de_Cafe</name>
+                </fields>
+                <name>Minimarket_Tipo</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Copy_1_of_Copy_2_of_Copy_1_of_Tipo_de_Cafe</name>
+                </fields>
+                <name>Oficina_Tipo</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Leche</name>
+                </fields>
+                <name>Paso_5_Tipo_de_leche</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>AL_PASO_CAPSULA_PROPUESTA</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>fileId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>propuestaimgcap</name>
+                </fields>
+                <fields>
+                    <name>web</name>
+                </fields>
+                <name>Propuesta</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Copy_4_of_Cantidad_de_Tasas_Diarias_Capsulas_Mes</name>
+                </fields>
+                <name>TOGOCAPSULAPaso_3_Cantidad_Consumida</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_Copy_3_of_Copy_1_of_Cantidad_de_Tasas_Diarias_Capsulas_Mes</name>
+                </fields>
+                <name>TOGOGRANOPaso3CantidadConsumida</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Cabecera</name>
+                </fields>
+                <fields>
+                    <name>Eligetiponegocio</name>
+                </fields>
+                <name>TipodeNegocio</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>fin1</name>
+                </fields>
+                <name>fin12</name>
+            </screens>
+            <textTemplates>
+                <name>prueba3</name>
+            </textTemplates>
+            <textTemplates>
+                <name>prueba4</name>
+            </textTemplates>
+            <textTemplates>
+                <name>prueba5</name>
+            </textTemplates>
+            <textTemplates>
+                <name>subjetc</name>
+            </textTemplates>
+            <textTemplates>
+                <name>texto</name>
+            </textTemplates>
+            <textTemplates>
+                <name>texto2</name>
+            </textTemplates>
+            <textTemplates>
+                <name>texto3</name>
+            </textTemplates>
+            <textTemplates>
+                <name>textoavance1</name>
+            </textTemplates>
+        </flows>
+        <fullName>Configurador_Cafeteras</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Congelar_Oportunidad2</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>columns</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>label</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>maxRowSelection</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>minRowSelection</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>selectionMode</name>
+                        <value/>
+                    </inputParameters>
+                    <name>PreciosCafe</name>
+                </fields>
+                <name>Cafes_disponibles</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Cantidad_de_Caf_mensual</name>
+                </fields>
+                <fields>
+                    <name>IngresoCafe</name>
+                </fields>
+                <name>Consulta_r_pida_M_quinas_de_Caf</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Suministro_de_agua</name>
+                </fields>
+                <name>Ingreso_datos_adicionales</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>texto</name>
+                </fields>
+                <name>NoConsumoMinimo</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>columns</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>label</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>maxRowSelection</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>minRowSelection</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>selectionMode</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>tableData</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Opciones</name>
+                </fields>
+                <name>Opciones_Disponibles</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Total</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>columns</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>label</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>minRowSelection</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>selectionMode</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Valoresproductos</name>
+                </fields>
+                <name>Total_valores</name>
+            </screens>
+        </flows>
+        <fullName>ConsultaMaquinas</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>CotizacionAprobada</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <textTemplates>
+                <name>asuntocorreo</name>
+            </textTemplates>
+            <textTemplates>
+                <name>cuerpocorreo</name>
+            </textTemplates>
+        </flows>
+        <fullName>CreaLeadGastronomico</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Crear_Asociacion</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Crear_Asociacion_Update</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <customErrorMessages>
+                <developerName>No_tiene_Datos_de_Despacho</developerName>
+            </customErrorMessages>
+        </flows>
+        <fullName>Crear_Cliente_SAP_desde_Oportunidad</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Crear_Cliente_o_Holding</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Crear_Cliente_o_Holding_TEST</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Crear_Cliente_o_Holding_V2</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Crear_Descuento</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Crear_Despacho_SAP</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Crear_Venta</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Crear_cliente_con_campos_obligatorios</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>text1</name>
+                </fields>
+                <name>sc1</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>text2</name>
+                </fields>
+                <name>sc2</name>
+            </screens>
+        </flows>
+        <fullName>Crear_cotizacion_de_descuentosv2</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Crear_evento_desde_vsita</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>CreatedQuiteLineItem</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Datos_Completos_True</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <textTemplates>
+                <name>AlertaAsesorBody</name>
+            </textTemplates>
+            <textTemplates>
+                <name>txtSubject</name>
+            </textTemplates>
+        </flows>
+        <fullName>DescuentoOportunidad</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>DescuentosVencidos</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Enviar_Domicilio_Adicional_cliente_full</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Enviar_Domicilios_Adicionales</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <textTemplates>
+                <name>VarBodyDelEmail</name>
+            </textTemplates>
+            <textTemplates>
+                <name>VarSubject</name>
+            </textTemplates>
+        </flows>
+        <fullName>Envio_a_Team_Cafe_TASK</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>MensajeEnPantalla</name>
+                </fields>
+                <name>Envio_a_Finanzas</name>
+            </screens>
+            <textTemplates>
+                <name>BodyEmailAccountJP1</name>
+            </textTemplates>
+            <textTemplates>
+                <name>SubjectEmailTemplateJP1</name>
+            </textTemplates>
+        </flows>
+        <fullName>Envio_de_Correo</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <textTemplates>
+                <name>TEXTODEMAILENVIODECLIENTE</name>
+            </textTemplates>
+            <textTemplates>
+                <name>subjectenviodecliente</name>
+            </textTemplates>
+        </flows>
+        <fullName>Envio_de_datos_fiscales_a_credito</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>FlowBeforeAPI_Insert</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <textTemplates>
+                <name>Encontrar</name>
+            </textTemplates>
+            <textTemplates>
+                <name>Nuevo_lead_Encontrar</name>
+            </textTemplates>
+        </flows>
+        <fullName>FlowVisitasJP</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <choices>
+                <name>cafeCrema</name>
+            </choices>
+            <choices>
+                <name>cafeForte</name>
+            </choices>
+            <choices>
+                <name>cafeMol</name>
+            </choices>
+            <choices>
+                <name>cajaSeis</name>
+            </choices>
+            <choices>
+                <name>capsulaGold</name>
+            </choices>
+            <choices>
+                <name>capsulaQualita</name>
+            </choices>
+            <choices>
+                <name>capsulaTop</name>
+            </choices>
+            <choices>
+                <name>cremaAroma</name>
+            </choices>
+            <choices>
+                <name>diez</name>
+            </choices>
+            <choices>
+                <name>forte</name>
+            </choices>
+            <choices>
+                <name>no</name>
+            </choices>
+            <choices>
+                <name>no_mercha</name>
+            </choices>
+            <choices>
+                <name>si</name>
+            </choices>
+            <choices>
+                <name>si_merchan</name>
+            </choices>
+            <choices>
+                <name>uno</name>
+            </choices>
+            <choices>
+                <name>veinte</name>
+            </choices>
+            <screens>
+                <fields>
+                    <name>Form_Lavazza_Section1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Form_Lavazza_Section1_Column1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Form_Lavazza_Section1_Column2</name>
+                </fields>
+                <fields>
+                    <name>Form_Lavazza_Section2</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Form_Lavazza_Section2_Column1</name>
+                </fields>
+                <fields>
+                    <name>Form_Lavazza_Section3</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Form_Lavazza_Section3_Column1</name>
+                </fields>
+                <fields>
+                    <name>Form_Lavazza_Section4</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Form_Lavazza_Section4_Column1</name>
+                </fields>
+                <fields>
+                    <name>Merchandising</name>
+                </fields>
+                <fields>
+                    <name>clienteMaquina</name>
+                </fields>
+                <fields>
+                    <name>consumoCafe</name>
+                </fields>
+                <fields>
+                    <name>logoLavazza</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>fieldApiName</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>label</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>objectApiName</name>
+                        <value/>
+                    </inputParameters>
+                    <name>lookupSKU</name>
+                </fields>
+                <fields>
+                    <name>seleccionarCafe</name>
+                </fields>
+                <fields>
+                    <name>text_merchan</name>
+                </fields>
+                <name>Form_Lavazza</name>
+            </screens>
+        </flows>
+        <fullName>Formulario_Lavazza</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>msjSuccess</name>
+                </fields>
+                <name>screenMsjUpdate</name>
+            </screens>
+        </flows>
+        <fullName>Get_GeoCodes_Latitud_Longitud</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Get_GeoCodes_Latitud_Longitud_V2</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>PdfUploadMemory</name>
+                </fields>
+                <name>Screen_Cargar_PDF</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>DisplayText_Confirmar</name>
+                </fields>
+                <name>Screen_Confirmar_Reemplazo</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>DisplayText_Exito</name>
+                </fields>
+                <name>Screen_Exito</name>
+            </screens>
+        </flows>
+        <fullName>ICB_Subir_PDF_Firma_Digital</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>ICB_flw_Log_Integracion_Event</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Invitaciones_Iquique</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Invitados_a_eventos_flow</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>LEAD_TRG_AfterUpdate</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>LEAD_TRG_BeforeUpdate</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <textTemplates>
+                <name>textT_Encontrar</name>
+            </textTemplates>
+            <textTemplates>
+                <name>textT_Nuevo_Lead_Encontrar</name>
+            </textTemplates>
+        </flows>
+        <fullName>LEAD_TRG_Visitas_AfterUpdate</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Lead_Tarea_Contactabilidad</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Lead_Tarea_contactabilidad_Asesor</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>msjUserAlert</name>
+                </fields>
+                <name>msjAlert</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msjConfirmacionScreen</name>
+                </fields>
+                <name>msjClienteActualziado</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msjAUsuario</name>
+                </fields>
+                <name>msjConfirmacion</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>CanalScreen</name>
+                </fields>
+                <fields>
+                    <name>Centro_Abastecimiento</name>
+                </fields>
+                <fields>
+                    <name>Comuna</name>
+                </fields>
+                <fields>
+                    <name>Comuna_de_Despacho</name>
+                </fields>
+                <fields>
+                    <name>Datos_Obligatorios</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Datos_Obligatorios_Column1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Datos_Obligatorios_Column2</name>
+                </fields>
+                <fields>
+                    <name>Direcci_n_de_despacho</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Direcci_n_de_despacho_Column1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>addressLabel</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>addressLookupLabel</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>city</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>country</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>disabled</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>postalCode</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>province</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>required</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>showAddressLookup</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>street</name>
+                        <value/>
+                    </inputParameters>
+                    <name>DireccionDespacho</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>addressLabel</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>addressLookupLabel</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>city</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>country</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>disabled</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>postalCode</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>province</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>required</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>showAddressLookup</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>street</name>
+                        <value/>
+                    </inputParameters>
+                    <name>DireccionFacturacion</name>
+                </fields>
+                <fields>
+                    <name>Direccion_1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Direccion_1_Column1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>required</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>value</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Email</name>
+                </fields>
+                <fields>
+                    <name>Especialidad1</name>
+                </fields>
+                <fields>
+                    <name>Nombre_de_Contacto</name>
+                </fields>
+                <fields>
+                    <name>Nombre_de_Fantasia</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>label</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>required</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>value</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Phone</name>
+                </fields>
+                <fields>
+                    <name>RUT</name>
+                    <validationRule/>
+                </fields>
+                <fields>
+                    <name>Raz_n_Social</name>
+                </fields>
+                <fields>
+                    <name>Region_de_Despacho</name>
+                </fields>
+                <fields>
+                    <name>Region_field</name>
+                </fields>
+                <fields>
+                    <name>Sucursal</name>
+                </fields>
+                <fields>
+                    <name>Tipo_de_Contacto</name>
+                </fields>
+                <fields>
+                    <name>TipodeContacto</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value/>
+                    </inputParameters>
+                    <name>TipodeContacto_Column1</name>
+                </fields>
+                <name>screen_data_lead</name>
+            </screens>
+        </flows>
+        <fullName>Lead_Validar_Datos_de_Lead</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>horizontalAlignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageHeight</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageName</name>
+                        <value/>
+                    </inputParameters>
+                    <name>LogoICB5</name>
+                </fields>
+                <fields>
+                    <name>Modulo_De_Aprobacion5</name>
+                </fields>
+                <fields>
+                    <name>No_Hay_Registros_para_Aprobar_Section1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value/>
+                    </inputParameters>
+                    <name>No_Hay_Registros_para_Aprobar_Section1_Column1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value/>
+                    </inputParameters>
+                    <name>No_Hay_Registros_para_Aprobar_Section1_Column2</name>
+                </fields>
+                <fields>
+                    <name>No_hay_registros2</name>
+                </fields>
+                <name>No_Hay_Registros_para_Aprobar</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>horizontalAlignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageHeight</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageName</name>
+                        <value/>
+                    </inputParameters>
+                    <name>LogoICB</name>
+                </fields>
+                <fields>
+                    <name>Modulo_De_Aprobacion</name>
+                </fields>
+                <fields>
+                    <name>Screen1_Section1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Screen1_Section1_Column1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Screen1_Section1_Column2</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>columns</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>isShowSearchBar</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>label</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>maxRowSelection</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>minRowSelection</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>selectionMode</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Solicitud_de_Descuentos</name>
+                </fields>
+                <name>Screen1</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>CodigoCliente</name>
+                </fields>
+                <fields>
+                    <name>CodigoSolicitud</name>
+                </fields>
+                <fields>
+                    <name>LinkCotizacion</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>horizontalAlignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageHeight</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageName</name>
+                        <value/>
+                    </inputParameters>
+                    <name>LogoICB2</name>
+                </fields>
+                <fields>
+                    <name>Modulo_De_Aprobacion2</name>
+                </fields>
+                <fields>
+                    <name>Screen2_Section1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Screen2_Section1_Column1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Screen2_Section1_Column2</name>
+                </fields>
+                <fields>
+                    <name>Screen2_Section2</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Screen2_Section2_Column1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Screen2_Section2_Column2</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Screen2_Section2_Column3</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Screen2_Section2_Column4</name>
+                </fields>
+                <fields>
+                    <name>listaDescuentos</name>
+                </fields>
+                <name>Screen2</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>CodigoCliente2</name>
+                </fields>
+                <fields>
+                    <name>CodigoSolicitud2</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>horizontalAlignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageHeight</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageName</name>
+                        <value/>
+                    </inputParameters>
+                    <name>LogoICB3</name>
+                </fields>
+                <fields>
+                    <name>Modulo_De_Aprobacion3</name>
+                </fields>
+                <fields>
+                    <name>Screen3_Section1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Screen3_Section1_Column1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Screen3_Section1_Column2</name>
+                </fields>
+                <fields>
+                    <name>Screen3_Section2</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Screen3_Section2_Column1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Screen3_Section2_Column2</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Screen3_Section2_Column3</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Screen3_Section2_Column4</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>columns</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>label</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>maxRowSelection</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>minRowSelection</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>selectionMode</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Solicitud_de_Descuentos3</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>columns</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>label</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>maxRowSelection</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>minRowSelection</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>selectionMode</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Solicitud_de_Descuentos4</name>
+                </fields>
+                <name>Screen3</name>
+            </screens>
+        </flows>
+        <fullName>Modulo_de_Aprobacion</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>NewAccBefore</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>NewCosto</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>NewDomBefore</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>NewLeadBefore</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>NewOppAsignoListaPrecios</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <textTemplates>
+                <name>BodyTemplate</name>
+            </textTemplates>
+            <textTemplates>
+                <name>NotificationTitle</name>
+            </textTemplates>
+        </flows>
+        <fullName>Notificacion_Sin_respuesta_2_dias_Team_Cafe</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <customErrorMessages>
+                <developerName>Fecha_tarea_previa</developerName>
+            </customErrorMessages>
+            <textTemplates>
+                <name>TextoMail</name>
+            </textTemplates>
+            <textTemplates>
+                <name>TextoMailConfianza</name>
+            </textTemplates>
+        </flows>
+        <fullName>NuevaActividad</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>NweQuote</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>PricebookDiario</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Programado_Update_Domicilio_en_Factura</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Propuesta_aceptada_Comodato_v1</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>QuoteLineItem</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>genExcelTxt</name>
+                </fields>
+                <name>Generar_Excel</name>
+            </screens>
+        </flows>
+        <fullName>Quote_scflw_Generar_Excel</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Relaciones_de_Venta</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>QrScanner</name>
+                </fields>
+                <name>Scanner_QR</name>
+            </screens>
+        </flows>
+        <fullName>SCannerIngresoOpenDay</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Subflow_Crear_Despacho_desde_Crear_Cliente</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Subflow_Domicilio_adicional_cliente</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Subflow_Domicilio_adicional_cliente_v2</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Subflow_Domicilio_adicional_cliente_v3</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Tarea_Primer_contacto_finalizado</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>TriggerActualizoListasPrecios</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <customErrorMessages>
+                <developerName>msjErrorUsuario</developerName>
+            </customErrorMessages>
+        </flows>
+        <fullName>Updata_Cliente_en_SAP</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>UpdateActividad</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>UpdatePedidoMuestras</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>UpdateProduct</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>UpdateProductosMuestra</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Update_Cliente_Full_Cliente_SAP</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Update_Despacho_desde_Update_Cliente</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Update_Domicilio_adicional_cliente_v1</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Update_Domicilio_adicional_cliente_v1_1</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Update_Factura_con_Domicilio</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Update_Facturas_Asignar_Domicilio_Programado</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Update_Facturas_Asignar_domicilios_Run_2_Programado</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Update_Facturas_Asignar_domicilios_Run_3_Programado</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Update_asignar_domicilio_a_Factura</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>VentaTresMeses</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>VentaTresMeses_v2</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Ventas3Meses</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <textTemplates>
+                <name>Encontrar</name>
+            </textTemplates>
+            <textTemplates>
+                <name>Nuevo_lead_Encontrar</name>
+            </textTemplates>
+        </flows>
+        <fullName>VisitaoppJP</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>actualiza_asesor_de_openday_FV</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>actualiza_fecha_de_visita_concretada</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <textTemplates>
+                <name>AsignatioTitle</name>
+            </textTemplates>
+            <textTemplates>
+                <name>BodyAsignaciondeleads</name>
+            </textTemplates>
+        </flows>
+        <fullName>cambioPropietario</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>correobienvenida</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>invitaciones_2</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <textTemplates>
+                <name>AlertadeLeads</name>
+            </textTemplates>
+            <textTemplates>
+                <name>Leadsingestionartext</name>
+            </textTemplates>
+        </flows>
+        <fullName>proceso_de_gestion_y_aletarta_leads_no_gestionados</fullName>
+    </flowDefinitions>
+    <quickActions>
+        <label><!-- Email --></label>
+        <name>Email_de_casos</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Follow Up --></label>
+        <name>Follow_Up</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Guest Community Case --></label>
+        <name>GuestCommunityCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Subir PDF Firma Digital --></label>
+        <name>ICB_Subir_PDF_Firma_Digital</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- LogACall --></label>
+        <name>LogACall</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewAccount --></label>
+        <name>NewAccount</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Case --></label>
+        <name>NewCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Community Case --></label>
+        <name>NewCommunityCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewContact --></label>
+        <name>NewContact</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Event --></label>
+        <name>NewEvent</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewGroup --></label>
+        <name>NewGroup</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewLead --></label>
+        <name>NewLead</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewOpportunity --></label>
+        <name>NewOpportunity</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewTask --></label>
+        <name>NewTask</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Nueva tarea --></label>
+        <name>NuevaTarea</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Case --></label>
+        <name>casoInetrnoSalesforce</name>
+    </quickActions>
+    <reportTypes>
+        <description><!-- Accounts with Activities --></description>
+        <label><!-- Accounts with Activities --></label>
+        <name>AP_Accounts_with_Activities_2024_07_02</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Actividades --></label>
+            <name>Actividades</name>
+        </sections>
+        <sections>
+            <label><!-- Activities --></label>
+            <name>Activities</name>
+        </sections>
+        <sections>
+            <label><!-- Clientes --></label>
+            <name>Clientes</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunities with Activities --></description>
+        <label><!-- Opportunities with Activities --></label>
+        <name>AP_Opportunities_with_Activities_2024_07_02</name>
+        <sections>
+            <label><!-- Actividades --></label>
+            <name>Actividades</name>
+        </sections>
+        <sections>
+            <label><!-- Activities --></label>
+            <name>Activities</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opptys --></description>
+        <label><!-- Opptys --></label>
+        <name>AP_Opptys_2024_07_02</name>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- User Activities --></description>
+        <label><!-- User Activities --></label>
+        <name>AP_User_Activities_2024_07_02</name>
+        <sections>
+            <label><!-- Actividades --></label>
+            <name>Actividades</name>
+        </sections>
+        <sections>
+            <label><!-- Activities --></label>
+            <name>Activities</name>
+        </sections>
+        <sections>
+            <label><!-- Activities (Assigned To) --></label>
+            <name>Activities (Assigned To)</name>
+        </sections>
+        <sections>
+            <label><!-- Users --></label>
+            <name>Users</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Account - Opportuniy --></description>
+        <label><!-- Account - Opportuniy --></label>
+        <name>Account_Opportuniy</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Clientes --></label>
+            <name>Clientes</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts with Contacts with Daily Engagements --></description>
+        <label><!-- Accounts with Contacts with Daily Engagements --></label>
+        <name>Accounts_with_Contacts_with_Daily_Engagements</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Clientes --></label>
+            <name>Clientes</name>
+        </sections>
+        <sections>
+            <label><!-- Contact Daily Metrics --></label>
+            <name>Contact Daily Metrics</name>
+        </sections>
+        <sections>
+            <label><!-- Contactos --></label>
+            <name>Contactos</name>
+        </sections>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts with Ventas with Detalles --></description>
+        <label><!-- Accounts with Ventas with Detalles --></label>
+        <name>Accounts_with_Ventas_with_Detalles</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Clientes --></label>
+            <name>Clientes</name>
+        </sections>
+        <sections>
+            <label><!-- Detalles --></label>
+            <name>Detalles</name>
+        </sections>
+        <sections>
+            <label><!-- Ventas --></label>
+            <name>Ventas</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Cadences &amp; Steps --></description>
+        <label><!-- Cadences &amp; Steps --></label>
+        <name>Cadences_amp_Steps</name>
+        <sections>
+            <label><!-- Cadence Steps --></label>
+            <name>Cadence Steps</name>
+        </sections>
+        <sections>
+            <label><!-- Cadences --></label>
+            <name>Cadences</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Call Script Monthly Engagement --></description>
+        <label><!-- Call Script Monthly Engagement --></label>
+        <name>Call_Script_Monthly_Engagement</name>
+        <sections>
+            <label><!-- Call Script Monthly Metrics --></label>
+            <name>Call Script Monthly Metrics</name>
+        </sections>
+        <sections>
+            <label><!-- Call Scripts --></label>
+            <name>Call Scripts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Call Script Engagement Report --></description>
+        <label><!-- Call Script Engagement Report --></label>
+        <name>Call_Template</name>
+        <sections>
+            <label><!-- Call Scripts --></label>
+            <name>Call Scripts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Cliente - Domicilio - Factura --></description>
+        <label><!-- Cliente - Domicilio - Factura --></label>
+        <name>Cliente_Domicilio_Factura</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Clientes --></label>
+            <name>Clientes</name>
+        </sections>
+        <sections>
+            <label><!-- Domicilio de Clientes --></label>
+            <name>Domicilio de Clientes</name>
+        </sections>
+        <sections>
+            <label><!-- Facturas --></label>
+            <name>Facturas</name>
+        </sections>
+        <sections>
+            <label><!-- Otros Domicilios --></label>
+            <name>Otros Domicilios</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Cliente-Facturas --></description>
+        <label><!-- Cliente-Facturas --></label>
+        <name>Cliente_Facturas</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Clientes --></label>
+            <name>Clientes</name>
+        </sections>
+        <sections>
+            <label><!-- Facturas --></label>
+            <name>Facturas</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Cliente-oportunidad --></description>
+        <label><!-- Cliente-oportunidad --></label>
+        <name>Cliente_oportunidad</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Clientes --></label>
+            <name>Clientes</name>
+        </sections>
+        <sections>
+            <label><!-- Funciones de contactos --></label>
+            <name>Funciones de contactos</name>
+        </sections>
+        <sections>
+            <label><!-- Oportunidades --></label>
+            <name>Oportunidades</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Clientes con Domicilios --></description>
+        <label><!-- Clientes con Domicilios --></label>
+        <name>Clientes_con_Domicilios</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Clientes --></label>
+            <name>Clientes</name>
+        </sections>
+        <sections>
+            <label><!-- Domicilio de Clientes --></label>
+            <name>Domicilio de Clientes</name>
+        </sections>
+        <sections>
+            <label><!-- Otros Domicilios --></label>
+            <name>Otros Domicilios</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Clientes con Facturas --></description>
+        <label><!-- Clientes con Facturas --></label>
+        <name>Clientes_con_Facturas</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Clientes --></label>
+            <name>Clientes</name>
+        </sections>
+        <sections>
+            <label><!-- Facturas --></label>
+            <name>Facturas</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Contacts and Cadence Trackers --></description>
+        <label><!-- Contacts and Cadence Trackers --></label>
+        <name>Contacts_and_Sales_Cadence_Trackers</name>
+        <sections>
+            <label><!-- Cadence Trackers --></label>
+            <name>Cadence Trackers</name>
+        </sections>
+        <sections>
+            <label><!-- Contactos --></label>
+            <name>Contactos</name>
+        </sections>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Contacts with Daily Engagements --></description>
+        <label><!-- Contacts with Daily Engagements --></label>
+        <name>Contacts_with_Daily_Engagements</name>
+        <sections>
+            <label><!-- Contact Daily Metrics --></label>
+            <name>Contact Daily Metrics</name>
+        </sections>
+        <sections>
+            <label><!-- Contactos --></label>
+            <name>Contactos</name>
+        </sections>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Contacts with Monthly Engagements --></description>
+        <label><!-- Contacts with Monthly Engagements --></label>
+        <name>Contacts_with_Monthly_Engagements</name>
+        <sections>
+            <label><!-- Contact Monthly Metrics --></label>
+            <name>Contact Monthly Metrics</name>
+        </sections>
+        <sections>
+            <label><!-- Contactos --></label>
+            <name>Contactos</name>
+        </sections>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Cuentas con Ventas --></description>
+        <label><!-- Cuentas con Ventas --></label>
+        <name>Cuentas</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Clientes --></label>
+            <name>Clientes</name>
+        </sections>
+        <sections>
+            <label><!-- Ventas --></label>
+            <name>Ventas</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Cuentas con facturas --></description>
+        <label><!-- Cuentas con facturas --></label>
+        <name>Cuentas_con_facturas</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Clientes --></label>
+            <name>Clientes</name>
+        </sections>
+        <sections>
+            <label><!-- Detalles Facturas --></label>
+            <name>Detalles Facturas</name>
+        </sections>
+        <sections>
+            <label><!-- Facturas --></label>
+            <name>Facturas</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Detalle ventas --></description>
+        <label><!-- Detalle ventas --></label>
+        <name>Detalle_ventas</name>
+        <sections>
+            <label><!-- Detalles --></label>
+            <name>Detalles</name>
+        </sections>
+        <sections>
+            <label><!-- Duplicate Record Items --></label>
+            <name>Duplicate Record Items</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Detalles de Factura con Datos de Producto --></description>
+        <label><!-- Detalles de Factura con Datos de Producto --></label>
+        <name>Detalles_de_Factura_con_Datos_de_Producto</name>
+        <sections>
+            <label><!-- Detalles Facturas --></label>
+            <name>Detalles Facturas</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Domicilio Clientes --></description>
+        <label><!-- Domicilio Clientes --></label>
+        <name>Domicilio_Clientes</name>
+        <sections>
+            <label><!-- Domicilio de Clientes --></label>
+            <name>Domicilio de Clientes</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Domicilio de Clientes with Historical Trending --></description>
+        <label><!-- Domicilio de Clientes with Historical Trending --></label>
+        <name>Domicilio_de_Clientes_with_Historical_Trending</name>
+        <sections>
+            <label><!-- Domicilio de Cliente (Historical) --></label>
+            <name>Domicilio de Cliente (Historical)</name>
+        </sections>
+        <sections>
+            <label><!-- Domicilio de Clientes --></label>
+            <name>Domicilio de Clientes</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Domicilios --></description>
+        <label><!-- Domicilios --></label>
+        <name>Domicilios</name>
+        <sections>
+            <columns>
+                <label><!-- Domicilio de Clientes : Cliente : Ventas 3 meses --></label>
+                <name>Domicilio de Clientes : Cliente : Ventas 3 meses</name>
+            </columns>
+            <label><!-- Domicilio de Clientes --></label>
+            <name>Domicilio de Clientes</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Domicilios con Facturas --></description>
+        <label><!-- Domicilios con Facturas --></label>
+        <name>Domicilios_con_Facturas</name>
+        <sections>
+            <label><!-- Cliente --></label>
+            <name>Cliente</name>
+        </sections>
+        <sections>
+            <label><!-- Domicilio de Clientes --></label>
+            <name>Domicilio de Clientes</name>
+        </sections>
+        <sections>
+            <label><!-- Facturas --></label>
+            <name>Facturas</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Email Template Engagement Report --></description>
+        <label><!-- Email Template Engagement Report --></label>
+        <name>Email_Template</name>
+        <sections>
+            <label><!-- Email Templates --></label>
+            <name>Email Templates</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Email Template Monthly Engagement --></description>
+        <label><!-- Email Template Monthly Engagement --></label>
+        <name>Email_Template_Monthly_Engagement</name>
+        <sections>
+            <label><!-- Email Template Monthly Metrics --></label>
+            <name>Email Template Monthly Metrics</name>
+        </sections>
+        <sections>
+            <label><!-- Email Templates --></label>
+            <name>Email Templates</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Factura - Cliente --></description>
+        <label><!-- Factura - Cliente --></label>
+        <name>Factura_Cliente</name>
+        <sections>
+            <label><!-- Facturas --></label>
+            <name>Facturas</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Factura con domicilios --></description>
+        <label><!-- Factura con domicilios --></label>
+        <name>Factura_con_domicilios</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Clientes --></label>
+            <name>Clientes</name>
+        </sections>
+        <sections>
+            <label><!-- Detalles Facturas --></label>
+            <name>Detalles Facturas</name>
+        </sections>
+        <sections>
+            <label><!-- Domicilio de Clientes --></label>
+            <name>Domicilio de Clientes</name>
+        </sections>
+        <sections>
+            <label><!-- Facturas --></label>
+            <name>Facturas</name>
+        </sections>
+        <sections>
+            <label><!-- Otros Domicilios --></label>
+            <name>Otros Domicilios</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Facturas --></description>
+        <label><!-- Facturas --></label>
+        <name>Facturas</name>
+        <sections>
+            <label><!-- Cliente --></label>
+            <name>Cliente</name>
+        </sections>
+        <sections>
+            <label><!-- Domicilio de Factura --></label>
+            <name>Domicilio de Factura</name>
+        </sections>
+        <sections>
+            <label><!-- Facturas --></label>
+            <name>Facturas</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Forecasting Items with Historical Trending --></description>
+        <label><!-- Forecasting Items with Historical Trending --></label>
+        <name>Forecasting_Items_with_Historical_Trending</name>
+        <sections>
+            <label><!-- Forecasting Item (Historical) --></label>
+            <name>Forecasting Item (Historical)</name>
+        </sections>
+        <sections>
+            <label><!-- Forecasting Items --></label>
+            <name>Forecasting Items</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Informe de contactos --></description>
+        <label><!-- Informe de contactos --></label>
+        <name>Informe_de_contactos</name>
+        <sections>
+            <label><!-- Contactos --></label>
+            <name>Contactos</name>
+        </sections>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- KPI ROA --></description>
+        <label><!-- KPI ROA --></label>
+        <name>KPI_ROA</name>
+        <sections>
+            <columns>
+                <label><!-- % Fuga --></label>
+                <name>% Fuga</name>
+            </columns>
+            <columns>
+                <label><!-- % Retención --></label>
+                <name>% Retención</name>
+            </columns>
+            <columns>
+                <label><!-- Cartera Activa --></label>
+                <name>Cartera Activa</name>
+            </columns>
+            <columns>
+                <label><!-- Fuga --></label>
+                <name>Fuga</name>
+            </columns>
+            <columns>
+                <label><!-- Nuevos --></label>
+                <name>Nuevos</name>
+            </columns>
+            <columns>
+                <label><!-- Recuperados --></label>
+                <name>Recuperados</name>
+            </columns>
+            <columns>
+                <label><!-- Retención --></label>
+                <name>Retención</name>
+            </columns>
+            <label><!-- Sales KPIs --></label>
+            <name>Sales KPIs</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- KPI ROA Domicilio --></description>
+        <label><!-- KPI ROA Domicilio --></label>
+        <name>KPI_ROA_Domicilio</name>
+        <sections>
+            <label><!-- Sales KPI Domicilios --></label>
+            <name>Sales KPI Domicilios</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- KPI ROA Mensual --></description>
+        <label><!-- KPI ROA Mensual --></label>
+        <name>KPI_ROA_Mensual</name>
+        <sections>
+            <columns>
+                <label><!-- % Fuga --></label>
+                <name>% Fuga</name>
+            </columns>
+            <columns>
+                <label><!-- % Retención --></label>
+                <name>% Retención</name>
+            </columns>
+            <columns>
+                <label><!-- Propietario --></label>
+                <name>Propietario</name>
+            </columns>
+            <label><!-- KPI Mensual ROA --></label>
+            <name>KPI Mensual ROA</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Lead Negocio Gastronomico --></description>
+        <label><!-- Lead Negocio Gastronomico --></label>
+        <name>Lead_Negocio_Gastronomico</name>
+        <sections>
+            <label><!-- Leads --></label>
+            <name>Leads</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Leads With or Without Cadence Trackers --></description>
+        <label><!-- Leads With or Without Cadence Trackers --></label>
+        <name>Leads_With_or_Without_Sales_Cadence_Trackers</name>
+        <sections>
+            <label><!-- Cadence Trackers --></label>
+            <name>Cadence Trackers</name>
+        </sections>
+        <sections>
+            <label><!-- Candidatos --></label>
+            <name>Candidatos</name>
+        </sections>
+        <sections>
+            <label><!-- Leads --></label>
+            <name>Leads</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Leads and Cadence Trackers --></description>
+        <label><!-- Leads and Cadence Trackers --></label>
+        <name>Leads_and_Sales_Cadence_Trackers</name>
+        <sections>
+            <label><!-- Cadence Trackers --></label>
+            <name>Cadence Trackers</name>
+        </sections>
+        <sections>
+            <label><!-- Candidatos --></label>
+            <name>Candidatos</name>
+        </sections>
+        <sections>
+            <label><!-- Leads --></label>
+            <name>Leads</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Leads cuentas ventas --></description>
+        <label><!-- Leads cuentas ventas --></label>
+        <name>Leads_cuentas_ventas</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Clientes --></label>
+            <name>Clientes</name>
+        </sections>
+        <sections>
+            <label><!-- Leads --></label>
+            <name>Leads</name>
+        </sections>
+        <sections>
+            <label><!-- Ventas --></label>
+            <name>Ventas</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Leads with Daily Engagements --></description>
+        <label><!-- Leads with Daily Engagements --></label>
+        <name>Leads_with_Daily_Engagements</name>
+        <sections>
+            <label><!-- Candidatos --></label>
+            <name>Candidatos</name>
+        </sections>
+        <sections>
+            <label><!-- Lead Daily Metrics --></label>
+            <name>Lead Daily Metrics</name>
+        </sections>
+        <sections>
+            <label><!-- Leads --></label>
+            <name>Leads</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Leads with Monthly Engagements --></description>
+        <label><!-- Leads with Monthly Engagements --></label>
+        <name>Leads_with_Monthly_Engagements</name>
+        <sections>
+            <label><!-- Candidatos --></label>
+            <name>Candidatos</name>
+        </sections>
+        <sections>
+            <label><!-- Lead Monthly Metrics --></label>
+            <name>Lead Monthly Metrics</name>
+        </sections>
+        <sections>
+            <label><!-- Leads --></label>
+            <name>Leads</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Lista de productos con precio --></description>
+        <label><!-- Lista de productos con precio --></label>
+        <name>Lista_de_productos_con_precio</name>
+        <sections>
+            <label><!-- Price Book Entries --></label>
+            <name>Price Book Entries</name>
+        </sections>
+        <sections>
+            <label><!-- Products --></label>
+            <name>Products</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- NegocioGastonomicoAccount --></description>
+        <label><!-- NegocioGastonomicoAccount --></label>
+        <name>NegocioGastonomicoAccount</name>
+        <sections>
+            <columns>
+                <label><!-- Account ID --></label>
+                <name>Account ID</name>
+            </columns>
+            <columns>
+                <label><!-- Account Name --></label>
+                <name>Account Name</name>
+            </columns>
+            <columns>
+                <label><!-- Account Number --></label>
+                <name>Account Number</name>
+            </columns>
+            <columns>
+                <label><!-- Account Owner --></label>
+                <name>Account Owner</name>
+            </columns>
+            <columns>
+                <label><!-- Account Record Type --></label>
+                <name>Account Record Type</name>
+            </columns>
+            <columns>
+                <label><!-- Account Site --></label>
+                <name>Account Site</name>
+            </columns>
+            <columns>
+                <label><!-- Account Source --></label>
+                <name>Account Source</name>
+            </columns>
+            <columns>
+                <label><!-- Annual Revenue --></label>
+                <name>Annual Revenue</name>
+            </columns>
+            <columns>
+                <label><!-- Asesor Asignado --></label>
+                <name>Asesor Asignado</name>
+            </columns>
+            <columns>
+                <label><!-- Asociacion Pendiente --></label>
+                <name>Asociacion Pendiente</name>
+            </columns>
+            <columns>
+                <label><!-- Asociacion Válida Desde --></label>
+                <name>Asociacion Válida Desde</name>
+            </columns>
+            <columns>
+                <label><!-- Auxiliar Formula Persona Fisica --></label>
+                <name>Auxiliar Formula Persona Fisica</name>
+            </columns>
+            <columns>
+                <label><!-- Auxiliar Identificador --></label>
+                <name>Auxiliar Identificador</name>
+            </columns>
+            <columns>
+                <label><!-- Billing Address --></label>
+                <name>Billing Address</name>
+            </columns>
+            <columns>
+                <label><!-- Billing City --></label>
+                <name>Billing City</name>
+            </columns>
+            <columns>
+                <label><!-- Billing Country --></label>
+                <name>Billing Country</name>
+            </columns>
+            <columns>
+                <label><!-- Billing Geocode Accuracy --></label>
+                <name>Billing Geocode Accuracy</name>
+            </columns>
+            <columns>
+                <label><!-- Billing Latitude --></label>
+                <name>Billing Latitude</name>
+            </columns>
+            <columns>
+                <label><!-- Billing Longitude --></label>
+                <name>Billing Longitude</name>
+            </columns>
+            <columns>
+                <label><!-- Billing State/Province --></label>
+                <name>Billing State/Province</name>
+            </columns>
+            <columns>
+                <label><!-- Billing Street --></label>
+                <name>Billing Street</name>
+            </columns>
+            <columns>
+                <label><!-- Billing Zip/Postal Code --></label>
+                <name>Billing Zip/Postal Code</name>
+            </columns>
+            <columns>
+                <label><!-- Canal --></label>
+                <name>Canal</name>
+            </columns>
+            <columns>
+                <label><!-- Centro de Abastecimiento --></label>
+                <name>Centro de Abastecimiento</name>
+            </columns>
+            <columns>
+                <label><!-- Cliente Despacho --></label>
+                <name>Cliente Despacho</name>
+            </columns>
+            <columns>
+                <label><!-- ClienteDespachoAsTrue --></label>
+                <name>ClienteDespachoAsTrue</name>
+            </columns>
+            <columns>
+                <label><!-- Codigo Ramo --></label>
+                <name>Codigo Ramo</name>
+            </columns>
+            <columns>
+                <label><!-- Codigo ejecutivo --></label>
+                <name>Codigo ejecutivo</name>
+            </columns>
+            <columns>
+                <label><!-- CodigoDeClienteAsTrue --></label>
+                <name>CodigoDeClienteAsTrue</name>
+            </columns>
+            <columns>
+                <label><!-- Comuna --></label>
+                <name>Comuna</name>
+            </columns>
+            <columns>
+                <label><!-- Comuna Despacho --></label>
+                <name>Comuna Despacho</name>
+            </columns>
+            <columns>
+                <label><!-- Comuna Facturación --></label>
+                <name>Comuna Facturación</name>
+            </columns>
+            <columns>
+                <label><!-- Condición de credito --></label>
+                <name>Condición de credito</name>
+            </columns>
+            <columns>
+                <label><!-- Created By --></label>
+                <name>Created By</name>
+            </columns>
+            <columns>
+                <label><!-- Created Date --></label>
+                <name>Created Date</name>
+            </columns>
+            <columns>
+                <label><!-- Credito Bloqueado --></label>
+                <name>Credito Bloqueado</name>
+            </columns>
+            <columns>
+                <label><!-- Crédito Usado --></label>
+                <name>Crédito Usado</name>
+            </columns>
+            <columns>
+                <label><!-- Código de cliente --></label>
+                <name>Código de cliente</name>
+            </columns>
+            <columns>
+                <label><!-- Data.com Key --></label>
+                <name>Data.com Key</name>
+            </columns>
+            <columns>
+                <label><!-- Datos Completos --></label>
+                <name>Datos Completos</name>
+            </columns>
+            <columns>
+                <label><!-- Datos de Contacto Comercial --></label>
+                <name>Datos de Contacto Comercial</name>
+            </columns>
+            <columns>
+                <label><!-- Datos de Contacto Principal --></label>
+                <name>Datos de Contacto Principal</name>
+            </columns>
+            <columns>
+                <label><!-- Datos de Contacto de Pagos --></label>
+                <name>Datos de Contacto de Pagos</name>
+            </columns>
+            <columns>
+                <label><!-- Description --></label>
+                <name>Description</name>
+            </columns>
+            <columns>
+                <label><!-- Email --></label>
+                <name>Email</name>
+            </columns>
+            <columns>
+                <label><!-- Employees --></label>
+                <name>Employees</name>
+            </columns>
+            <columns>
+                <label><!-- Envio a Sap Timestap --></label>
+                <name>Envio a Sap Timestap</name>
+            </columns>
+            <columns>
+                <label><!-- Es Parte de un Holding --></label>
+                <name>Es Parte de un Holding</name>
+            </columns>
+            <columns>
+                <label><!-- Especialidad --></label>
+                <name>Especialidad</name>
+            </columns>
+            <columns>
+                <label><!-- Fax --></label>
+                <name>Fax</name>
+            </columns>
+            <columns>
+                <label><!-- Fecha  Rechazo Aumento crédito --></label>
+                <name>Fecha  Rechazo Aumento crédito</name>
+            </columns>
+            <columns>
+                <label><!-- Fecha de Ultima Visita --></label>
+                <name>Fecha de Ultima Visita</name>
+            </columns>
+            <columns>
+                <label><!-- Grupo Cliente --></label>
+                <name>Grupo Cliente</name>
+            </columns>
+            <columns>
+                <label><!-- Horario de Recepción Max --></label>
+                <name>Horario de Recepción Max</name>
+            </columns>
+            <columns>
+                <label><!-- Horario de Recepción Min --></label>
+                <name>Horario de Recepción Min</name>
+            </columns>
+            <columns>
+                <label><!-- Industry --></label>
+                <name>Industry</name>
+            </columns>
+            <columns>
+                <label><!-- IsNullCodigo --></label>
+                <name>IsNullCodigo</name>
+            </columns>
+            <columns>
+                <label><!-- Last Activity --></label>
+                <name>Last Activity</name>
+            </columns>
+            <columns>
+                <label><!-- Last Modified By --></label>
+                <name>Last Modified By</name>
+            </columns>
+            <columns>
+                <label><!-- Last Modified Date --></label>
+                <name>Last Modified Date</name>
+            </columns>
+            <columns>
+                <label><!-- Limite de Credito --></label>
+                <name>Limite de Credito</name>
+            </columns>
+            <columns>
+                <label><!-- Nombre de Fantasia --></label>
+                <name>Nombre de Fantasia</name>
+            </columns>
+            <columns>
+                <label><!-- Nombre de contacto --></label>
+                <name>Nombre de contacto</name>
+            </columns>
+            <columns>
+                <label><!-- Observaciones del Cliente --></label>
+                <name>Observaciones del Cliente</name>
+            </columns>
+            <columns>
+                <label><!-- Oficina de Venta --></label>
+                <name>Oficina de Venta</name>
+            </columns>
+            <columns>
+                <label><!-- Ownership --></label>
+                <name>Ownership</name>
+            </columns>
+            <columns>
+                <label><!-- Parent Account --></label>
+                <name>Parent Account</name>
+            </columns>
+            <columns>
+                <label><!-- Persona Fisica --></label>
+                <name>Persona Fisica</name>
+            </columns>
+            <columns>
+                <label><!-- Phone --></label>
+                <name>Phone</name>
+            </columns>
+            <columns>
+                <label><!-- Prior Parent --></label>
+                <name>Prior Parent</name>
+            </columns>
+            <columns>
+                <label><!-- Proximos Pasos --></label>
+                <name>Proximos Pasos</name>
+            </columns>
+            <columns>
+                <label><!-- RUT --></label>
+                <name>RUT</name>
+            </columns>
+            <columns>
+                <label><!-- Rating --></label>
+                <name>Rating</name>
+            </columns>
+            <columns>
+                <label><!-- Razon Social --></label>
+                <name>Razon Social</name>
+            </columns>
+            <columns>
+                <label><!-- Region Despacho --></label>
+                <name>Region Despacho</name>
+            </columns>
+            <columns>
+                <label><!-- RegistroTipo --></label>
+                <name>RegistroTipo</name>
+            </columns>
+            <columns>
+                <label><!-- Región Facturación --></label>
+                <name>Región Facturación</name>
+            </columns>
+            <columns>
+                <label><!-- Rut a Validar --></label>
+                <name>Rut a Validar</name>
+            </columns>
+            <columns>
+                <label><!-- SIC Code --></label>
+                <name>SIC Code</name>
+            </columns>
+            <columns>
+                <label><!-- SIC Description --></label>
+                <name>SIC Description</name>
+            </columns>
+            <columns>
+                <label><!-- Shipping Address --></label>
+                <name>Shipping Address</name>
+            </columns>
+            <columns>
+                <label><!-- Shipping City --></label>
+                <name>Shipping City</name>
+            </columns>
+            <columns>
+                <label><!-- Shipping Country --></label>
+                <name>Shipping Country</name>
+            </columns>
+            <columns>
+                <label><!-- Shipping Geocode Accuracy --></label>
+                <name>Shipping Geocode Accuracy</name>
+            </columns>
+            <columns>
+                <label><!-- Shipping Latitude --></label>
+                <name>Shipping Latitude</name>
+            </columns>
+            <columns>
+                <label><!-- Shipping Longitude --></label>
+                <name>Shipping Longitude</name>
+            </columns>
+            <columns>
+                <label><!-- Shipping State/Province --></label>
+                <name>Shipping State/Province</name>
+            </columns>
+            <columns>
+                <label><!-- Shipping Street --></label>
+                <name>Shipping Street</name>
+            </columns>
+            <columns>
+                <label><!-- Shipping Zip/Postal Code --></label>
+                <name>Shipping Zip/Postal Code</name>
+            </columns>
+            <columns>
+                <label><!-- Source System ID --></label>
+                <name>Source System ID</name>
+            </columns>
+            <columns>
+                <label><!-- Status Jurídico --></label>
+                <name>Status Jurídico</name>
+            </columns>
+            <columns>
+                <label><!-- Sucursal --></label>
+                <name>Sucursal</name>
+            </columns>
+            <columns>
+                <label><!-- Teléfono de Contacto de Pagos --></label>
+                <name>Teléfono de Contacto de Pagos</name>
+            </columns>
+            <columns>
+                <label><!-- Teléfono de contacto principal --></label>
+                <name>Teléfono de contacto principal</name>
+            </columns>
+            <columns>
+                <label><!-- Teléfono de de Contacto de Pagos --></label>
+                <name>Teléfono de de Contacto de Pagos</name>
+            </columns>
+            <columns>
+                <label><!-- Ticker Symbol --></label>
+                <name>Ticker Symbol</name>
+            </columns>
+            <columns>
+                <label><!-- Type --></label>
+                <name>Type</name>
+            </columns>
+            <columns>
+                <label><!-- Website --></label>
+                <name>Website</name>
+            </columns>
+            <columns>
+                <label><!-- largo telefono --></label>
+                <name>largo telefono</name>
+            </columns>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Clientes --></label>
+            <name>Clientes</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Canal --></label>
+                <name>Canal</name>
+            </columns>
+            <columns>
+                <label><!-- Centro de Abastecimiento --></label>
+                <name>Centro de Abastecimiento</name>
+            </columns>
+            <columns>
+                <label><!-- Comuna --></label>
+                <name>Comuna</name>
+            </columns>
+            <columns>
+                <label><!-- Comuna web --></label>
+                <name>Comuna web</name>
+            </columns>
+            <columns>
+                <label><!-- Convertido en Cuenta --></label>
+                <name>Convertido en Cuenta</name>
+            </columns>
+            <columns>
+                <label><!-- Created By --></label>
+                <name>Created By</name>
+            </columns>
+            <columns>
+                <label><!-- Created Date --></label>
+                <name>Created Date</name>
+            </columns>
+            <columns>
+                <label><!-- Cuenta --></label>
+                <name>Cuenta</name>
+            </columns>
+            <columns>
+                <label><!-- Cómo se enteró de ICB Food Service --></label>
+                <name>Cómo se enteró de ICB Food Service</name>
+            </columns>
+            <columns>
+                <label><!-- Derivado a Asesor --></label>
+                <name>Derivado a Asesor</name>
+            </columns>
+            <columns>
+                <label><!-- Detalle de Contacto --></label>
+                <name>Detalle de Contacto</name>
+            </columns>
+            <columns>
+                <label><!-- Dirección (City) --></label>
+                <name>Dirección (City)</name>
+            </columns>
+            <columns>
+                <label><!-- Dirección (Country/Territory) --></label>
+                <name>Dirección (Country/Territory)</name>
+            </columns>
+            <columns>
+                <label><!-- Dirección (Geocode Accuracy) --></label>
+                <name>Dirección (Geocode Accuracy)</name>
+            </columns>
+            <columns>
+                <label><!-- Dirección (Latitude) --></label>
+                <name>Dirección (Latitude)</name>
+            </columns>
+            <columns>
+                <label><!-- Dirección (Longitude) --></label>
+                <name>Dirección (Longitude)</name>
+            </columns>
+            <columns>
+                <label><!-- Dirección (State/Province) --></label>
+                <name>Dirección (State/Province)</name>
+            </columns>
+            <columns>
+                <label><!-- Dirección (Street) --></label>
+                <name>Dirección (Street)</name>
+            </columns>
+            <columns>
+                <label><!-- Dirección (ZIP/Postal Code) --></label>
+                <name>Dirección (ZIP/Postal Code)</name>
+            </columns>
+            <columns>
+                <label><!-- Dirección web --></label>
+                <name>Dirección web</name>
+            </columns>
+            <columns>
+                <label><!-- Email --></label>
+                <name>Email</name>
+            </columns>
+            <columns>
+                <label><!-- Es Parte de un Holding --></label>
+                <name>Es Parte de un Holding</name>
+            </columns>
+            <columns>
+                <label><!-- Especialidad --></label>
+                <name>Especialidad</name>
+            </columns>
+            <columns>
+                <label><!-- Estado --></label>
+                <name>Estado</name>
+            </columns>
+            <columns>
+                <label><!-- Fecha Probable de Cierre --></label>
+                <name>Fecha Probable de Cierre</name>
+            </columns>
+            <columns>
+                <label><!-- Fecha Probable de Visita --></label>
+                <name>Fecha Probable de Visita</name>
+            </columns>
+            <columns>
+                <label><!-- Fuente del Lead --></label>
+                <name>Fuente del Lead</name>
+            </columns>
+            <columns>
+                <label><!-- IdOwner --></label>
+                <name>IdOwner</name>
+            </columns>
+            <columns>
+                <label><!-- Last Activity Date --></label>
+                <name>Last Activity Date</name>
+            </columns>
+            <columns>
+                <label><!-- Last Modified By --></label>
+                <name>Last Modified By</name>
+            </columns>
+            <columns>
+                <label><!-- Last Modified Date --></label>
+                <name>Last Modified Date</name>
+            </columns>
+            <columns>
+                <label><!-- Lead ID --></label>
+                <name>Lead ID</name>
+            </columns>
+            <columns>
+                <label><!-- Nombre de Contacto Web --></label>
+                <name>Nombre de Contacto Web</name>
+            </columns>
+            <columns>
+                <label><!-- Nombre de Fantasía --></label>
+                <name>Nombre de Fantasía</name>
+            </columns>
+            <columns>
+                <label><!-- Nombre de contacto * --></label>
+                <name>Nombre de contacto *</name>
+            </columns>
+            <columns>
+                <label><!-- Numero de Registro --></label>
+                <name>Numero de Registro</name>
+            </columns>
+            <columns>
+                <label><!-- Oficina de Venta --></label>
+                <name>Oficina de Venta</name>
+            </columns>
+            <columns>
+                <label><!-- Owner --></label>
+                <name>Owner</name>
+            </columns>
+            <columns>
+                <label><!-- Próximos Pasos --></label>
+                <name>Próximos Pasos</name>
+            </columns>
+            <columns>
+                <label><!-- RUT --></label>
+                <name>RUT</name>
+            </columns>
+            <columns>
+                <label><!-- Región --></label>
+                <name>Región</name>
+            </columns>
+            <columns>
+                <label><!-- Región Web --></label>
+                <name>Región Web</name>
+            </columns>
+            <columns>
+                <label><!-- Rut a Validar --></label>
+                <name>Rut a Validar</name>
+            </columns>
+            <columns>
+                <label><!-- Sucursal --></label>
+                <name>Sucursal</name>
+            </columns>
+            <columns>
+                <label><!-- Teléfono * --></label>
+                <name>Teléfono *</name>
+            </columns>
+            <columns>
+                <label><!-- Tipo de Empresa --></label>
+                <name>Tipo de Empresa</name>
+            </columns>
+            <columns>
+                <label><!-- UTM Campaign --></label>
+                <name>UTM Campaign</name>
+            </columns>
+            <columns>
+                <label><!-- UTM source --></label>
+                <name>UTM source</name>
+            </columns>
+            <columns>
+                <label><!-- UTM_medium --></label>
+                <name>UTM_medium</name>
+            </columns>
+            <columns>
+                <label><!-- ¿Que estás buscando? --></label>
+                <name>¿Que estás buscando?</name>
+            </columns>
+            <columns>
+                <label><!-- ¿Ya es Cliente? --></label>
+                <name>¿Ya es Cliente?</name>
+            </columns>
+            <label><!-- Leads --></label>
+            <name>Leads</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunities with Historical Trending --></description>
+        <label><!-- Opportunities with Historical Trending --></label>
+        <name>Opportunities_with_Historical_Trending</name>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunity (Historical) --></label>
+            <name>Opportunity (Historical)</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Precio de productopor T Cliente --></description>
+        <label><!-- Precio de productopor T Cliente --></label>
+        <name>Precio_de_productopor_T_Cliente</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Cliente --></label>
+            <name>Cliente</name>
+        </sections>
+        <sections>
+            <label><!-- Clientes --></label>
+            <name>Clientes</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Productos con  Precios --></description>
+        <label><!-- Productos con  Precios --></label>
+        <name>Productos_con_Precios</name>
+        <sections>
+            <label><!-- Precios --></label>
+            <name>Precios</name>
+        </sections>
+        <sections>
+            <label><!-- Products --></label>
+            <name>Products</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Productos y Precios --></description>
+        <label><!-- Productos y Precios --></label>
+        <name>Productos_y_Precios</name>
+        <sections>
+            <label><!-- Precios --></label>
+            <name>Precios</name>
+        </sections>
+        <sections>
+            <label><!-- Products --></label>
+            <name>Products</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Reporte Cascada - Clientes --></description>
+        <label><!-- Reporte Cascada - Clientes --></label>
+        <name>Reporte_Cascada_Clientes</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Clientes --></label>
+            <name>Clientes</name>
+        </sections>
+        <sections>
+            <label><!-- Detalles --></label>
+            <name>Detalles</name>
+        </sections>
+        <sections>
+            <label><!-- Ventas --></label>
+            <name>Ventas</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Reporte Comodato --></description>
+        <label><!-- Reporte Comodato --></label>
+        <name>Reporte_Comodato</name>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+        <sections>
+            <label><!-- Propuestas Comodatos --></label>
+            <name>Propuestas Comodatos</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Cadences &amp; Steps with Monthly Metrics --></description>
+        <label><!-- Cadences &amp; Steps with Monthly Metrics --></label>
+        <name>Sales_Cadences_Steps_with_Monthly_Metrics</name>
+        <sections>
+            <label><!-- Cadence Step Monthly Metrics --></label>
+            <name>Cadence Step Monthly Metrics</name>
+        </sections>
+        <sections>
+            <label><!-- Cadence Steps --></label>
+            <name>Cadence Steps</name>
+        </sections>
+        <sections>
+            <label><!-- Cadences --></label>
+            <name>Cadences</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Cadences &amp; Trackers --></description>
+        <label><!-- Cadences &amp; Trackers --></label>
+        <name>Sales_Cadences_amp_Trackers</name>
+        <sections>
+            <label><!-- Cadence Trackers --></label>
+            <name>Cadence Trackers</name>
+        </sections>
+        <sections>
+            <label><!-- Cadences --></label>
+            <name>Cadences</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Cadences and Trackers (Inner join) --></description>
+        <label><!-- Cadences and Trackers (Inner join) --></label>
+        <name>Sales_Cadences_and_Trackers_Inner_join</name>
+        <sections>
+            <label><!-- Cadence Trackers --></label>
+            <name>Cadence Trackers</name>
+        </sections>
+        <sections>
+            <label><!-- Cadences --></label>
+            <name>Cadences</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Users with Daily Metrics --></description>
+        <label><!-- Users with Daily Metrics --></label>
+        <name>Users_with_Daily_Metrics</name>
+        <sections>
+            <label><!-- User Daily Metrics --></label>
+            <name>User Daily Metrics</name>
+        </sections>
+        <sections>
+            <label><!-- Users --></label>
+            <name>Users</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Users with Monthly Engagements --></description>
+        <label><!-- Users with Monthly Engagements --></label>
+        <name>Users_with_Monthly_Engagements</name>
+        <sections>
+            <label><!-- User Monthly Metrics --></label>
+            <name>User Monthly Metrics</name>
+        </sections>
+        <sections>
+            <label><!-- Users --></label>
+            <name>Users</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Ventas --></description>
+        <label><!-- Ventas --></label>
+        <name>Ventas</name>
+        <sections>
+            <label><!-- Detalles --></label>
+            <name>Detalles</name>
+        </sections>
+        <sections>
+            <label><!-- Ventas --></label>
+            <name>Ventas</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Ventas con Cuentas --></description>
+        <label><!-- Ventas con Cuentas --></label>
+        <name>Ventas_con_Cuentas</name>
+        <sections>
+            <label><!-- Detalles --></label>
+            <name>Detalles</name>
+        </sections>
+        <sections>
+            <label><!-- Ventas --></label>
+            <name>Ventas</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- x10 oportunidades  relevantes --></description>
+        <label><!-- x10 oportunidades  relevantes --></label>
+        <name>X10_oportunidades_relevantes</name>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- cuentas con direcciones --></description>
+        <label><!-- cuentas con direcciones --></label>
+        <name>cuentas_con_direcciones</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Clientes --></label>
+            <name>Clientes</name>
+        </sections>
+        <sections>
+            <label><!-- Domicilio de Clientes --></label>
+            <name>Domicilio de Clientes</name>
+        </sections>
+        <sections>
+            <label><!-- Otros Domicilios --></label>
+            <name>Otros Domicilios</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- cuentas usuarios --></description>
+        <label><!-- cuentas usuarios --></label>
+        <name>cuentas_usuarios</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Clientes --></label>
+            <name>Clientes</name>
+        </sections>
+        <sections>
+            <label><!-- Ventas --></label>
+            <name>Ventas</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- domicilio --></description>
+        <label><!-- domicilio --></label>
+        <name>domicilio</name>
+        <sections>
+            <label><!-- Domicilio de Clientes --></label>
+            <name>Domicilio de Clientes</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Orchestration Run Logs Spring &apos;24 --></description>
+        <label><!-- Orchestration Run Logs Spring &apos;24 --></label>
+        <name>flow_orchestration_log_ootb_crt_two_four_eight</name>
+        <sections>
+            <label><!-- Orchestration Run Log --></label>
+            <name>Orchestration Run Log</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Orchestration Runs Spring &apos;24 --></description>
+        <label><!-- Orchestration Runs Spring &apos;24 --></label>
+        <name>flow_orchestration_run_ootb_crt_two_four_eight</name>
+        <sections>
+            <label><!-- Orchestration Runs --></label>
+            <name>Orchestration Runs</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Orchestration Stage Runs Spring &apos;24 --></description>
+        <label><!-- Orchestration Stage Runs Spring &apos;24 --></label>
+        <name>flow_orchestration_stage_run_ootb_crt_two_four_eight</name>
+        <sections>
+            <label><!-- Orchestration Stage Runs --></label>
+            <name>Orchestration Stage Runs</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Orchestration Step Runs Spring &apos;24 --></description>
+        <label><!-- Orchestration Step Runs Spring &apos;24 --></label>
+        <name>flow_orchestration_step_run_ootb_crt_two_four_eight</name>
+        <sections>
+            <label><!-- Orchestration Step Runs --></label>
+            <name>Orchestration Step Runs</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Orchestration Work Items Spring &apos;24 --></description>
+        <label><!-- Orchestration Work Items Spring &apos;24 --></label>
+        <name>flow_orchestration_work_item_ootb_crt_two_four_eight</name>
+        <sections>
+            <columns>
+                <label><!-- Orchestration Step Run: Label --></label>
+                <name>Orchestration Step Run: Label</name>
+            </columns>
+            <columns>
+                <label><!-- Orchestration Step Run: Name --></label>
+                <name>Orchestration Step Run: Name</name>
+            </columns>
+            <columns>
+                <label><!-- Orchestration Step Run: Status --></label>
+                <name>Orchestration Step Run: Status</name>
+            </columns>
+            <label><!-- Orchestration Step Runs --></label>
+            <name>Orchestration Step Runs</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Assigned Group or Queue --></label>
+                <name>Assigned Group or Queue</name>
+            </columns>
+            <columns>
+                <label><!-- Assigned User --></label>
+                <name>Assigned User</name>
+            </columns>
+            <label><!-- Orchestration Work Items --></label>
+            <name>Orchestration Work Items</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- leads-account-opp --></description>
+        <label><!-- leads-account-opp --></label>
+        <name>leads_account_opp</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Clientes --></label>
+            <name>Clientes</name>
+        </sections>
+        <sections>
+            <label><!-- Leads --></label>
+            <name>Leads</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- negocio gastronomico - clientes --></description>
+        <label><!-- negocio gastronomico - clientes --></label>
+        <name>negocio_gastronomico_clientes</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Clientes --></label>
+            <name>Clientes</name>
+        </sections>
+        <sections>
+            <label><!-- Leads --></label>
+            <name>Leads</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- prueba --></description>
+        <label><!-- prueba --></label>
+        <name>prueba</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Clientes --></label>
+            <name>Clientes</name>
+        </sections>
+        <sections>
+            <label><!-- Contactos --></label>
+            <name>Contactos</name>
+        </sections>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+        <sections>
+            <label><!-- Leads --></label>
+            <name>Leads</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- reporte Leads Personalizado --></description>
+        <label><!-- reporte Leads Personalizado --></label>
+        <name>reporte_Leads_Personalizado</name>
+        <sections>
+            <label><!-- Actividades --></label>
+            <name>Actividades</name>
+        </sections>
+        <sections>
+            <label><!-- Activities --></label>
+            <name>Activities</name>
+        </sections>
+        <sections>
+            <label><!-- Assigned To --></label>
+            <name>Assigned To</name>
+        </sections>
+        <sections>
+            <label><!-- Leads --></label>
+            <name>Leads</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Screen Flows --></description>
+        <label><!-- Screen Flows --></label>
+        <name>screen_flows_prebuilt_crt</name>
+        <sections>
+            <label><!-- Flow Interview Log Entries --></label>
+            <name>Flow Interview Log Entries</name>
+        </sections>
+        <sections>
+            <label><!-- Flow Interview Logs --></label>
+            <name>Flow Interview Logs</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- usuarios cuentas --></description>
+        <label><!-- usuarios cuentas --></label>
+        <name>usuarios_cuentas</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Accounts (Account Owner) --></label>
+            <name>Accounts (Account Owner)</name>
+        </sections>
+        <sections>
+            <label><!-- Clientes --></label>
+            <name>Clientes</name>
+        </sections>
+        <sections>
+            <label><!-- Detalles --></label>
+            <name>Detalles</name>
+        </sections>
+        <sections>
+            <label><!-- Users --></label>
+            <name>Users</name>
+        </sections>
+        <sections>
+            <label><!-- Ventas --></label>
+            <name>Ventas</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- usuarios oportunidades --></description>
+        <label><!-- usuarios oportunidades --></label>
+        <name>usuarios_oportunidades</name>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunities (Created By) --></label>
+            <name>Opportunities (Created By)</name>
+        </sections>
+        <sections>
+            <label><!-- Users --></label>
+            <name>Users</name>
+        </sections>
+    </reportTypes>
+</Translations>

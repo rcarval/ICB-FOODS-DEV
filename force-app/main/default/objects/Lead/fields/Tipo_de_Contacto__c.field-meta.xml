@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo_de_Contacto__c</fullName>
+    <label>Tipo de Contacto</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Usuario PIA</fullName>
+                <default>false</default>
+                <label>Usuario PIA</label>
+            </value>
+            <value>
+                <fullName>Comprador</fullName>
+                <default>false</default>
+                <label>Comprador</label>
+            </value>
+            <value>
+                <fullName>Pagador</fullName>
+                <default>false</default>
+                <label>Pagador</label>
+            </value>
+            <value>
+                <fullName>Comercial</fullName>
+                <default>false</default>
+                <label>Comercial</label>
+            </value>
+            <value>
+                <fullName>Dueño</fullName>
+                <default>false</default>
+                <label>Dueño</label>
+            </value>
+            <value>
+                <fullName>Chef</fullName>
+                <default>false</default>
+                <label>Chef</label>
+            </value>
+            <value>
+                <fullName>Administrador</fullName>
+                <default>false</default>
+                <label>Administrador</label>
+            </value>
+            <value>
+                <fullName>Logística</fullName>
+                <default>false</default>
+                <label>Logística</label>
+            </value>
+            <value>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+                <label>Marketing</label>
+            </value>
+            <value>
+                <fullName>Finanzas</fullName>
+                <default>false</default>
+                <label>Finanzas</label>
+            </value>
+            <value>
+                <fullName>Gestión calidad</fullName>
+                <default>false</default>
+                <label>Gestión calidad</label>
+            </value>
+            <value>
+                <fullName>Gerente General</fullName>
+                <default>false</default>
+                <label>Gerente General</label>
+            </value>
+            <value>
+                <fullName>Representante Legal</fullName>
+                <default>false</default>
+                <label>Representante Legal</label>
+            </value>
+            <value>
+                <fullName>Comprador Pedido por Voz</fullName>
+                <default>false</default>
+                <label>Comprador Pedido por Voz</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

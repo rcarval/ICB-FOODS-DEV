@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Grupo_Cliente__c</fullName>
+    <label>Grupo Cliente</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Grupo 1</fullName>
+                <default>false</default>
+                <label>Grupo 1</label>
+            </value>
+            <value>
+                <fullName>Grupo 2</fullName>
+                <default>false</default>
+                <label>Grupo 2</label>
+            </value>
+            <value>
+                <fullName>Grupo 3</fullName>
+                <default>false</default>
+                <label>Grupo 3</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

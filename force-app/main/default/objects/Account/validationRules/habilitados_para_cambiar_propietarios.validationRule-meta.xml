@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>habilitados_para_cambiar_propietarios</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  ISCHANGED(OwnerId),
+  NOT(
+    OR(
+      CONTAINS($Profile.Name, &quot;Gerente&quot;),
+      CONTAINS($Profile.Name, &quot;Sub Gerente de Negocio&quot;),
+      CONTAINS($Profile.Name, &quot;System Administrator&quot;),
+      CONTAINS($Profile.Name, &quot;Gerencia Superior&quot;),
+      CONTAINS($Profile.Name, &quot;Administrador&quot;)
+    )
+  )
+)</errorConditionFormula>
+    <errorMessage>No tiene permitido cambiar propietario.</errorMessage>
+</ValidationRule>

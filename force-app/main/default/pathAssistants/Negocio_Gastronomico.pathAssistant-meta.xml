@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Negocio_Gastronomico__c</entityName>
+    <fieldName>Estado__c</fieldName>
+    <masterLabel>Negocio Gastronomico</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Para pasar al estado Prospecto debe completar los campos :&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Nombre de Fantasía&lt;/li&gt;&lt;li&gt;RUT&lt;/li&gt;&lt;li&gt;Dirección&lt;/li&gt;&lt;li&gt;Nombre de Contacto&lt;/li&gt;&lt;li&gt;Teléfono&lt;/li&gt;&lt;li&gt;Email&lt;/li&gt;&lt;li&gt;Canal&lt;/li&gt;&lt;li&gt;Especialidad&lt;/li&gt;&lt;li&gt;Próximos Pasos&lt;/li&gt;&lt;li&gt;Oficina de Venta&lt;/li&gt;&lt;li&gt;Sucursal&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p class=&quot;ql-indent-1&quot;&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Prospecto</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Temuco</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Especialidad__c</columns>
+    <columns>Gerencia__c</columns>
+    <columns>Ventas_3_meses__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Sucursal__c</field>
+        <operation>equals</operation>
+        <value>S003 - Suc Temuco</value>
+    </filters>
+    <filters>
+        <field>Especialidad__c</field>
+        <operation>contains</operation>
+        <value>A9 - Cafetería,C0 - Hotel,A2 - Hamburguesa,A5 - Pastelería,B5 - Americano,A3 - Sándwich y Hotdog,C1 - Banquetería,C5 - Petroleras</value>
+    </filters>
+    <label>Temuco</label>
+</ListView>

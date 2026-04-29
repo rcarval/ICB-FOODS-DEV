@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Modificacion_QLI_en_Estado_Aprobado</fullName>
+    <active>true</active>
+    <description>No se pueden modificar los %Descuento de los QLI una vez que el estado de la Cotizacion sea Aprobado</description>
+    <errorConditionFormula>AND(
+    ISPICKVAL(Quote.Status, &quot;Draft&quot;) = FALSE,
+    ISCHANGED(Discount)
+)</errorConditionFormula>
+    <errorMessage>No se puede cambiar el descuento del QLI si el estado de la Cotización ya no es borrador.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,22 @@
+<template>
+    <div class="slds-box slds-box_x-small slds-m-around_small">
+        <p class="slds-m-bottom_small slds-text-body_regular">
+            Seleccione un único archivo PDF. El archivo no se guarda en Salesforce; se envía directamente a Firma Digital.
+        </p>
+        <div class="slds-form-element">
+            <label class="slds-form-element__label">Archivo PDF</label>
+            <div class="slds-form-element__control">
+                <input type="file"
+                       accept=".pdf,application/pdf"
+                       class="pdf-input"
+                       onchange={handleFileChange} />
+            </div>
+            <p class="slds-form-element__help slds-m-top_xx-small">Solo se permite un archivo PDF</p>
+        </div>
+        <template lwc:if={fileName}>
+            <p class="slds-m-top_small slds-text-color_success">
+                Archivo seleccionado: {fileName}
+            </p>
+        </template>
+    </div>
+</template>

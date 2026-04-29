@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>S001 - Suc Santiago</fullName>
+        <default>false</default>
+        <label>S001 - Suc Santiago</label>
+    </customValue>
+    <customValue>
+        <fullName>S005 - Suc Antofagasta</fullName>
+        <default>false</default>
+        <label>S005 - Suc Antofagasta</label>
+    </customValue>
+    <customValue>
+        <fullName>S002 - Suc Coquimbo</fullName>
+        <default>false</default>
+        <label>S002 - Suc Coquimbo</label>
+    </customValue>
+    <customValue>
+        <fullName>S009 - Suc Calama</fullName>
+        <default>false</default>
+        <label>S009 - Suc Calama</label>
+    </customValue>
+    <customValue>
+        <fullName>S004 - Suc Concepción</fullName>
+        <default>false</default>
+        <label>S004 - Suc Concepción</label>
+    </customValue>
+    <customValue>
+        <fullName>S007 - Suc Iquique</fullName>
+        <default>false</default>
+        <label>S007 - Suc Iquique</label>
+    </customValue>
+    <customValue>
+        <fullName>S008 - Suc Curicó</fullName>
+        <default>false</default>
+        <label>S008 - Suc Curicó</label>
+    </customValue>
+    <customValue>
+        <fullName>S015 - Suc Viña del Mar</fullName>
+        <default>false</default>
+        <label>S015 - Suc Viña del Mar</label>
+    </customValue>
+    <customValue>
+        <fullName>S003 - Suc Temuco</fullName>
+        <default>false</default>
+        <label>S003 - Suc Temuco</label>
+    </customValue>
+    <customValue>
+        <fullName>S006 - Suc Puerto Montt</fullName>
+        <default>false</default>
+        <label>S006 - Suc Puerto Montt</label>
+    </customValue>
+    <customValue>
+        <fullName>Código de sucursal desconocido</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Código de sucursal desconocido</label>
+    </customValue>
+    <customValue>
+        <fullName>Sucursal 3</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Sucursal 3</label>
+    </customValue>
+    <customValue>
+        <fullName>Sucursal 2</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Sucursal 2</label>
+    </customValue>
+    <customValue>
+        <fullName>Sucursal 1</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Sucursal 1</label>
+    </customValue>
+    <masterLabel>Sucursal</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

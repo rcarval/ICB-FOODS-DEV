@@ -1,0 +1,43 @@
+<messaging:emailTemplate subject="ICB Food Service - Aviso Error RUT" recipientType="Lead" relatedToType="Lead">
+  <messaging:htmlEmailBody >
+    <html>
+      <body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #ffffff;">
+
+        <!-- Tabla contenedora central -->
+        <table align="center" cellpadding="0" cellspacing="0" border="0" width="600" style="margin: 0 auto; background-color: #ffffff;">
+          <tr>
+            <td>
+
+              <!-- HEADER -->
+              <img src="https://energy-saas-7178.my.salesforce.com/servlet/servlet.ImageServer?id=015Pr00000FGMju&oid=00D7z00000ZVxE9&lastMod=1753898167000" 
+                   alt="ICB Food Header" 
+                   width="600" 
+                   style="display: block; width: 100%; height: auto; margin: 0; padding: 0;" />
+
+              <!-- Imagen central clicable -->
+              <a href="https://forms.gle/Co3D8MfRsAa4Ca6a7" target="_blank">
+                <img src="https://energy-saas-7178.my.salesforce.com/servlet/servlet.ImageServer?id=015Pr00000FIaHZ&oid=00D7z00000ZVxE9&lastMod=1753998785000" 
+                     alt="Aviso Error RUT - Open Day Santiago 2025" 
+                     width="600" 
+                     style="display: block; width: 100%; height: auto; border: none; margin: 0 auto;" />
+              </a>
+
+              <!-- FOOTER -->
+              <table width="600" cellpadding="0" cellspacing="0" border="0" style="background-color: #e50046;">
+                <tr>
+                  <td align="center" style="font-family: Arial, sans-serif; font-size: 14px; color: #ffffff; padding: 10px;">
+                    <strong>@icbfoodservice</strong> - Centro Contacto Clientes 
+                    <a href="mailto:ccc@icbfs.cl" style="color: #ffffff; text-decoration: none;"><strong>ccc@icbfs.cl</strong></a> 
+                    - whatsapp <strong>+56 9 2730 8510</strong>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+        </table>
+
+      </body>
+    </html>
+  </messaging:htmlEmailBody>
+</messaging:emailTemplate>

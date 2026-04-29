@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QR_Lead__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;ICB Food Service&quot;+ &quot; #OPENDAY &quot;+BR()+
+IMAGE(&quot;https://api.qrserver.com/v1/create-qr-code/?size=150x150&amp;data=&quot;&amp;Id,&quot;QR OpenDay&quot;&amp;Company+&quot;-&quot;&amp;RUT__c &amp;&quot;-&quot;&amp;Email)&amp;&quot; &quot;+BR()
++
+&quot;Empresa: &quot; &amp; IF(ISBLANK(Company), &quot;No disponible&quot;, Company) &amp; BR() +
+&quot;RUT: &quot; &amp; IF(ISBLANK(RUT__c), &quot;No disponible&quot;, RUT__c) &amp; BR() +
+&quot;Email: &quot; &amp; IF(ISBLANK(Email), &quot;No disponible&quot;, Email)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>QR Lead</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

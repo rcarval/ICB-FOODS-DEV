@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Direction</fullName>
+    <inlineHelpText>Especifica si la organización está recibiendo o enviando el documento.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

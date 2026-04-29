@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Auxiliar_Formula_Persona_Fisica__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISPICKVAL(Gerencia__c, &quot;107 - Personas&quot;) , &quot;X&quot;,&quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Auxiliar Formula Persona Fisica</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

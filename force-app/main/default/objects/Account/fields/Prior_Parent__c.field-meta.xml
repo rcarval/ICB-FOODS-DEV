@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prior_Parent__c</fullName>
+    <description>Almacena el valor del Codigo de Cliente SAP anterior, para poder ser evaluado en el Flow que asocia/desasocia Facturador y Holding.</description>
+    <externalId>false</externalId>
+    <label>Prior Parent</label>
+    <length>20</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

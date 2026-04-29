@@ -1,0 +1,13 @@
+.full-screen-modal .slds-modal__container {
+    width: 95vw;  /* Full width minus a small padding */
+    max-width: 95vw;
+    height: 100vh;  /* Almost full height */
+    display: flex;
+    flex-direction: column;
+}
+
+.full-screen-modal .slds-modal__content {
+    flex-grow: 1;
+    overflow: auto;
+    padding: 1rem; /* Adjust as needed */
+}

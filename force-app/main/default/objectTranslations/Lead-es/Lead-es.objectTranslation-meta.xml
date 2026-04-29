@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Lead Layout</layout>
+        <sections>
+            <label><!-- Campos Web --></label>
+            <section>Campos Web</section>
+        </sections>
+        <sections>
+            <label><!-- Datos del contacto --></label>
+            <section>Datos del contacto</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Negocio Gastronómico Layout</layout>
+        <sections>
+            <label><!-- Datos Web --></label>
+            <section>Datos Web</section>
+        </sections>
+        <sections>
+            <label><!-- Datos de Contacto --></label>
+            <section>Datos de Contacto</section>
+        </sections>
+        <sections>
+            <label><!-- Datos de Dirección --></label>
+            <section>Datos de Dirección</section>
+        </sections>
+        <sections>
+            <label><!-- Información --></label>
+            <section>Información</section>
+        </sections>
+        <sections>
+            <label><!-- Información del sistema --></label>
+            <section>Información del sistema</section>
+        </sections>
+        <sections>
+            <label><!-- Vínculos personalizados --></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Persona</layout>
+        <sections>
+            <label><!-- Datos Web --></label>
+            <section>Datos Web</section>
+        </sections>
+        <sections>
+            <label><!-- Datos de Dirección --></label>
+            <section>Datos de Dirección</section>
+        </sections>
+        <sections>
+            <label><!-- Información --></label>
+            <section>Información</section>
+        </sections>
+        <sections>
+            <label><!-- Información del sistema --></label>
+            <section>Información del sistema</section>
+        </sections>
+        <sections>
+            <label><!-- Vínculos personalizados --></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Update Lead --></label>
+        <name>UpdateRecord</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Cliente Persona --></label>
+        <name>Cliente_Persona</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Empresa --></label>
+        <name>Empresa</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Lead Standar --></label>
+        <name>Lead_Standar</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- #OpenDay --></label>
+        <name>OpenDay</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Completar el campo Canal --></errorMessage>
+        <name>Canal_paso_a_Prospecto</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Completar el campo Centro de Abastecimiento --></errorMessage>
+        <name>Centro_abastecimiento_paso_a_prospecto</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Debe indicar si el cliente ha sido contactado. --></errorMessage>
+        <name>ClienteContactado_Requerido</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Debe ingresar Región y Comuna --></errorMessage>
+        <name>Comuna_Region_Validar</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Este campo solo puede ser modificado por Gerencia Superior y el Administrador --></errorMessage>
+        <name>Derivado_a_Asesor</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Completar el campo Dirección --></errorMessage>
+        <name>Direccion_Paso_a_Prospecto</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- El nombre es obligatorio --></errorMessage>
+        <name>First_Name_Requerido</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Debe ingresar una Observación indicando por qué no se ha contactado al cliente. --></errorMessage>
+        <name>Observacion_ClienteNoContactado</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Debe ingresar el RUT Contacto --></errorMessage>
+        <name>RUT_Contacto_Empresa</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Completar el campo RUT --></errorMessage>
+        <name>Rut_valido_paso_a_prospecto</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Completar el campo Sucursal --></errorMessage>
+        <name>Sucursal_valido_paso_a_prospecto</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Ingrese un Rut Valido --></errorMessage>
+        <name>Validacion_Verificador_de_RUTs</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Bot Detectado!! --></errorMessage>
+        <name>regla_de_validacion_BOT</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+</CustomObjectTranslation>

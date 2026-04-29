@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Region__c</fullName>
+    <label>Región Facturación</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>13 - Región Metropolitana</fullName>
+                <default>false</default>
+                <label>13 - Región Metropolitana</label>
+            </value>
+            <value>
+                <fullName>01 - Iquique</fullName>
+                <default>false</default>
+                <label>01 - Iquique</label>
+            </value>
+            <value>
+                <fullName>02 - Antofagasta</fullName>
+                <default>false</default>
+                <label>02 - Antofagasta</label>
+            </value>
+            <value>
+                <fullName>03 - Copiapo</fullName>
+                <default>false</default>
+                <label>03 - Copiapo</label>
+            </value>
+            <value>
+                <fullName>04 - La Serena</fullName>
+                <default>false</default>
+                <label>04 - La Serena</label>
+            </value>
+            <value>
+                <fullName>05 - Valparaiso</fullName>
+                <default>false</default>
+                <label>05 - Valparaiso</label>
+            </value>
+            <value>
+                <fullName>06 - Rancagua</fullName>
+                <default>false</default>
+                <label>06 - Rancagua</label>
+            </value>
+            <value>
+                <fullName>07 - Talca</fullName>
+                <default>false</default>
+                <label>07 - Talca</label>
+            </value>
+            <value>
+                <fullName>08 - Concepción</fullName>
+                <default>false</default>
+                <label>08 - Concepción</label>
+            </value>
+            <value>
+                <fullName>09 - Temuco</fullName>
+                <default>false</default>
+                <label>09 - Temuco</label>
+            </value>
+            <value>
+                <fullName>10 - Puerto Montt</fullName>
+                <default>false</default>
+                <label>10 - Puerto Montt</label>
+            </value>
+            <value>
+                <fullName>11 - Coyhaique</fullName>
+                <default>false</default>
+                <label>11 - Coyhaique</label>
+            </value>
+            <value>
+                <fullName>12 - Punta Arenas</fullName>
+                <default>false</default>
+                <label>12 - Punta Arenas</label>
+            </value>
+            <value>
+                <fullName>14 - Los Ríos</fullName>
+                <default>false</default>
+                <label>14 - Los Ríos</label>
+            </value>
+            <value>
+                <fullName>15 - Arica</fullName>
+                <default>false</default>
+                <label>15 - Arica</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

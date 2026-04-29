@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>DASHBOARD 3</label>
+    <protected>false</protected>
+    <values>
+        <field>Activo__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Nombre_dashboard__c</field>
+        <value xsi:type="xsd:string">DASHBOARD 3</value>
+    </values>
+    <values>
+        <field>id_dashboard__c</field>
+        <value xsi:type="xsd:string">5954f5c2-2bbd-4eb1-987b-941f92a023bd</value>
+    </values>
+</CustomMetadata>

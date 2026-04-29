@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Comuna Despacho Nombre Integracion --></label>
+    <name>Comuna_Despacho_Nombre_Integracion__c</name>
+</CustomFieldTranslation>

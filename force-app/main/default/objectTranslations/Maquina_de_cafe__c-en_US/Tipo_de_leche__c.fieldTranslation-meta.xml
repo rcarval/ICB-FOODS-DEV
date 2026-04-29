@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tipo de leche --></label>
+    <name>Tipo_de_leche__c</name>
+    <picklistValues>
+        <masterLabel>Liquida</masterLabel>
+        <translation><!-- Liquida --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Polvo</masterLabel>
+        <translation><!-- Polvo --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

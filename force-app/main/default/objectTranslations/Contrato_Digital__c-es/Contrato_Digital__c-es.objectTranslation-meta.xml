@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Contrato Digital</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Contratos Digitales</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <quickActions>
+        <label><!-- Descargar Documento Firmado --></label>
+        <name>Descargar_Documento_Firmado</name>
+    </quickActions>
+</CustomObjectTranslation>

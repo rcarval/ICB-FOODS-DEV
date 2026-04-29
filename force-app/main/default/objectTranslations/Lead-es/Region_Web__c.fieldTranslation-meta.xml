@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Región Web --></label>
+    <name>Region_Web__c</name>
+    <picklistValues>
+        <masterLabel>Región Metropolitana</masterLabel>
+        <translation><!-- Región Metropolitana --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Región de Antofagasta</masterLabel>
+        <translation><!-- Región de Antofagasta --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Región de Arica y Parinacota</masterLabel>
+        <translation><!-- Región de Arica y Parinacota --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Región de Atacama</masterLabel>
+        <translation><!-- Región de Atacama --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Región de Aysén</masterLabel>
+        <translation><!-- Región de Aysén --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Región de Coquimbo</masterLabel>
+        <translation><!-- Región de Coquimbo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Región de La Araucanía</masterLabel>
+        <translation><!-- Región de La Araucanía --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Región de Los Lagos</masterLabel>
+        <translation><!-- Región de Los Lagos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Región de Los Ríos</masterLabel>
+        <translation><!-- Región de Los Ríos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Región de Magallanes</masterLabel>
+        <translation><!-- Región de Magallanes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Región de O’Higgins</masterLabel>
+        <translation><!-- Región de O’Higgins --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Región de Tarapacá</masterLabel>
+        <translation><!-- Región de Tarapacá --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Región de Valparaíso</masterLabel>
+        <translation><!-- Región de Valparaíso --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Región del Biobío</masterLabel>
+        <translation><!-- Región del Biobío --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Región del Maule</masterLabel>
+        <translation><!-- Región del Maule --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Región del Ñuble</masterLabel>
+        <translation><!-- Región del Ñuble --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

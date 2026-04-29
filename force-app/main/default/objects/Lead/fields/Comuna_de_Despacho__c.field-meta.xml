@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comuna_de_Despacho__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Comuna de Despacho</label>
+    <referenceTo>Comuna__c</referenceTo>
+    <relationshipLabel>Candidatos</relationshipLabel>
+    <relationshipName>Candidatos</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Lookup</type>
+</CustomField>

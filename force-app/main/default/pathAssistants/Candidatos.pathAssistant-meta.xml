@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Lead</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Candidatos</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>RUT__c</fieldNames>
+        <fieldNames>Phone</fieldNames>
+        <fieldNames>Gerencia__c</fieldNames>
+        <fieldNames>Grupo_Cliente__c</fieldNames>
+        <fieldNames>Sucursal__c</fieldNames>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Para pasar al estado Convertido debe completar los campos :&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;RUT&lt;/li&gt;&lt;li&gt;Dirección&lt;/li&gt;&lt;li&gt;Teléfono&lt;/li&gt;&lt;li&gt;Email&lt;/li&gt;&lt;li&gt;Canal&lt;/li&gt;&lt;li&gt;Especialidad&lt;/li&gt;&lt;li&gt;Sucursal&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Lead Contactado</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <picklistValueName>Prospecto</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Empresa</recordTypeName>
+</PathAssistant>

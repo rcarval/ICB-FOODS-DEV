@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsFlowUpdate__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Campo auxiliar que determina si el cambio de estado se hace por flow o manualmente. Con el checkbox en true, el flow Alerta Cotizacion Completa puede correr y hacer el cambio.</description>
+    <label>IsFlowUpdate</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

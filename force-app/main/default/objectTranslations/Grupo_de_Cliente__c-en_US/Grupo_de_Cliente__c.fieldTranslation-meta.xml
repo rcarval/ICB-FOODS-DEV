@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Grupo de Cliente --></label>
+    <name>Grupo_de_Cliente__c</name>
+    <picklistValues>
+        <masterLabel>A0 - Carnes</masterLabel>
+        <translation><!-- A0 - Carnes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A1 - Pollo</masterLabel>
+        <translation><!-- A1 - Pollo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A2 - Hamburguesa</masterLabel>
+        <translation><!-- A2 - Hamburguesa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A3 - Sándwich y Hotdog</masterLabel>
+        <translation><!-- A3 - Sándwich y Hotdog --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A4 - Pescados y Mariscos</masterLabel>
+        <translation><!-- A4 - Pescados y Mariscos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A5 - Pastelería</masterLabel>
+        <translation><!-- A5 - Pastelería --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A6 - Panadería</masterLabel>
+        <translation><!-- A6 - Panadería --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A7 - Empanadas</masterLabel>
+        <translation><!-- A7 - Empanadas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A8 - Pizza</masterLabel>
+        <translation><!-- A8 - Pizza --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A9 - Cafetería</masterLabel>
+        <translation><!-- A9 - Cafetería --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B0 - Heladería</masterLabel>
+        <translation><!-- B0 - Heladería --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B1 - Pastas</masterLabel>
+        <translation><!-- B1 - Pastas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B2 - Internacional</masterLabel>
+        <translation><!-- B2 - Internacional --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B3 - Peruano</masterLabel>
+        <translation><!-- B3 - Peruano --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B4 - Español</masterLabel>
+        <translation><!-- B4 - Español --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B5 - Americano</masterLabel>
+        <translation><!-- B5 - Americano --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B6 - Chino</masterLabel>
+        <translation><!-- B6 - Chino --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B7 - Sushi</masterLabel>
+        <translation><!-- B7 - Sushi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B8 - Almacén / Tienda</masterLabel>
+        <translation><!-- B8 - Almacén / Tienda --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B9 - Naturista</masterLabel>
+        <translation><!-- B9 - Naturista --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C0 - Hotel</masterLabel>
+        <translation><!-- C0 - Hotel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C1 - Banquetería</masterLabel>
+        <translation><!-- C1 - Banquetería --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C2 - Comida Casera / Menú</masterLabel>
+        <translation><!-- C2 - Comida Casera / Menú --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C3 - Servicios Alimentaci</masterLabel>
+        <translation><!-- C3 - Servicios Alimentaci --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C4 - Otros</masterLabel>
+        <translation><!-- C4 - Otros --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C5 - Petroleras</masterLabel>
+        <translation><!-- C5 - Petroleras --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C6 - DIST.Y MAYORISTAS</masterLabel>
+        <translation><!-- C6 - DIST.Y MAYORISTAS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C7 - CLIENTE BOLETA</masterLabel>
+        <translation><!-- C7 - CLIENTE BOLETA --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>1</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.Correo_de_usuario__c</field>
+                <operation>notEqual</operation>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Usuario__c</field>
+                <operation>notEqual</operation>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <replyToEmail>jparral@icbfs.cl</replyToEmail>
+            <senderEmail>jparral@icbfs.cl</senderEmail>
+            <senderName>Jose Parra</senderName>
+            <template>unfiled$public/Auto_respuesta_WebToCase</template>
+        </ruleEntry>
+    </autoResponseRule>
+</AutoResponseRules>

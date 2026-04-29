@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Estado de la visita --></label>
+    <name>Estado_de_la_visita__c</name>
+    <picklistValues>
+        <masterLabel>Concretada</masterLabel>
+        <translation><!-- Concretada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Lograda</masterLabel>
+        <translation><!-- No Lograda --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Programada</masterLabel>
+        <translation><!-- Programada --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

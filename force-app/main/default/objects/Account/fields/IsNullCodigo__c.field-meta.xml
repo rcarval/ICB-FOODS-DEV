@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsNullCodigo__c</fullName>
+    <description>Campo auxiliar para verificar si Status Juridico tiene valores o no.</description>
+    <formula>OR (ISPICKVAL(Status_Jur_dico__c,&quot;&quot;), ISBLANK(Codigo_Ramo__c))</formula>
+    <label>IsNullCodigo</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

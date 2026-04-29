@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Motivo --></label>
+    <name>Motivo__c</name>
+    <picklistValues>
+        <masterLabel>Baja demanda / cierre temporal</masterLabel>
+        <translation><!-- Baja demanda / cierre temporal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Calidad / insatisfacción con producto</masterLabel>
+        <translation><!-- Calidad / insatisfacción con producto --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cambio de proveedor o marca</masterLabel>
+        <translation><!-- Cambio de proveedor o marca --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fecha especial</masterLabel>
+        <translation><!-- Fecha especial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Otro</masterLabel>
+        <translation><!-- Otro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Precio elevado</masterLabel>
+        <translation><!-- Precio elevado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Producto descontinuado o sin stock</masterLabel>
+        <translation><!-- Producto descontinuado o sin stock --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Promoción o compra puntual</masterLabel>
+        <translation><!-- Promoción o compra puntual --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

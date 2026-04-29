@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Negocio_Gastronomico__c$Name</field>
+    </columns>
+    <columns>
+        <field>Negocio_Gastronomico__c.Accounts__r$Name</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Negocio_Gastronomico__c$Cliente_Contactado__c</field>
+    </columns>
+    <columns>
+        <field>Negocio_Gastronomico__c$Primer_Contacto_Lead__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Negocio_Gastronomico__c$Cantidad_de_dias__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Negocio_Gastronomico__c$Cliente_creado__c</field>
+    </columns>
+    <columns>
+        <field>Negocio_Gastronomico__c.Accounts__r$C_digo_de_cliente__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Leads contactados seguimiento</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>negocio_gastronomico_clientes__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Negocio_Gastronomico__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,345 @@
+<template>
+    <template if:false={isActualizarClicked}>
+        <lightning-card title="Maestra de Precios" icon-name="standard:pricebook">
+            <!-- Sección de Encabezado -->
+            <div class="slds-grid slds-wrap slds-p-around_medium slds-box slds-theme_shade slds-m-bottom_medium header-container">
+                <div class="slds-col slds-size_1-of-2">
+                    <div class="slds-media">
+                        <div class="slds-media__figure">
+                            <lightning-icon icon-name="standard:user" size="medium" class="header-icon"></lightning-icon>
+                        </div>
+                        <div class="slds-media__body">
+                            <p class="slds-text-heading_medium account-name">Cliente: {displayAccountName}</p>
+                            <p class="slds-text-body_regular">{encabezado}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-col slds-size_1-of-2 slds-text-align_right">
+                    <lightning-button 
+                        variant="brand" 
+                        label="Actualizar Maestra Actual" 
+                        onclick={handleActualizar}
+                        disabled={isUpdateButtonDisabled}>
+                    </lightning-button>
+                </div>
+            </div>
+
+            <!-- Campo de búsqueda y filtros -->
+            <div class="search-container slds-p-horizontal_medium slds-m-bottom_medium">
+                <div class="slds-grid slds-grid_align-spread slds-grid_vertical-align-center slds-m-bottom_small">
+                    <div class="slds-col slds-size_1-of-2">
+                        <div class="slds-media">
+                            <div class="slds-media__figure">
+                                <lightning-icon icon-name="standard:product" size="small" class="product-icon"></lightning-icon>
+                            </div>
+                            <div class="slds-media__body">
+                                <h2 class="slds-text-heading_small">Productos</h2>
+                                <p class="slds-text-body_small slds-text-color_weak" if:true={productsAvailable}>
+                                    {paginationInfo}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slds-col search-input-container">
+                        <div class="slds-form-element">
+                            <label class="slds-form-element__label" for="search-input">B&uacute;squeda r&aacute;pida</label>
+                            <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_left-right">
+                                <lightning-icon
+                                    icon-name="utility:search"
+                                    size="x-small"
+                                    alternative-text="Buscar"
+                                    class="slds-icon slds-input__icon slds-input__icon_left slds-icon-text-default">
+                                </lightning-icon>
+                                <input
+                                    id="search-input"
+                                    type="search"
+                                    value={searchTerm}
+                                    oninput={handleSearch}
+                                    placeholder="Buscar por SKU o descripci&oacute;n..."
+                                    class="slds-input professional-input"
+                                    disabled={isDataDisabled}
+                                />
+                                <template if:true={searchTerm}>
+                                    <button class="slds-button slds-button_icon slds-input__icon slds-input__icon_right" 
+                                            title="Limpiar b&uacute;squeda"
+                                            aria-label="Limpiar b&uacute;squeda"
+                                            onclick={clearSearch}
+                                            disabled={isDataDisabled}>
+                                        <lightning-icon
+                                            icon-name="utility:clear"
+                                            size="x-small"
+                                            alternative-text="Limpiar b&uacute;squeda">
+                                        </lightning-icon>
+                                    </button>
+                                </template>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Filtros avanzados con accordion -->
+                <template if:true={hasData}>
+                    <div class="filters-section slds-m-top_medium">
+                        <lightning-accordion allow-multiple-sections-open="false" active-section-name={activeFilterSection} onsectiontoggle={handleAccordionSectionToggle}>
+                            <lightning-accordion-section name="advancedFilters" label="Filtros Avanzados">
+                                <template slot="title">
+                                    <div class="slds-media">
+                                        <div class="slds-media__figure">
+                                            <lightning-icon icon-name="utility:filterList" size="x-small" class="filter-icon"></lightning-icon>
+                                        </div>
+                                        <div class="slds-media__body">
+                                            <span class="filters-title">Filtros Avanzados</span>
+                                            <template if:true={hasAdvancedFilters}>
+                                                <lightning-badge label="Filtros activos" class="active-badge"></lightning-badge>
+                                            </template>
+                                        </div>
+                                    </div>
+                                </template>
+                                <div class="filters-header">
+                                    <template if:true={hasAdvancedFilters}>
+                                        <lightning-button 
+                                            variant="neutral" 
+                                            icon-name="utility:clear"
+                                            label="Limpiar filtros"
+                                            onclick={clearAdvancedFilters}
+                                            class="clear-filters-btn">
+                                        </lightning-button>
+                                    </template>
+                                </div>
+                                <div class="advanced-filters-container">
+                                    <div class="slds-grid slds-wrap slds-gutters">
+                            <div class="slds-col slds-size_1-of-3">
+                                <lightning-input
+                                    label="Precio M&iacute;nimo"
+                                    type="number"
+                                    value={precioMin}
+                                    onchange={handlePrecioMinChange}
+                                    formatter="currency"
+                                    step="0.01"
+                                    disabled={isDataDisabled}>
+                                </lightning-input>
+                            </div>
+                            <div class="slds-col slds-size_1-of-3">
+                                <lightning-input
+                                    label="Precio M&aacute;ximo"
+                                    type="number"
+                                    value={precioMax}
+                                    onchange={handlePrecioMaxChange}
+                                    formatter="currency"
+                                    step="0.01"
+                                    disabled={isDataDisabled}>
+                                </lightning-input>
+                            </div>
+                            <div class="slds-col slds-size_1-of-3">
+                                <lightning-input
+                                    label="Descuento M&iacute;nimo (%)"
+                                    type="number"
+                                    value={descuentoMin}
+                                    onchange={handleDescuentoMinChange}
+                                    min="0"
+                                    max="100"
+                                    step="0.01"
+                                    disabled={isDataDisabled}>
+                                </lightning-input>
+                            </div>
+                            <div class="slds-col slds-size_1-of-3">
+                                <lightning-input
+                                    label="Descuento M&aacute;ximo (%)"
+                                    type="number"
+                                    value={descuentoMax}
+                                    onchange={handleDescuentoMaxChange}
+                                    min="0"
+                                    max="100"
+                                    step="0.01"
+                                    disabled={isDataDisabled}>
+                                </lightning-input>
+                            </div>
+                            <div class="slds-col slds-size_1-of-3">
+                                <lightning-input
+                                    label="Fecha Desde"
+                                    type="date"
+                                    value={fechaDesde}
+                                    onchange={handleFechaDesdeChange}
+                                    disabled={isDataDisabled}>
+                                </lightning-input>
+                            </div>
+                            <div class="slds-col slds-size_1-of-3">
+                                <lightning-input
+                                    label="Fecha Hasta"
+                                    type="date"
+                                    value={fechaHasta}
+                                    onchange={handleFechaHastaChange}
+                                    disabled={isDataDisabled}>
+                                </lightning-input>
+                            </div>
+                            <div class="slds-col slds-size_1-of-3">
+                                <div class="slds-form-element">
+                                    <label class="slds-form-element__label">Filtrar por Fugados</label>
+                                    <div class="slds-form-element__control">
+                                        <select class="slds-select" value={filtroFugados} onchange={handleFiltroFugadosChange} disabled={isDataDisabled}>
+                                            <option value="all">Todos</option>
+                                            <option value="yes">S&iacute;</option>
+                                            <option value="no">No</option>
+                                        </select>
+                                    </div>
+                                    <p class="slds-form-element__help slds-m-top_xx-small">El indicador Fugados se basa en compras de los &uacute;ltimos 3 meses.</p>
+                                </div>
+                            </div>
+                                    </div>
+                                </div>
+                            </lightning-accordion-section>
+                        </lightning-accordion>
+                    </div>
+                </template>
+            </div>
+
+            <!-- Spinner mientras se cargan los datos -->
+            <template if:false={productsAvailable}>
+                <div class="slds-align_absolute-center slds-m-vertical_x-large">
+                    <lightning-spinner alternative-text="Cargando..." size="medium"></lightning-spinner>
+                    <p class="slds-text-body_regular slds-m-top_small">Cargando maestra de precios...</p>
+                </div>
+            </template>
+
+            <!-- Mensaje de error cuando hay un problema -->
+            <template if:true={hasError}>
+                <div class="error-state-container">
+                    <div class="error-content">
+                        <div class="error-icon-wrapper">
+                            <lightning-icon icon-name="utility:error" size="large" class="error-icon"></lightning-icon>
+                        </div>
+                        <div class="error-text">
+                            <h3 class="error-title">Error al cargar la maestra de precios</h3>
+                            <p class="error-message">{errorMessage}</p>
+                        </div>
+                    </div>
+                </div>
+            </template>
+
+            <!-- Mensaje cuando no hay datos iniciales (solo si no hay error) -->
+            <template if:true={isEmptyWithoutFilters}>
+                <template if:false={hasError}>
+                <div class="empty-state-container">
+                    <div class="slds-media">
+                        <div class="slds-media__figure">
+                            <lightning-icon icon-name="utility:info" size="large" class="slds-icon-text-default"></lightning-icon>
+                        </div>
+                        <div class="slds-media__body">
+                            <h3 class="slds-text-heading_small">No hay productos disponibles</h3>
+                            <p>No se encontraron productos para este cliente. Por favor, verifica la informaci&oacute;n o contacta al administrador.</p>
+                        </div>
+                    </div>
+                </div>
+                </template>
+            </template>
+
+            <!-- Mensaje cuando no hay resultados con filtros aplicados -->
+            <template if:true={noResultsFound}>
+                <template if:false={isEmptyWithoutFilters}>
+                    <div class="slds-box slds-align_absolute-center slds-theme_warning slds-m-around_medium no-results-container">
+                        <div class="slds-media">
+                            <div class="slds-media__figure">
+                                <lightning-icon icon-name="utility:warning" size="large" class="slds-icon-text-warning"></lightning-icon>
+                            </div>
+                            <div class="slds-media__body">
+                                <h3 class="slds-text-heading_small">No se encontraron resultados</h3>
+                                <p>No hay productos que coincidan con los filtros aplicados. Intenta ajustar los criterios de b&uacute;squeda.</p>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </template>
+
+            <!-- Tabla de Registros usando lightning-datatable -->
+            <template if:true={productsAvailable}>
+                <template if:true={hasData}>
+                    <template if:true={filteredData.length}>
+                        <div class="table-container">
+                            <lightning-datatable
+                                key-field="id"
+                                data={paginatedData}
+                                columns={columns}
+                                hide-checkbox-column="true"
+                                class="professional-datatable"
+                                onsort={handleSort}
+                                sorted-by={sortedBy}
+                                sorted-direction={sortedDirection}
+                                default-sort-direction="asc"
+                            ></lightning-datatable>
+                        </div>
+                        
+                        <!-- Controles de paginación -->
+                        <template if:true={filteredData.length}>
+                            <div class="pagination-container slds-m-top_medium slds-m-bottom_medium">
+                                <div class="slds-grid slds-grid_align-spread slds-grid_vertical-align-center pagination-layout">
+                                    <div class="slds-col pagination-left">
+                                        <div class="slds-form-element">
+                                            <label class="slds-form-element__label" for="page-size-select">Productos por p&aacute;gina:</label>
+                                            <div class="slds-form-element__control">
+                                                <select class="slds-select page-size-select" value={pageSizeString} onchange={handlePageSizeChange}>
+                                                    <option value="5">5</option>
+                                                    <option value="25">25</option>
+                                                    <option value="50">50</option>
+                                                    <option value="100">100</option>
+                                                    <option value="200">200</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slds-col pagination-center">
+                                        <div class="pagination-controls">
+                                            <lightning-button-icon 
+                                                icon-name="utility:chevronleft" 
+                                                alternative-text="P&aacute;gina anterior"
+                                                title="P&aacute;gina anterior"
+                                                onclick={previousPage}
+                                                disabled={isFirstPage}
+                                                variant="neutral"
+                                                class="pagination-nav-button">
+                                            </lightning-button-icon>
+                                            
+                                            <template for:each={pageNumbers} for:item="page">
+                                                <lightning-button 
+                                                    key={page.number}
+                                                    variant={page.variant}
+                                                    label={page.number}
+                                                    data-page={page.number}
+                                                    onclick={handlePageClick}
+                                                    class="pagination-button">
+                                                </lightning-button>
+                                            </template>
+                                            
+                                            <lightning-button-icon 
+                                                icon-name="utility:chevronright" 
+                                                alternative-text="P&aacute;gina siguiente"
+                                                title="P&aacute;gina siguiente"
+                                                onclick={nextPage}
+                                                disabled={isLastPage}
+                                                variant="neutral"
+                                                class="pagination-nav-button">
+                                            </lightning-button-icon>
+                                        </div>
+                                    </div>
+                                    <div class="slds-col pagination-right">
+                                        <p class="pagination-info">
+                                            P&aacute;gina <strong>{currentPage}</strong> de <strong>{totalPages}</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </template>
+                    </template>
+                </template>
+            </template>
+        </lightning-card>
+    </template>
+    <template if:true={isActualizarClicked}>
+        <c-panel-seteo
+            account-id-value={accountIdValue}
+            account-name={accountName}
+            onatrasclicked={handleAtrasClicked}
+            should-filter=true
+            initial-product-data={initialProductData}>
+        </c-panel-seteo>
+    </template>
+</template>

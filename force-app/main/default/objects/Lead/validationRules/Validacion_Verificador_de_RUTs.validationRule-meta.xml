@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validacion_Verificador_de_RUTs</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT(ISBLANK(RUT__c)),
+OR(
+LEN(RUT__c) &lt; 3,
+LEN(RUT__c) &gt; 11,
+MID(RUT__c, LEN(RUT__c) - 1, 1) &lt;&gt; &quot;-&quot;,
+CONTAINS(MID(RUT__c, 1, LEN(RUT__c) - 2), &quot;.&quot;),
+CONTAINS(MID(RUT__c, 1, LEN(RUT__c) - 2), &quot;,&quot;),
+MID(RUT__c, 1, 1) = &quot;0&quot;,
+NOT(ISNUMBER(MID(RUT__c, 1, LEN(RUT__c) - 2))),
+AND(
+NOT(ISNUMBER(MID(RUT__c, LEN(RUT__c), 1))),
+MID(RUT__c, LEN(RUT__c), 1) &lt;&gt; &quot;K&quot;
+),
+NOT(
+11 - MOD(
+IF(LEN(RUT__c) &gt; 2, VALUE(MID(RUT__c, LEN(RUT__c) - 2, 1)) * 2, 0) +
+IF(LEN(RUT__c) &gt; 3, VALUE(MID(RUT__c, LEN(RUT__c) - 3, 1)) * 3, 0) +
+IF(LEN(RUT__c) &gt; 4, VALUE(MID(RUT__c, LEN(RUT__c) - 4, 1)) * 4, 0) +
+IF(LEN(RUT__c) &gt; 5, VALUE(MID(RUT__c, LEN(RUT__c) - 5, 1)) * 5, 0) +
+IF(LEN(RUT__c) &gt; 6, VALUE(MID(RUT__c, LEN(RUT__c) - 6, 1)) * 6, 0) +
+IF(LEN(RUT__c) &gt; 7, VALUE(MID(RUT__c, LEN(RUT__c) - 7, 1)) * 7, 0) +
+IF(LEN(RUT__c) &gt; 8, VALUE(MID(RUT__c, LEN(RUT__c) - 8, 1)) * 2, 0) +
+IF(LEN(RUT__c) &gt; 9, VALUE(MID(RUT__c, LEN(RUT__c) - 9, 1)) * 3, 0) +
+IF(LEN(RUT__c) &gt; 10, VALUE(MID(RUT__c, LEN(RUT__c) - 10, 1)) * 4, 0),
+11
+) = IF(
+MID(RUT__c, LEN(RUT__c), 1) = &apos;K&apos;,
+10,
+IF(
+MID(RUT__c, LEN(RUT__c), 1) = &apos;0&apos;,
+11,
+VALUE(MID(RUT__c, LEN(RUT__c), 1))
+)
+)
+)
+)
+)</errorConditionFormula>
+    <errorDisplayField>RUT__c</errorDisplayField>
+    <errorMessage>Ingrese un Rut Valido</errorMessage>
+</ValidationRule>

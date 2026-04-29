@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Direccion_de_Despacho__c</fullName>
+    <label>Dirección de Despacho</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Address</type>
+</CustomField>

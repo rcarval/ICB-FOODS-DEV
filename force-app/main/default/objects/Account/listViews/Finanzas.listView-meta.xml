@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Finanzas</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>RUT__c</columns>
+    <columns>Razon_Social__c</columns>
+    <columns>ACCOUNT.ADDRESS2_STREET</columns>
+    <columns>ACCOUNT.ADDRESS1_STREET</columns>
+    <columns>Comuna_Despacho__c</columns>
+    <columns>Comuna_Facturaci_n__c</columns>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <columns>ACCOUNT.LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CORE.USERS.FIRST_NAME</field>
+        <operation>notEqual</operation>
+        <value>jose</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.LAST_NAME</field>
+        <operation>notEqual</operation>
+        <value>Parra</value>
+    </filters>
+    <filters>
+        <field>C_digo_de_cliente__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>Finanzas</label>
+    <sharedTo>
+        <role>Finanzas</role>
+    </sharedTo>
+</ListView>

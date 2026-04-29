@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Envio_Mail</name>
+        <label>Envio Mail</label>
+        <locationX>50</locationX>
+        <locationY>539</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>busco_mail_creditos.Correo_Referente_Cr_ditos__c</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>Asunto</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>TextoMail</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>relatedRecordId</name>
+            <value>
+                <elementReference>$Record.Account.Razon_Social__c</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_Email_Action_2</name>
+        <label>envioMailMediocampo</label>
+        <locationX>578</locationX>
+        <locationY>863</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>AsignoMediocampo</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>BuscoSuperior.Email</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Solicitud de Crédito de confianza</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>TextoMailConfianza</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+    </actionCalls>
+    <apiVersion>61.0</apiVersion>
+    <assignments>
+        <name>AsignoMediocampo</name>
+        <label>AsignoMediocampo</label>
+        <locationX>578</locationX>
+        <locationY>971</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.OwnerId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>BuscoSuperior.Id</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <customErrors>
+        <name>Fecha_tarea_previa</name>
+        <label>Fecha tarea previa</label>
+        <locationX>314</locationX>
+        <locationY>539</locationY>
+        <customErrorMessages>
+            <errorMessage>No hay tarea previa de pedido de aumento dentro de los 60 días</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <decisions>
+        <name>Si_encotre_mail</name>
+        <label>Si encotre mail</label>
+        <locationX>710</locationX>
+        <locationY>755</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>encotre_mail</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>BuscoSuperior.Email</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Email_Action_2</targetReference>
+            </connector>
+            <label>encotre mail</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Veo_tipo</name>
+        <label>Veo tipo</label>
+        <locationX>534</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Es_de_aumento_credito</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Solicitud aumento crédito</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>busco_mail_creditos</targetReference>
+            </connector>
+            <label>Es de aumento credito</label>
+        </rules>
+        <rules>
+            <name>Es_credito_de_confianza</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Solicitud Crédito de confianza</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>verifico_fecha</targetReference>
+            </connector>
+            <label>Es credito de confianza</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>verifico_fecha</name>
+        <label>verifico fecha</label>
+        <locationX>512</locationX>
+        <locationY>431</locationY>
+        <defaultConnector>
+            <targetReference>Get_Records_2</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>No_se_acepta</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account.Fecha_Rechazo_Aumento_cr_dito__c</leftValueReference>
+                <operator>LessThan</operator>
+                <rightValue>
+                    <elementReference>Fechamenos2</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Account.Fecha_Rechazo_Aumento_cr_dito__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Fecha_tarea_previa</targetReference>
+            </connector>
+            <label>No se acepta</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>Fechamenos2</name>
+        <dataType>Date</dataType>
+        <expression>today() - 60</expression>
+    </formulas>
+    <interviewLabel>NuevaActividad {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>NuevaActividad</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>busco_mail_creditos</name>
+        <label>busco mail creditos</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Envio_Mail</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>User</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>BuscoSuperior</name>
+        <label>BuscoSuperior</label>
+        <locationX>710</locationX>
+        <locationY>647</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Si_encotre_mail</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>UserRoleId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Records_2.ParentRoleId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>User</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Records_2</name>
+        <label>Get Records 2</label>
+        <locationX>710</locationX>
+        <locationY>539</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>BuscoSuperior</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$UserRole.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>UserRole</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>408</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Veo_tipo</targetReference>
+        </connector>
+        <object>Task</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>TextoMail</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Estimados:
+Solicito aumento de crédito para el cliente:  
+{!$Record.Account.C_digo_de_cliente__c}- {!$Record.Account.Razon_Social__c}
+Rut: {!$Record.Account.RUT__c}
+Monto: {!$Record.Monto_del_Cr_dito__c}
+Plazo (meses): {!$Record.Plazo_meses__c}
+Quedo a la espera de su respuesta.
+Atentamente
+{!$User.FirstName} {!$User.LastName}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>TextoMailConfianza</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Tiene un pedido de Solicitud de Crédito de confianza.
+{!$Record.Account.C_digo_de_cliente__c} - {!$Record.Account.Name}
+Monto: {!$Record.Monto_del_Cr_dito__c}  
+Plazo(meses): {!$Record.Plazo_meses__c}
+Solicitado por {!$User.FirstName} {!$User.LastName}</text>
+    </textTemplates>
+    <variables>
+        <name>Asunto</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Solicitud aumento de crédito</stringValue>
+        </value>
+    </variables>
+</Flow>

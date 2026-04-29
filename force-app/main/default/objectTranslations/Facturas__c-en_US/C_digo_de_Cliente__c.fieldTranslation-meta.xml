@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Código de Cliente --></label>
+    <name>C_digo_de_Cliente__c</name>
+</CustomFieldTranslation>

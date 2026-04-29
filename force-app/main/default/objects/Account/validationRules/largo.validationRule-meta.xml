@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>largo</fullName>
+    <active>true</active>
+    <errorConditionFormula>LEN( BillingStreet) &gt; 50 &amp;&amp; LEN( ShippingStreet ) &gt; 50</errorConditionFormula>
+    <errorDisplayField>BillingStreet</errorDisplayField>
+    <errorMessage>Los campos de dirección deben contener menos de 50 caracteres</errorMessage>
+</ValidationRule>

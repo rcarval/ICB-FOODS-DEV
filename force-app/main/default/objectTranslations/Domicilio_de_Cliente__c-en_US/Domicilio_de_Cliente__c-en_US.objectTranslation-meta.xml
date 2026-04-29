@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Domicilio de Cliente</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Domicilio de Clientes</value>
+    </caseValues>
+    <layouts>
+        <layout>Domicilio de Cliente Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Información de Sistema --></label>
+            <section>Información de Sistema</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Obtener Lat | Long --></label>
+        <name>Obtener_Lat_Long</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- No tiene permitido el cambio de propietario --></errorMessage>
+        <name>Cambio_de_propietarios</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- no es posible crear direccion si Cliente no posee FS Valido generado por SAP --></errorMessage>
+        <name>Evitar_creacion_sin_FS</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Domicilio Adicional Dirección, no puede tener mas de 30 caracteres --></errorMessage>
+        <name>Largo_domicilio</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- No se puede crear un registro antes de 3 minutos de creada la cuenta. --></errorMessage>
+        <name>Regla_de_3_minutos</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- No se puede modificar el domicilio ingresado --></errorMessage>
+        <name>ValidoModif</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- La región y la comuna son obligatorios para guardar el registro --></errorMessage>
+        <name>obligatoriedadRegionComuna</name>
+    </validationRules>
+</CustomObjectTranslation>

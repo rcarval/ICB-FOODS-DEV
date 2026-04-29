@@ -1,0 +1,32 @@
+<template>
+    <!-- Barra de búsqueda -->
+    <div class="slds-m-bottom_medium">
+        <lightning-input
+            label="Buscar"
+            placeholder="Buscar productos..."
+            type="search"
+            value={searchTerm}
+            onchange={handleSearch}>
+        </lightning-input>
+    </div>
+
+    <!-- Spinner mientras se cargan los datos -->
+    <template if:true={showSpinner}>
+        <div class="slds-is-relative slds-m-top_xx-large">
+            <lightning-spinner alternative-text="Cargando..." size="medium"></lightning-spinner>
+        </div>
+    </template>
+
+    <!-- Tabla de resultados -->
+    <template if:false={showSpinner}>
+        <lightning-datatable
+            class="slds-m-top_medium"
+            key-field="id"
+            data={data}
+            columns={columns}
+            enable-infinite-loading
+            onloadmore={handleOnLoadMore}
+            onrowselection={handleSelectedRow}>
+        </lightning-datatable>
+    </template>
+</template>

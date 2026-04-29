@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumnStacked</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>User.Opportunity$CreatedById$Sucursal__c</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <secondaryGroupingColumn>User.Opportunity$CreatedById$Canal__c</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>User$Name</field>
+    </columns>
+    <columns>
+        <field>User.Opportunity$CreatedById$Id</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>IF(User.UserRole.Name = &quot;Asesores Comerciales 1&quot;, &quot;Albert Fresco&quot;,
+  IF(User.UserRole.Name = &quot;Asesores Comerciales 2&quot;, &quot;Patricia Gomez&quot;,
+    IF(User.UserRole.Name = &quot;Asesores Comerciales 3&quot;, &quot;Jimena Fau&quot;,
+      IF(User.UserRole.Name = &quot;Asesores Comerciales 4&quot;, &quot;Pedro Salgado&quot;,
+        IF(User.UserRole.Name = &quot;Asesores Comerciales 5&quot;, &quot;Andres Ortiz&quot;,
+          IF(User.UserRole.Name = &quot;Asesores Comerciales 6&quot;, &quot;Leonardo Flores&quot;,
+            IF(User.UserRole.Name = &quot;Asesores Comerciales 7&quot;, &quot;Rene Avila&quot;,
+              IF(User.UserRole.Name = &quot;Asesores Comerciales 8&quot;, &quot;Mariana Pizarro&quot;,
+                IF(User.UserRole.Name = &quot;Asesores Comerciales 9&quot;, &quot;Paulo Artal&quot;,
+                  IF(User.UserRole.Name = &quot;Asesores Comerciales 10&quot;, &quot;Ian Rojas&quot;,
+                    IF(User.UserRole.Name = &quot;Asesores Comerciales 11&quot;, &quot;Tomas Aravena&quot;,
+                      IF(User.UserRole.Name = &quot;Asesores Comerciales 12&quot;, &quot;Rodrigo Medina&quot;,
+                        IF(User.UserRole.Name = &quot;Asesores Comerciales 13&quot;, &quot;Francisco Lopez&quot;, &quot;&quot;)
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+    )
+  )
+)</calculatedFormula>
+        <dataType>Text</dataType>
+        <developerName>CDF1</developerName>
+        <label>Medio Campo</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <description>Marzo Abril Junio</description>
+    <filter>
+        <criteriaItems>
+            <column>User.Opportunity$CreatedById$Owner</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Jose Parra</value>
+        </criteriaItems>
+        <language>es_MX</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>User.Opportunity$CreatedById$Canal__c</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User.Opportunity$CreatedById$Sucursal__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Oportunidad por Canal/Sucursal.</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>usuarios_oportunidades__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>User.Opportunity$CreatedById$CreatedDate</dateColumn>
+        <endDate>2025-05-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2025-03-01</startDate>
+    </timeFrameFilter>
+</Report>

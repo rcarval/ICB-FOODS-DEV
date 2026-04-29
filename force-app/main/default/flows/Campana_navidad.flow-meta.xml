@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>65.0</apiVersion>
+    <decisions>
+        <name>decidir_si_visto</name>
+        <label>decidir si visto</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>campana_navide_a</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Mostrar Flayer</defaultConnectorLabel>
+        <rules>
+            <name>ya_vio_campana</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>obtener_usuario_actual.Campana_Navidad__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>ya vio campana</label>
+        </rules>
+    </decisions>
+    <description>Me muestra un Flyer de una campaña navideña en la pantalla principal + update records + cambio tamaño
+- Cambio de foto para Campaña Copa Davis</description>
+    <environments>Default</environments>
+    <interviewLabel>Campana navidad {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Campana navidad</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <name>obtener_usuario_actual</name>
+        <label>obtener usuario actual</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>decidir_si_visto</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>User</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>usuario vé flyer</description>
+        <name>marcar_como_visto</name>
+        <label>marcar como visto</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>obtener_usuario_actual.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Campana_Navidad__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>User</object>
+    </recordUpdates>
+    <screens>
+        <name>campana_navide_a</name>
+        <label>campana_navideña</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>marcar_como_visto</targetReference>
+        </connector>
+        <fields>
+            <name>flyer_navidad</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;{!$Resource.Copa_Davis_Lavazza}&quot; alt=&quot;Copa Davis&quot;&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <nextOrFinishButtonLabel>Entendido, ¡Gracias!</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>obtener_usuario_actual</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+</Flow>

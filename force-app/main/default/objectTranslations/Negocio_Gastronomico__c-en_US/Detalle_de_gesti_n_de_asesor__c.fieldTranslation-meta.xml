@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Detalle de gestión de asesor --></label>
+    <name>Detalle_de_gesti_n_de_asesor__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,33 @@
+<messaging:emailTemplate subject="ICB Food Service #OPENDAY" recipientType="Lead" relatedToType="Lead">
+  <messaging:htmlEmailBody >
+    <html>
+      <body style="font-family: Arial, sans-serif; color: white; background-color: #1a1a1a; padding: 20px; text-align: center;">
+
+        <img src="{!URLFOR($Resource.imagenICB)}&oid=00D7z00000ZVxE9" alt="prueba" width="50%" style="margin-bottom: 20px;"/>
+
+        
+        <img src="https://energy-saas-7178.my.salesforce.com/servlet/servlet.ImageServer?id=015Pr00000FGMju&oid=00D7z00000ZVxE9&lastMod=1753898167000" alt="ICB Food Header" width="100%" style="margin-bottom: 20px;" />
+
+  <center>
+        <p>
+ <img 
+  src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Id"
+  alt="Código QR"
+  width="300" height="300"
+  style="border: 1px solid #fff;" />
+
+</p>
+
+
+        </center>
+
+        <img src="https://energy-saas-7178.my.salesforce.com/servlet/servlet.ImageServer?id=015Pr00000FGN3F&oid=00D7z00000ZVxE9&lastMod=1753898200000" alt="ICB Food Header" width="100%" style="margin-bottom: 20px;" />
+
+
+        <img src="https://energy-saas-7178.file.force.com/servlet/servlet.FileDownload?file=015Pr00000G6aUl" alt="ICB Food Header" width="100%" style="margin-bottom: 20px;" />
+
+
+      </body>
+    </html>
+  </messaging:htmlEmailBody>
+</messaging:emailTemplate>

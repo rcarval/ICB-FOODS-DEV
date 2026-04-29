@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Es_parte_de_Holding_y_parent_acc</fullName>
+    <active>false</active>
+    <description>Si es parte de holding pedir un parent account</description>
+    <errorConditionFormula>AND(
+   Es_Parte_de_un_Holding__c  = TRUE,
+  ISBLANK( Parent.Name )
+)</errorConditionFormula>
+    <errorDisplayField>ParentId</errorDisplayField>
+    <errorMessage>Por favor completar el campo Parent Account</errorMessage>
+</ValidationRule>

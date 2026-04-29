@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ICBFS</letterhead>
+    <name>Bienvenida b2b auto</name>
+    <style>freeForm</style>
+    <subject>¡Bienvenido a ICBFS! Tu cuenta está lista  y tu primer pedido tiene un regalo 🎁</subject>
+    <textOnly>Hola ,
+
+Nos alegra tenerte con nosotros. Y para darte la mejor bienvenida posible, tenemos un regalo para ti:
+
+🎉 Disfruta 20% de descuento para tu bienvenida
+         [Quiero comprar]
+
+Ahora que ya tienes tu descuento, descubre todo lo que PIA tiene para ti:
+
+🛒 Un portafolio amplio para tu negocio Encuentra todo lo que necesitas en un solo lugar. Desde carnes y bollería hasta café y mucho más — una amplia variedad de categorías pensadas para abastecer tu negocio sin tener que buscar en varios proveedores.
+
+🕐 Haz tus pedidos hasta las 23:59 ¿Se te pasó el horario? Con PIA, eso ya no existe. Ingresa tus pedidos hasta la medianoche, todos los días.
+
+💳 Paga como prefieras, con un solo clic Débito, crédito o transferencia bancaria — elige el medio que más te convenga.
+
+📦 Sigue tu pedido en tiempo real Desde que confirmas tu compra hasta que llega a tus manos, puedes ver el estado de despacho de tu pedido en todo momento.
+
+🧾 Tus facturas, siempre a la mano Accede al historial de tus comprobantes desde la plataforma, cuando los necesites. Sin llamadas, sin esperas.
+
+¿Tienes alguna duda? Estamos para ayudarte en:
+📲 WhatsApp: +56 9 273 08510
+📧 Correo: ccc@icbfs.cl
+
+ICB Food Service
+Tu socio estratégico para tu negocio
+
+
+Saludos,</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

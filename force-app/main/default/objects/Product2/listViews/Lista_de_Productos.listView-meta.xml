@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lista_de_Productos</fullName>
+    <columns>Codigo__c</columns>
+    <columns>PRODUCT2.NAME</columns>
+    <columns>Marca__c</columns>
+    <columns>TextoUMV__c</columns>
+    <columns>UMV__c</columns>
+    <columns>TextoFamilia__c</columns>
+    <columns>TextoCategoria__c</columns>
+    <columns>Descuento_Autonomo_de_Asesor__c</columns>
+    <columns>Descuento_Autonomo_de_Mediocampo__c</columns>
+    <columns>Fecha_maxima_de_descuento__c</columns>
+    <columns>D_as_m_ximo_de_descuento__c</columns>
+    <columns>PRODUCT2.ACTIVE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PRODUCT2.NAME</field>
+        <operation>contains</operation>
+        <value>sucralosa,lavazza</value>
+    </filters>
+    <label>Lista de Productos</label>
+</ListView>

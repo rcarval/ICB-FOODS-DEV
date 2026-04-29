@@ -1,0 +1,6 @@
+Nueva Asignación de Lead
+
+El siguiente Lead fue asignado a usted.  
+Nombre del Lead:  {!Lead.Name}  
+
+Puede Ingresar directamente en el Link:  {!Lead.Link}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tipo de café --></label>
+    <name>Tipo_de_caf__c</name>
+    <picklistValues>
+        <masterLabel>Cápsula</masterLabel>
+        <translation><!-- Cápsula --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Grano</masterLabel>
+        <translation><!-- Grano --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Molido</masterLabel>
+        <translation><!-- Molido --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

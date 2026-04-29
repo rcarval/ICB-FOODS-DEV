@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <decisions>
+        <description>Decidir entre las oportunidades, cuales deberian pasar a estado Congelado.</description>
+        <name>Aplicar_Estado_Congelado</name>
+        <label>Aplicar Estado Congelado?</label>
+        <locationX>176</locationX>
+        <locationY>252</locationY>
+        <defaultConnector>
+            <targetReference>Congelar_Oportunidad</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Congelar</defaultConnectorLabel>
+        <rules>
+            <name>No_Congelar</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.CloseDate</leftValueReference>
+                <operator>LessThan</operator>
+                <rightValue>
+                    <elementReference>FechaValida</elementReference>
+                </rightValue>
+            </conditions>
+            <label>No Congelar</label>
+        </rules>
+    </decisions>
+    <description>Congela las oportunidades cuya Fecha de Cierre haya sido superada por 30 dias</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>FechaValida</name>
+        <dataType>Date</dataType>
+        <expression>today() - 31</expression>
+    </formulas>
+    <interviewLabel>Congelar Oportunidad2 {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Congelar Oportunidad2</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>Congela las oportunidades filtradas</description>
+        <name>Congelar_Oportunidad</name>
+        <label>Congelar Oportunidad</label>
+        <locationX>308</locationX>
+        <locationY>360</locationY>
+        <inputAssignments>
+            <field>StageName</field>
+            <value>
+                <stringValue>Congelada</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Aplicar_Estado_Congelado</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>StageName</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Propuesta aceptada</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>StageName</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Congelada</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>StageName</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Oportunidad Cerrada</stringValue>
+            </value>
+        </filters>
+        <object>Opportunity</object>
+        <schedule>
+            <frequency>Daily</frequency>
+            <startDate>2024-08-03</startDate>
+            <startTime>06:30:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Obsolete</status>
+    <variables>
+        <name>currentItem_Filtrar_Oportunidades</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+    <variables>
+        <name>OportunidadesAEvaluar</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+</Flow>

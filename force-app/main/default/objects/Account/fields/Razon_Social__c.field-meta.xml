@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Razon_Social__c</fullName>
+    <label>Razon Social</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Responsable Inscripto</fullName>
+                <default>false</default>
+                <label>Responsable Inscripto</label>
+            </value>
+            <value>
+                <fullName>Excento</fullName>
+                <default>false</default>
+                <label>Excento</label>
+            </value>
+            <value>
+                <fullName>Consumidor Final</fullName>
+                <default>false</default>
+                <label>Consumidor Final</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

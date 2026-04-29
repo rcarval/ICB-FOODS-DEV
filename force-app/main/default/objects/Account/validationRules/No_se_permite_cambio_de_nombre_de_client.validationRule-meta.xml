@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_se_permite_cambio_de_nombre_de_client</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  ISCHANGED(Name),
+  NOT(
+    OR(
+      CONTAINS($Profile.Name, &quot;System Administrator&quot;),
+      CONTAINS($Profile.Name, &quot;Administrador&quot;)
+    )
+  ),
+  NOT(ISBLANK(C_digo_de_cliente__c))
+)</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>No está permitido modificar el nombre de la cuenta.</errorMessage>
+</ValidationRule>

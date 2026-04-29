@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inversion_Adicional__c</fullName>
+    <externalId>false</externalId>
+    <label>Inversión Adicional (CLP)</label>
+    <length>35</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

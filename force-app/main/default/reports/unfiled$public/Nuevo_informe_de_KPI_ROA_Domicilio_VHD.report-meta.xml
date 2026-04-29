@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>DomicilioSalesKPI__c$Owner</field>
+    </columns>
+    <columns>
+        <field>DomicilioSalesKPI__c$ActiveCount__c</field>
+    </columns>
+    <columns>
+        <field>DomicilioSalesKPI__c$ChurnedCount__c</field>
+    </columns>
+    <columns>
+        <field>DomicilioSalesKPI__c$RetainedCount__c</field>
+    </columns>
+    <columns>
+        <field>DomicilioSalesKPI__c$NewAccountCount__c</field>
+    </columns>
+    <columns>
+        <field>DomicilioSalesKPI__c$RecoveredCount__c</field>
+    </columns>
+    <columns>
+        <field>DomicilioSalesKPI__c$RetainedPct__c</field>
+    </columns>
+    <columns>
+        <field>DomicilioSalesKPI__c$ChurnPct__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>KPI ROA Domicilio</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>KPI_ROA_Domicilio__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>DomicilioSalesKPI__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Asociacion_Pendiente__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Campo que se va a poner en true cuando desde SAP ya obtengo el codigo de cliente.</description>
+    <label>Asociacion Pendiente</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

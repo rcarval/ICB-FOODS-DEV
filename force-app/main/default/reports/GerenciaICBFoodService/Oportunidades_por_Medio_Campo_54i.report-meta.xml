@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>User.Opportunity$CreatedById$Valor_oportunidad__c</column>
+        </chartSummaries>
+        <chartType>HorizontalBarStacked</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>CDF1</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <secondaryGroupingColumn>User.Opportunity$CreatedById$StageName</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>User$Name</field>
+    </columns>
+    <columns>
+        <field>User.Opportunity$CreatedById$Account</field>
+    </columns>
+    <columns>
+        <field>User.Opportunity$CreatedById$Name</field>
+    </columns>
+    <columns>
+        <field>User$UserRole</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>User.Opportunity$CreatedById$Valor_oportunidad__c</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>IF(User.UserRole.Name = &quot;Asesores Comerciales 1&quot;, &quot;Albert Fresco&quot;,
+  IF(User.UserRole.Name = &quot;Asesores Comerciales 2&quot;, &quot;Patricia Gomez&quot;,
+    IF(User.UserRole.Name = &quot;Asesores Comerciales 3&quot;, &quot;Jimena Fau&quot;,
+      IF(User.UserRole.Name = &quot;Asesores Comerciales 4&quot;, &quot;Pedro Salgado&quot;,
+        IF(User.UserRole.Name = &quot;Asesores Comerciales 5&quot;, &quot;Andres Ortiz&quot;,
+          IF(User.UserRole.Name = &quot;Asesores Comerciales 6&quot;, &quot;Leonardo Flores&quot;,
+            IF(User.UserRole.Name = &quot;Asesores Comerciales 7&quot;, &quot;Rene Avila&quot;,
+              IF(User.UserRole.Name = &quot;Asesores Comerciales 8&quot;, &quot;Mariana Pizarro&quot;,
+                IF(User.UserRole.Name = &quot;Asesores Comerciales 9&quot;, &quot;Paulo Artal&quot;,
+                  IF(User.UserRole.Name = &quot;Asesores Comerciales 10&quot;, &quot;Ian Rojas&quot;,
+                    IF(User.UserRole.Name = &quot;Asesores Comerciales 11&quot;, &quot;Tomas Aravena&quot;,
+                      IF(User.UserRole.Name = &quot;Asesores Comerciales 12&quot;, &quot;Rodrigo Medina&quot;,
+                        IF(User.UserRole.Name = &quot;Asesores Comerciales 13&quot;, &quot;Francisco Lopez&quot;, &quot;&quot;)
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+    )
+  )
+)</calculatedFormula>
+        <dataType>Text</dataType>
+        <developerName>CDF1</developerName>
+        <label>Medio Campo</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <filter>
+        <criteriaItems>
+            <column>User.Opportunity$CreatedById$Owner</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Jose Parra</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>User.Opportunity$CreatedById$StageName</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CDF1</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Oportunidades por Medio Campo</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>usuarios_oportunidades__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>User.Opportunity$CreatedById$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

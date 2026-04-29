@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Notificaci_n_Contactar_nuevo_lead</name>
+        <label>Notificación - Contactar nuevo lead</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>customNotificationAction</actionName>
+        <actionType>customNotificationAction</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>customNotifTypeId</name>
+            <value>
+                <elementReference>idNotificacion</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recipientIds</name>
+            <value>
+                <elementReference>listIds</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderId</name>
+            <value>
+                <elementReference>$Record.CreatedById</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>title</name>
+            <value>
+                <elementReference>tituloNotificacion</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>body</name>
+            <value>
+                <elementReference>bodyNotificacion</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>targetId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>customNotificationAction</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <actionCalls>
+        <name>Notificaci_n_Contactar_nuevo_lead_2</name>
+        <label>Notificación - Contactar nuevo lead 2</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>customNotificationAction</actionName>
+        <actionType>customNotificationAction</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>customNotifTypeId</name>
+            <value>
+                <elementReference>idNotificacion</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recipientIds</name>
+            <value>
+                <elementReference>listIds</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderId</name>
+            <value>
+                <elementReference>$Record.CreatedById</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>title</name>
+            <value>
+                <elementReference>tituloNotificacion</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>body</name>
+            <value>
+                <elementReference>bodyNotificacion</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>targetId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>customNotificationAction</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <apiVersion>65.0</apiVersion>
+    <assignments>
+        <name>asignar_datos_lead</name>
+        <label>asignar datos lead</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>recordId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>idNotificacion</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>obtener_notificacion_por_tarea.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>listIds</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>$Record.Owner:User.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Notificaci_n_Contactar_nuevo_lead</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>asignar_datos_lead_nuevo</name>
+        <label>asignar datos lead nuevo</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>recordId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>idNotificacion</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>obtener_notificacion_por_tarea_nueva.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>listIds</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>$Record.Owner:User.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Notificaci_n_Contactar_nuevo_lead_2</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Propietario_del_Lead_cambio</name>
+        <label>Propietario del Lead cambio?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>obtener_notificacion_por_tarea_nueva</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Resultado predeterminado</defaultConnectorLabel>
+        <rules>
+            <name>Si_cambio</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Owner:User.Id</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>obtener_notificacion_por_tarea</targetReference>
+            </connector>
+            <label>Si cambio</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>asuntoTarea</name>
+        <dataType>String</dataType>
+        <expression>&quot;Gestionar primer contacto con el nuevo Lead&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>bodyNotificacion</name>
+        <dataType>String</dataType>
+        <expression>&quot;Hola &quot; +
+&quot;Se ha creado un nuevo lead asignado a ti: &quot; +
+	&quot;•	Nombre del Lead: &quot; + {!$Record.Raz_n_Social__c} +
+	&quot;•	Empresa / Organización: &quot; + {!$Record.Raz_n_Social__c} +
+	&quot;•	Nombre del Contacto: &quot; + {!$Record.Nombre_de_contacto__c} +
+	&quot;•	Fecha de ingreso: &quot; + TEXT({!$Record.CreatedDate}) +
+	&quot;•	Medio de contacto: &quot; + {!$Record.Telefono__c} + &quot; | &quot; + {!$Record.Email__c} +
+	&quot;•	Detalle rápido: &quot; + {!$Record.Proximos_Pasos__c} + 
+&quot; Por favor, contacta este lead tan pronto como te sea posible para iniciar la conversación y avanzar con el seguimiento.&quot; +
+
+&quot; Si necesitas alguna información adicional o recursos, comunicate con tu supervisor. &quot; +
+
+&quot; ¡Gracias y éxito con este nuevo contacto! &quot;</expression>
+    </formulas>
+    <formulas>
+        <name>fechaVencimiento</name>
+        <dataType>Date</dataType>
+        <expression>DATEVALUE({!$Record.CreatedDate}) + 3</expression>
+    </formulas>
+    <formulas>
+        <name>tituloNotificacion</name>
+        <dataType>String</dataType>
+        <expression>&quot;Nuevo Lead Asignado – Por favor contactar&quot;</expression>
+    </formulas>
+    <interviewLabel>Lead - Tarea contactabilidad Asesor {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Lead - Tarea contactabilidad Asesor</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>obtener_notificacion_por_tarea</name>
+        <label>obtener notificacion por tarea</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>asignar_datos_lead</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>CustomNotifTypeName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Notificación por tarea nueva</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>CustomNotificationType</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>obtener_notificacion_por_tarea_nueva</name>
+        <label>obtener notificacion por tarea nueva</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>asignar_datos_lead_nuevo</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>CustomNotifTypeName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Notificación por tarea nueva</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>CustomNotificationType</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Propietario_del_Lead_cambio</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>OwnerId</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </filters>
+        <object>Negocio_Gastronomico__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+    <variables>
+        <name>idNotificacion</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>listIds</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

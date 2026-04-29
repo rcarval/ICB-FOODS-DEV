@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Lead x</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Leads x</value>
+    </caseValues>
+    <layouts>
+        <layout>Negocio Gastronomico Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Datos Web --></label>
+            <section>Datos Web</section>
+        </sections>
+        <sections>
+            <label><!-- Datos de Contacto --></label>
+            <section>Datos de Contacto</section>
+        </sections>
+        <sections>
+            <label><!-- Datos de Dirección --></label>
+            <section>Datos de Dirección</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- New Visita --></label>
+        <name>NuevaVisita</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Lead --></label>
+        <name>UpdateRecord</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Validar Datos Para Creación --></label>
+        <name>Validar_Datos_Para_Creacion</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- No se puede cambiar el estado después de haberlo pasado a &apos;Prospecto&apos; --></errorMessage>
+        <name>Cambio_de_estado_Prospecto</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Completar el campo Centro de abastecimiento para pasar a Prospecto --></errorMessage>
+        <name>Centro_abastecimiento_paso_a_prospecto</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Faltan datos, favor validar usando el botón Validar Datos Para Creación --></errorMessage>
+        <name>Datos_Validados_Lead</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Completar el campo Direccion para pasar a Prospecto --></errorMessage>
+        <name>Direccion_paso_a_Prospecto</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Rut no válido --></errorMessage>
+        <name>LenRut</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Completar el campo Oficina de Venta para pasar a Prospecto --></errorMessage>
+        <name>Oficina_de_venta_valido_paso_a_prospecto</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- La razón Social no debe estar vacío --></errorMessage>
+        <name>Razon_social_Vacia</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Completar el campo RUT para pasar a Prospecto --></errorMessage>
+        <name>Rut_valido_paso_a_prospecto</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Completar el campo Sucursal para pasar a Prospecto --></errorMessage>
+        <name>Sucursal_valido_paso_a_prospecto</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Completar el campo Email para pasar a Prospecto --></errorMessage>
+        <name>Validacion_Email_paso_a_prospecto</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Ingrese un Rut Valido --></errorMessage>
+        <name>Validacion_Verificador_de_RUTs</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Completar el campo Fecha Probable de Visita con una fecha valida --></errorMessage>
+        <name>Validacion_fecha_de_visita</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Completar el campo Fecha Probable de Visita --></errorMessage>
+        <name>Validacion_fecha_de_visita_completa</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Completar el campo Nombre de Fantasia --></errorMessage>
+        <name>Validacion_nombre</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Completar el campo Region para pasar a Prospecto --></errorMessage>
+        <name>Validacion_region_cambio_a_prospecto</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Complete el campo Nombre de contacto o Direccion --></errorMessage>
+        <name>Validar_contacto_o_direccions</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Completar el campo Fecha Probable de Cierre para pasar a Prospecto --></errorMessage>
+        <name>Validar_fecha_cierre_pasar_a_prospecto</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Completar el campo Telefono para pasar a Prospecto --></errorMessage>
+        <name>Validar_telefono_para_pasar_a_prospecto</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Debe ingresar Region y Comuna --></errorMessage>
+        <name>ValidoComunaRegion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- El teléfono debe tener 9 dígitos --></errorMessage>
+        <name>ValidoTelefono</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Valor de RUT inválido --></errorMessage>
+        <name>Valido_ruts</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Este campo solo puede ser modificado por Alicia Briones y el Administrador --></errorMessage>
+        <name>deribado_a_asesor</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Completar el campo Centro de Abastecimiento para pasar a Prospecto --></errorMessage>
+        <name>validacion_centro_de_ab_paso_a_prospecto</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Completar el campo Gerencia para pasar a Prospecto --></errorMessage>
+        <name>validacion_gerencia_paso_a_prospecto</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Completar el campo Grupo Cliente para pasar a Prospecto --></errorMessage>
+        <name>validacion_grupo_cliente_paso_a_prospect</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Completar el campo RUT para pasar a Prospecto --></errorMessage>
+        <name>validacion_rut_paso_a_prospecto</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Completar el campo Sucursal para pasar a Prospecto --></errorMessage>
+        <name>validacion_sucursal</name>
+    </validationRules>
+</CustomObjectTranslation>

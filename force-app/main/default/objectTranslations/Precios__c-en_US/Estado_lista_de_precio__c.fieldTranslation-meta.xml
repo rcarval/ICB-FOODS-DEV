@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Estado lista de precio --></label>
+    <name>Estado_lista_de_precio__c</name>
+    <picklistValues>
+        <masterLabel>Hasta agotar Stock</masterLabel>
+        <translation><!-- Hasta agotar Stock --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mantiene</masterLabel>
+        <translation><!-- Mantiene --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vencida</masterLabel>
+        <translation><!-- Vencida --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

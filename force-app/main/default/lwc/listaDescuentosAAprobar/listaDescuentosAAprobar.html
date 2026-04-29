@@ -1,0 +1,21 @@
+<template>
+    <template lwc:if={showTable}>
+        <div class="slds-var-m-bottom_small slds-text-align_right">
+            <lightning-button label="Aprobar" onclick={handleApprove} class="slds-var-m-around_small"></lightning-button>
+            <lightning-button label="Rechazar" onclick={handleReject} class="slds-var-m-around_small"></lightning-button>
+        </div>
+        <lightning-datatable
+                key-field="id"
+                data={data}
+                columns={columns}
+                onrowselection={handleSelectedRow}
+        >
+        </lightning-datatable>
+        <lightning-input label="Comentario" onchange={handleChange} class="slds-size_1-of-1 slds-var-m-top_small" value={comentario}></lightning-input>
+    </template>
+    <template lwc:else>
+        <div class="slds-text-align_center slds-text-color_error slds-text-heading_small">
+            No hay registros que mostrar
+        </div>
+    </template>
+</template>

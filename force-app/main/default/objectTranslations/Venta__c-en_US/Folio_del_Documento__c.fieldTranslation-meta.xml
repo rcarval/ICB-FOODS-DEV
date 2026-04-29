@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Folio del Documento Electrónico --></help>
+    <label><!-- Folio del Documento --></label>
+    <name>Folio_del_Documento__c</name>
+</CustomFieldTranslation>

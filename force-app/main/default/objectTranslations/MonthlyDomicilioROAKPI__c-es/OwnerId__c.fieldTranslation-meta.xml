@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Propietario de cuenta (cartera activa ROA por sucursal). --></help>
+    <label><!-- Propietario --></label>
+    <name>OwnerId__c</name>
+    <relationshipLabel><!-- KPI Mensual ROA Domicilios --></relationshipLabel>
+</CustomFieldTranslation>

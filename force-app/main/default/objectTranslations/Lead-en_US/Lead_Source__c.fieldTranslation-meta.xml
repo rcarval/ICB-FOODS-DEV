@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Lead Source --></label>
+    <name>Lead_Source__c</name>
+    <picklistValues>
+        <masterLabel>Advertisement</masterLabel>
+        <translation><!-- Advertisement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CCC</masterLabel>
+        <translation><!-- CCC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carozzi</masterLabel>
+        <translation><!-- Carozzi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Catalogo web</masterLabel>
+        <translation><!-- Catalogo web --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chefworks</masterLabel>
+        <translation><!-- Chefworks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Event</masterLabel>
+        <translation><!-- Customer Event --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Expocafe</masterLabel>
+        <translation><!-- Expocafe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Foodservice</masterLabel>
+        <translation><!-- Foodservice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lead CSM</masterLabel>
+        <translation><!-- Lead CSM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lead Meta</masterLabel>
+        <translation><!-- Lead Meta --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OpenDay</masterLabel>
+        <translation><!-- OpenDay --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OpenDayIquique</masterLabel>
+        <translation><!-- OpenDayIquique --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OpenDayTemuco</masterLabel>
+        <translation><!-- OpenDayTemuco --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Terreno</masterLabel>
+        <translation><!-- Terreno --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Uscheese</masterLabel>
+        <translation><!-- Uscheese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Web Contactanos</masterLabel>
+        <translation><!-- Web Contactanos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Web Hablemos</masterLabel>
+        <translation><!-- Web Hablemos --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

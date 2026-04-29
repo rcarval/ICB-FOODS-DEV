@@ -1,0 +1,1046 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>Negocio_Gastronomico__c</baseObject>
+    <category>leads</category>
+    <deployed>false</deployed>
+    <description>Rate de conversion</description>
+    <join>
+        <outerJoin>false</outerJoin>
+        <relationship>Accounts__r</relationship>
+    </join>
+    <label>NegocioGastonomicoAccount</label>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Lead ID</displayNameOverride>
+            <field>Id</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Owner</displayNameOverride>
+            <field>Owner</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <displayNameOverride>Numero de Registro</displayNameOverride>
+            <field>Name</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created Date</displayNameOverride>
+            <field>CreatedDate</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created By</displayNameOverride>
+            <field>CreatedBy</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Negocio_Gastronomico__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified Date</displayNameOverride>
+            <field>LastModifiedDate</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified By</displayNameOverride>
+            <field>LastModifiedBy</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Activity Date</displayNameOverride>
+            <field>LastActivityDate</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Centro de Abastecimiento</displayNameOverride>
+            <field>Centro_de_Abastecimiento__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Comuna</displayNameOverride>
+            <field>Comuna__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Cuenta</displayNameOverride>
+            <field>Cuenta__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Dirección (Street)</displayNameOverride>
+            <field>Direccion__Street__s</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Dirección (City)</displayNameOverride>
+            <field>Direccion__City__s</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Dirección (ZIP/Postal Code)</displayNameOverride>
+            <field>Direccion__PostalCode__s</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Dirección (State/Province)</displayNameOverride>
+            <field>Direccion__StateCode__s</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Dirección (Country/Territory)</displayNameOverride>
+            <field>Direccion__CountryCode__s</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Dirección (Latitude)</displayNameOverride>
+            <field>Direccion__Latitude__s</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Dirección (Longitude)</displayNameOverride>
+            <field>Direccion__Longitude__s</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Dirección (Geocode Accuracy)</displayNameOverride>
+            <field>Direccion__GeocodeAccuracy__s</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Email</displayNameOverride>
+            <field>Email__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Es Parte de un Holding</displayNameOverride>
+            <field>Es_Parte_de_un_Holding__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Estado</displayNameOverride>
+            <field>Estado__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fecha Probable de Cierre</displayNameOverride>
+            <field>Fecha_Probable_de_Cierre__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Cómo se enteró de ICB Food Service</displayNameOverride>
+            <field>C_mo_se_enter_de_ICB_Food_Service__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Canal</displayNameOverride>
+            <field>Gerencia__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Especialidad</displayNameOverride>
+            <field>Grupo_Cliente__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Nombre de Fantasía</displayNameOverride>
+            <field>Nombre_de_Fantasia__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Nombre de contacto *</displayNameOverride>
+            <field>Nombre_de_contacto__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Oficina de Venta</displayNameOverride>
+            <field>Oficina_de_Venta__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Próximos Pasos</displayNameOverride>
+            <field>Proximos_Pasos__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>RUT</displayNameOverride>
+            <field>RUT__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Región</displayNameOverride>
+            <field>Region__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Sucursal</displayNameOverride>
+            <field>Sucursal__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Teléfono *</displayNameOverride>
+            <field>Telefono__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Rut a Validar</displayNameOverride>
+            <field>Rut_a_Validar__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>IdOwner</displayNameOverride>
+            <field>IdOwner__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fecha Probable de Visita</displayNameOverride>
+            <field>Fecha_Probable_de_Visita__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Comuna web</displayNameOverride>
+            <field>Comuna_Web__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fuente del Lead</displayNameOverride>
+            <field>Fuente_del_Lead__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Nombre de Contacto Web</displayNameOverride>
+            <field>Nombre_de_Contacto_Web__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>¿Que estás buscando?</displayNameOverride>
+            <field>Que_est_s_buscando__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Región Web</displayNameOverride>
+            <field>Region_Web__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Tipo de Empresa</displayNameOverride>
+            <field>Tipo_de_Empresa__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>¿Ya es Cliente?</displayNameOverride>
+            <field>Ya_es_Cliente__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>UTM Campaign</displayNameOverride>
+            <field>UTM_Campaign__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>UTM source</displayNameOverride>
+            <field>UTM_source__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>UTM_medium</displayNameOverride>
+            <field>UTM_medium__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Dirección web</displayNameOverride>
+            <field>Direcci_n_web__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Derivado a Asesor</displayNameOverride>
+            <field>Derivado_a_Asesor__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Detalle de Contacto</displayNameOverride>
+            <field>detalle_de_contacto__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Convertido en Cuenta</displayNameOverride>
+            <field>Convertido_en_Cuenta__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Detalle_de_gesti_n_de_asesor__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Fecha_reasignaci_n_owner__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Comuna_de_despacho__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Regi_n_de_Despacho__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Raz_n_Social__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Cliente_creado__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Lead_de_calidad__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Observacion__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Cliente_Contactado__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Primer_Contacto_Lead__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Cantidad_de_dias__c</field>
+            <table>Negocio_Gastronomico__c</table>
+        </columns>
+        <masterLabel>Leads</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account ID</displayNameOverride>
+            <field>Id</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <displayNameOverride>Account Name</displayNameOverride>
+            <field>Name</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Type</displayNameOverride>
+            <field>Type</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Record Type</displayNameOverride>
+            <field>RecordType</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Parent Account</displayNameOverride>
+            <field>Parent</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Billing Address</displayNameOverride>
+            <field>BillingAddress</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Billing Street</displayNameOverride>
+            <field>BillingStreet</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Billing City</displayNameOverride>
+            <field>BillingCity</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Billing State/Province</displayNameOverride>
+            <field>BillingState</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Billing Zip/Postal Code</displayNameOverride>
+            <field>BillingPostalCode</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Billing Country</displayNameOverride>
+            <field>BillingCountry</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Billing Latitude</displayNameOverride>
+            <field>BillingLatitude</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Billing Longitude</displayNameOverride>
+            <field>BillingLongitude</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Billing Geocode Accuracy</displayNameOverride>
+            <field>BillingGeocodeAccuracy</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Shipping Address</displayNameOverride>
+            <field>ShippingAddress</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Shipping Street</displayNameOverride>
+            <field>ShippingStreet</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Shipping City</displayNameOverride>
+            <field>ShippingCity</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Shipping State/Province</displayNameOverride>
+            <field>ShippingState</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Shipping Zip/Postal Code</displayNameOverride>
+            <field>ShippingPostalCode</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Shipping Country</displayNameOverride>
+            <field>ShippingCountry</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Shipping Latitude</displayNameOverride>
+            <field>ShippingLatitude</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Shipping Longitude</displayNameOverride>
+            <field>ShippingLongitude</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Shipping Geocode Accuracy</displayNameOverride>
+            <field>ShippingGeocodeAccuracy</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Phone</displayNameOverride>
+            <field>Phone</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fax</displayNameOverride>
+            <field>Fax</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Number</displayNameOverride>
+            <field>AccountNumber</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Website</displayNameOverride>
+            <field>Website</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>SIC Code</displayNameOverride>
+            <field>Sic</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Industry</displayNameOverride>
+            <field>Industry</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Annual Revenue</displayNameOverride>
+            <field>AnnualRevenue</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Employees</displayNameOverride>
+            <field>NumberOfEmployees</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Ownership</displayNameOverride>
+            <field>Ownership</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Ticker Symbol</displayNameOverride>
+            <field>TickerSymbol</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Description</displayNameOverride>
+            <field>Description</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Rating</displayNameOverride>
+            <field>Rating</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Site</displayNameOverride>
+            <field>Site</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner</displayNameOverride>
+            <field>Owner</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created Date</displayNameOverride>
+            <field>CreatedDate</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created By</displayNameOverride>
+            <field>CreatedBy</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified Date</displayNameOverride>
+            <field>LastModifiedDate</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified By</displayNameOverride>
+            <field>LastModifiedBy</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Activity</displayNameOverride>
+            <field>LastActivityDate</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Source System ID</displayNameOverride>
+            <field>SourceSystemIdentifier</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Data.com Key</displayNameOverride>
+            <field>Jigsaw</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Source</displayNameOverride>
+            <field>AccountSource</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>SIC Description</displayNameOverride>
+            <field>SicDesc</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Asesor Asignado</displayNameOverride>
+            <field>Asesor_Asignado__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Asociacion Válida Desde</displayNameOverride>
+            <field>Asociacion_V_lida_Desde__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Código de cliente</displayNameOverride>
+            <field>C_digo_de_cliente__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Centro de Abastecimiento</displayNameOverride>
+            <field>Centro_de_Abastecimiento__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Cliente Despacho</displayNameOverride>
+            <field>Cliente_Despacho__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Codigo Ramo</displayNameOverride>
+            <field>Codigo_Ramo__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Comuna Despacho</displayNameOverride>
+            <field>Comuna_Despacho__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Comuna Facturación</displayNameOverride>
+            <field>Comuna_Facturaci_n__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Comuna</displayNameOverride>
+            <field>Comuna__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Condición de credito</displayNameOverride>
+            <field>Condicion_de_Credito__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Crédito Usado</displayNameOverride>
+            <field>Cr_dito_disponible__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Credito Bloqueado</displayNameOverride>
+            <field>Credito_Bloqueado__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Datos de Contacto Comercial</displayNameOverride>
+            <field>Datos_de_Contacto_Comercial__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Datos de Contacto Principal</displayNameOverride>
+            <field>Datos_de_Contacto_Principal__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Datos de Contacto de Pagos</displayNameOverride>
+            <field>Datos_de_Contacto_de_Pagos__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Email</displayNameOverride>
+            <field>Email__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Es Parte de un Holding</displayNameOverride>
+            <field>Es_Parte_de_un_Holding__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Especialidad</displayNameOverride>
+            <field>Especialidad__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fecha  Rechazo Aumento crédito</displayNameOverride>
+            <field>Fecha_Rechazo_Aumento_cr_dito__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fecha de Ultima Visita</displayNameOverride>
+            <field>Fecha_de_Ultima_Visita__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Canal</displayNameOverride>
+            <field>Gerencia__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Grupo Cliente</displayNameOverride>
+            <field>Grupo_Cliente__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Horario de Recepción Max</displayNameOverride>
+            <field>Horario_de_Recepcion_Max__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Horario de Recepción Min</displayNameOverride>
+            <field>Horario_de_Recepcion__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Limite de Credito</displayNameOverride>
+            <field>Limite_Credito__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Nombre de Fantasia</displayNameOverride>
+            <field>Nombre_de_Fantasia__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Nombre de contacto</displayNameOverride>
+            <field>Nombre_de_contacto__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Observaciones del Cliente</displayNameOverride>
+            <field>Observaciones_del_Cliente__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Oficina de Venta</displayNameOverride>
+            <field>Oficina_de_Venta__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Persona Fisica</displayNameOverride>
+            <field>Persona_Fisica__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Prior Parent</displayNameOverride>
+            <field>Prior_Parent__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Proximos Pasos</displayNameOverride>
+            <field>Proximos_Pasos__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>RUT</displayNameOverride>
+            <field>RUT__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Razon Social</displayNameOverride>
+            <field>Razon_Social__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Region Despacho</displayNameOverride>
+            <field>Region_Despacho__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Región Facturación</displayNameOverride>
+            <field>Region__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Status Jurídico</displayNameOverride>
+            <field>Status_Jur_dico__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Sucursal</displayNameOverride>
+            <field>Sucursal__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Auxiliar Formula Persona Fisica</displayNameOverride>
+            <field>Auxiliar_Formula_Persona_Fisica__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Auxiliar Identificador</displayNameOverride>
+            <field>Auxiliar_Identificador__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Rut a Validar</displayNameOverride>
+            <field>Rut_a_Validar__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>IsNullCodigo</displayNameOverride>
+            <field>IsNullCodigo__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Codigo ejecutivo</displayNameOverride>
+            <field>Codigo_ejecutivo__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Teléfono de contacto principal</displayNameOverride>
+            <field>Tel_fono_de_contacto_principal__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Teléfono de Contacto de Pagos</displayNameOverride>
+            <field>Tel_fono_de_Contacto_de_Pagos__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Teléfono de de Contacto de Pagos</displayNameOverride>
+            <field>Tel_fono_de_de_Contacto_de_Pagos__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>RegistroTipo</displayNameOverride>
+            <field>RegistroTipo__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Datos Completos</displayNameOverride>
+            <field>Datos_Completos__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>largo telefono</displayNameOverride>
+            <field>largo_telefono__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>ClienteDespachoAsTrue</displayNameOverride>
+            <field>ClienteDespachoAsTrue__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>CodigoDeClienteAsTrue</displayNameOverride>
+            <field>CodigoDeClienteAsTrue__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Asociacion Pendiente</displayNameOverride>
+            <field>Asociacion_Pendiente__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Envio a Sap Timestap</displayNameOverride>
+            <field>Envio_a_Sap_Timestap__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Codigo_del_asesor__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Rut_igual_a_rut_Lead__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Pedido__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Tipificaci_n_de_Origen__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Ventas_3_meses__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CanalAuxiliar__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CentroAuxiliar__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Comuna_Despacho_Nombre_Integracion__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>EspecialidadAuxiliar__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>RegionDespachoAuxiliar__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>RegionFacturaci_nAuxiliar__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>SucursalAuxiliar__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Lead__c</field>
+            <table>Negocio_Gastronomico__c.Accounts__r</table>
+        </columns>
+        <masterLabel>Accounts</masterLabel>
+    </sections>
+    <sections>
+        <masterLabel>Clientes</masterLabel>
+    </sections>
+</ReportType>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Actividades2</fullName>
+    <fields>Subject</fields>
+    <fields>Location</fields>
+    <fields>StartDateTime</fields>
+    <fields>EndDateTime</fields>
+    <fields>Tipo_de_Visita__c</fields>
+    <fields>CreatedById</fields>
+    <fields>WhatId</fields>
+    <fields>ActivityDate</fields>
+    <fields>WhoId</fields>
+    <label>Actividades2</label>
+</CompactLayout>

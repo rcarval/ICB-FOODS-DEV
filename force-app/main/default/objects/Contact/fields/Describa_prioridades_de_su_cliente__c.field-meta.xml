@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Describa_prioridades_de_su_cliente__c</fullName>
+    <description>El asesor podrá describir las necesidades especificas del cliente, con mayor detalle.</description>
+    <label>Dolores, cómo lo miden, necesidad clave</label>
+    <length>100000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ClienteContactado_Requerido</fullName>
+    <active>true</active>
+    <description>Valida que el campo Cliente Contactado sea obligatorio cuando el estado sea Congelado o Prospecto.</description>
+    <errorConditionFormula>AND(
+    OR(
+        ISPICKVAL(Status, &quot;Congelado&quot;),
+        ISPICKVAL(Status, &quot;Prospecto&quot;)
+    ),
+    ISBLANK(TEXT(Cliente_Contactado__c))
+)</errorConditionFormula>
+    <errorDisplayField>Cliente_Contactado__c</errorDisplayField>
+    <errorMessage>Debe indicar si el cliente ha sido contactado.</errorMessage>
+</ValidationRule>

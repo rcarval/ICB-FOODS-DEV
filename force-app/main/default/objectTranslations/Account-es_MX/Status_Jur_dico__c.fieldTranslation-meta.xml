@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status Jurídico --></label>
+    <name>Status_Jur_dico__c</name>
+    <picklistValues>
+        <masterLabel>01 - Persona Natural</masterLabel>
+        <translation><!-- 01 - Persona Natural --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>02 - Asociación</masterLabel>
+        <translation><!-- 02 - Asociación --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>03 - Cta en participación</masterLabel>
+        <translation><!-- 03 - Cta en participación --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>04 - Aparcerías</masterLabel>
+        <translation><!-- 04 - Aparcerías --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>05 - Sociedad Colectiva</masterLabel>
+        <translation><!-- 05 - Sociedad Colectiva --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>06 - Sociedad Limitada</masterLabel>
+        <translation><!-- 06 - Sociedad Limitada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>07 - Comand. Simple</masterLabel>
+        <translation><!-- 07 - Comand. Simple --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>08 - Comand. Acciones</masterLabel>
+        <translation><!-- 08 - Comand. Acciones --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>09 - Sociedad Anónima</masterLabel>
+        <translation><!-- 09 - Sociedad Anónima --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>10 - Cooperativa</masterLabel>
+        <translation><!-- 10 - Cooperativa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>11 - Contractual Minera</masterLabel>
+        <translation><!-- 11 - Contractual Minera --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>12 - Persona Jurídica</masterLabel>
+        <translation><!-- 12 - Persona Jurídica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>13 - E.I.R.L.</masterLabel>
+        <translation><!-- 13 - E.I.R.L. --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

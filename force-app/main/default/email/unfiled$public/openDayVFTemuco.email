@@ -1,0 +1,26 @@
+<messaging:emailTemplate subject="ICB Food Service OPENDAY" recipientType="Lead" relatedToType="Lead">
+  <messaging:htmlEmailBody >
+    <html>
+      <body style="font-family: Arial, sans-serif; color: white; background-color: #1a1a1a; padding: 20px; text-align: center;">
+
+        <img src="https://energy-saas-7178.file.force.com/sfc/dist/version/renditionDownload?rendition=ORIGINAL_Png&versionId=068Pr00000Rr1ua&operationContext=DELIVERY&contentId=05TPr00000ZeiQF&page=0&d=/a/Pr000004HTBN/pG9Q2_fRTmKy.84fSDF3.kt86U5BwSYAJmwnErLzQ80&oid=00D7z00000ZVxE9&dpt=null&viewId=" alt="ICB Food Temuco Header" width="100%" style="margin-bottom: 20px;"/>
+        
+
+  <center>
+        <p>
+ <img 
+  src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data={!recipient.Id}"
+  alt="Código QR"
+  width="300" height="300"
+  style="border: 1px solid #fff;" />
+
+</p>
+
+        </center>
+
+        <img src="https://energy-saas-7178.file.force.com/sfc/dist/version/renditionDownload?rendition=ORIGINAL_Png&versionId=068Pr00000Rr7F8&operationContext=DELIVERY&contentId=05TPr00000Zex0P&page=0&d=/a/Pr000004HTL3/o0Gi9nfipgYIhqSA6eokZcJf0cCgXR3Fx5a1NiGHBYo&oid=00D7z00000ZVxE9&dpt=null&viewId=" alt="ICB Food Temuco Footer" width="100%" style="margin-bottom: 20px;" />
+
+      </body>
+    </html>
+  </messaging:htmlEmailBody>
+</messaging:emailTemplate>

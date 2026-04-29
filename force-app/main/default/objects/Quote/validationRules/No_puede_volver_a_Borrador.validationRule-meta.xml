@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_puede_volver_a_Borrador</fullName>
+    <active>true</active>
+    <description>Una vez que el status paso a Aprobado, no puede volver a borrador.</description>
+    <errorConditionFormula>AND(
+    ISPICKVAL(Status, &quot;Draft&quot;),
+    ISCHANGED(Status),
+    NOT(ISPICKVAL(PRIORVALUE(Status), &quot;Draft&quot;)),
+    ISPICKVAL(PRIORVALUE(Status), &quot;Approved&quot;)
+)</errorConditionFormula>
+    <errorMessage>La cotización paso a Aprobada, no puede volver a Borrador.</errorMessage>
+</ValidationRule>

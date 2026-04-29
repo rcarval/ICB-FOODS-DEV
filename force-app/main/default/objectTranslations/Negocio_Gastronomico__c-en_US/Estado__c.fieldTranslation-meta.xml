@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Estado --></label>
+    <name>Estado__c</name>
+    <picklistValues>
+        <masterLabel>Cliente Creado</masterLabel>
+        <translation><!-- Cliente Creado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Congelado</masterLabel>
+        <translation><!-- Congelado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lead Contactado</masterLabel>
+        <translation><!-- Lead Contactado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Negocio Gastronomico</masterLabel>
+        <translation><!-- Negocio Gastronomico --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

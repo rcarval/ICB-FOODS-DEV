@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>First_Name_Requerido</fullName>
+    <active>true</active>
+    <description>Valida que el nombre sea obligatorio antes de guardar.</description>
+    <errorConditionFormula>ISBLANK(FirstName)</errorConditionFormula>
+    <errorDisplayField>FirstName</errorDisplayField>
+    <errorMessage>El nombre es obligatorio</errorMessage>
+</ValidationRule>

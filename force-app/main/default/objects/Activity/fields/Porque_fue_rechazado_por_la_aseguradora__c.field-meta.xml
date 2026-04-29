@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Porque_fue_rechazado_por_la_aseguradora__c</fullName>
+    <label>Motivo de rechazo de la aseguradora?</label>
+    <required>false</required>
+    <type>TextArea</type>
+</CustomField>

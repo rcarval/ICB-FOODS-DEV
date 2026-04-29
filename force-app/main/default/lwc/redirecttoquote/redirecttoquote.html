@@ -1,0 +1,6 @@
+<template>
+    <template if:true={isLoading}>
+        <lightning-spinner alternative-text="Cargando..." variant="brand" class="slds-is-fixed"></lightning-spinner>
+    </template>
+    <div if:false={isLoading} class="redirect-message">Redirigiendo a la cotización...</div>
+</template>

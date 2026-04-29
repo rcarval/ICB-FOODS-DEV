@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Centro_abastecimiento_paso_a_prospecto</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(Status, &quot;Lead Contactado&quot;) &amp;&amp;
+ISBLANK(TEXT(Centro_de_Abastecimiento__c))</errorConditionFormula>
+    <errorDisplayField>Centro_de_Abastecimiento__c</errorDisplayField>
+    <errorMessage>Completar el campo Centro de Abastecimiento</errorMessage>
+</ValidationRule>

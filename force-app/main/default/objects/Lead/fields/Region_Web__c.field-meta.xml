@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Region_Web__c</fullName>
+    <label>Región Web</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Región de Arica y Parinacota</fullName>
+                <default>false</default>
+                <label>Región de Arica y Parinacota</label>
+            </value>
+            <value>
+                <fullName>Región de Tarapacá</fullName>
+                <default>false</default>
+                <label>Región de Tarapacá</label>
+            </value>
+            <value>
+                <fullName>Región de Antofagasta</fullName>
+                <default>false</default>
+                <label>Región de Antofagasta</label>
+            </value>
+            <value>
+                <fullName>Región de Atacama</fullName>
+                <default>false</default>
+                <label>Región de Atacama</label>
+            </value>
+            <value>
+                <fullName>Región de Coquimbo</fullName>
+                <default>false</default>
+                <label>Región de Coquimbo</label>
+            </value>
+            <value>
+                <fullName>Región de Valparaíso</fullName>
+                <default>false</default>
+                <label>Región de Valparaíso</label>
+            </value>
+            <value>
+                <fullName>Región Metropolitana</fullName>
+                <default>false</default>
+                <label>Región Metropolitana</label>
+            </value>
+            <value>
+                <fullName>Región de O’Higgins</fullName>
+                <default>false</default>
+                <label>Región de O’Higgins</label>
+            </value>
+            <value>
+                <fullName>Región del Maule</fullName>
+                <default>false</default>
+                <label>Región del Maule</label>
+            </value>
+            <value>
+                <fullName>Región del Ñuble</fullName>
+                <default>false</default>
+                <label>Región del Ñuble</label>
+            </value>
+            <value>
+                <fullName>Región del Biobío</fullName>
+                <default>false</default>
+                <label>Región del Biobío</label>
+            </value>
+            <value>
+                <fullName>Región de La Araucanía</fullName>
+                <default>false</default>
+                <label>Región de La Araucanía</label>
+            </value>
+            <value>
+                <fullName>Región de Los Ríos</fullName>
+                <default>false</default>
+                <label>Región de Los Ríos</label>
+            </value>
+            <value>
+                <fullName>Región de Los Lagos</fullName>
+                <default>false</default>
+                <label>Región de Los Lagos</label>
+            </value>
+            <value>
+                <fullName>Región de Aysén</fullName>
+                <default>false</default>
+                <label>Región de Aysén</label>
+            </value>
+            <value>
+                <fullName>Región de Magallanes</fullName>
+                <default>false</default>
+                <label>Región de Magallanes</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

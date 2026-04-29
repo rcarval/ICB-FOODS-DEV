@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Relacion Rappel Detalle --></label>
+    <name>Relacion_Rappel_Detalle__c</name>
+    <relationshipLabel><!-- Detalles --></relationshipLabel>
+</CustomFieldTranslation>

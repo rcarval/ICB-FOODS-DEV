@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExternalClientApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>rodrigo.carvallo@seidor.com</contactEmail>
+    <distributionState>Packaged</distributionState>
+    <isProtected>false</isProtected>
+    <label>AWS Firma Digital Integration</label>
+    <orgScopedExternalApp>00D7z00000ZVxE9:AWS_Firma_Digital_Integration</orgScopedExternalApp>
+</ExternalClientApplication>

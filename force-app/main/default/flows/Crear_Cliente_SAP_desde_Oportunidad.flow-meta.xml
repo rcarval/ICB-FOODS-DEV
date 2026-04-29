@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <customErrors>
+        <name>No_tiene_Datos_de_Despacho</name>
+        <label>No tiene Datos de Despacho</label>
+        <locationX>506</locationX>
+        <locationY>647</locationY>
+        <connector>
+            <targetReference>Rollback_Stage_Name</targetReference>
+        </connector>
+        <customErrorMessages>
+            <errorMessage>El Cliente {!Traer_Cuenta.Name} no posee direccion de Despacho. Completar la direccion de Despacho e intentar nuevamente.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <decisions>
+        <name>Decision_Direccion_Despacho</name>
+        <label>Decision Direccion Despacho</label>
+        <locationX>374</locationX>
+        <locationY>539</locationY>
+        <defaultConnector>
+            <targetReference>No_tiene_Datos_de_Despacho</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No Tiene Datos de Despacho</defaultConnectorLabel>
+        <rules>
+            <name>Tiene_Datos_de_Despacho</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Traer_Cuenta.ShippingCity</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Traer_Cuenta.ShippingStreet</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Crear_Cliente_en_SAP</targetReference>
+            </connector>
+            <label>Tiene Datos de Despacho</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Decision_Tiene_id_de_Cliente_SAP</name>
+        <label>Decision Tiene id de Cliente SAP?</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <defaultConnector>
+            <targetReference>Traer_Cuenta</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Tiene_id_SAP</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account.C_digo_de_cliente__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Tiene id SAP</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Crear Cliente SAP desde Oportunidad {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Crear Cliente SAP desde Oportunidad</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Traer_Cuenta</name>
+        <label>Traer Cuenta</label>
+        <locationX>374</locationX>
+        <locationY>431</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Decision_Direccion_Despacho</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.AccountId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Account</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Regrega el Estado de la Oportunidad a su Estado anterior, para que el asesor complete la direccion de shipping en el registro del Cliente,</description>
+        <name>Rollback_Stage_Name</name>
+        <label>Rollback Stage Name</label>
+        <locationX>506</locationX>
+        <locationY>755</locationY>
+        <inputAssignments>
+            <field>StageName</field>
+            <value>
+                <elementReference>$Record__Prior.StageName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Decision_Tiene_id_de_Cliente_SAP</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>StageName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Propuesta aceptada</stringValue>
+            </value>
+        </filters>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Crear_Cliente_en_SAP</name>
+        <label>Crear Cliente en SAP</label>
+        <locationX>242</locationX>
+        <locationY>647</locationY>
+        <connector>
+            <targetReference>Crear_Domicilios_de_Despacho_Asociados</targetReference>
+        </connector>
+        <flowName>Auto_Crear_Cliente_SAP_sin_Despacho</flowName>
+        <inputAssignments>
+            <name>varAccountId</name>
+            <value>
+                <elementReference>$Record.AccountId</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <subflows>
+        <name>Crear_Domicilios_de_Despacho_Asociados</name>
+        <label>Crear Domicilios de Despacho Asociados</label>
+        <locationX>242</locationX>
+        <locationY>755</locationY>
+        <flowName>Subflow_Crear_Despacho_desde_Crear_Cliente</flowName>
+        <inputAssignments>
+            <name>varAccountId</name>
+            <value>
+                <elementReference>Traer_Cuenta.Id</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+</Flow>

@@ -1,0 +1,1137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cliente_Persona</fullName>
+    <active>true</active>
+    <businessProcess>Leads Estandar</businessProcess>
+    <label>Cliente Persona</label>
+    <picklistValues>
+        <picklist>C_mo_se_enter_de_ICB_Food_Service__c</picklist>
+        <values>
+            <fullName>Asesor de Ventas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Otros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Página Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recomendación de un Amigo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Redes Sociales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tiendas</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Canal__c</picklist>
+        <values>
+            <fullName>Auto Inscripción</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FFVV Iquique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FFVV Temuco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meta</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Centro_de_Abastecimiento__c</picklist>
+        <values>
+            <fullName>FS00 - Santiago Maulen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS02 - Coquimbo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS03 - Temuco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS04 - Concepción</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS05 - Antofagasta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS06 - Puerto Montt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS07 - Iquique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS08 - Curicó</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS09 - Calama</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS10 - Paine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS11 - Tienda Vitacura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS12 - Tienda Rendic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS13 - Tienda Calama</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSE1 - Bodegas Externas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSE2 - Operador Logístico %22Loginsa%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSE3 - Frigorífico Icestar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSEX - FS Express</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cliente_Contactado__c</picklist>
+        <values>
+            <fullName>NO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SI</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GenderIdentity</picklist>
+        <values>
+            <fullName>Female</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Male</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nonbinary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Listed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Gerencia__c</picklist>
+        <values>
+            <fullName>102 - Cadenas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>103 - Catering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>105 - Institucional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>106 - Mayorista</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>107 - Personas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>112 - Industria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>113 - Otros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>115 - Punto a Punto</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Grupo_Cliente__c</picklist>
+        <values>
+            <fullName>A0 - Carnes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A1 - Pollo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A2 - Hamburguesa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A3 - Sándwich y Hotdog</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A4 - Pescados y Mariscos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A5 - Pastelería</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A6 - Panadería</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A7 - Empanadas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A8 - Pizza</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A9 - Cafetería</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B0 - Heladería</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B1 - Pastas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B2 - Internacional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B3 - Peruano</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B4 - Español</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B5 - Americano</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B6 - Chino</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B7 - Sushi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B8 - Almacén %2F Tienda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B9 - Naturista</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C0 - Hotel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C1 - Banquetería</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C2 - Comida Casera %2F Menú</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C3 - Servicios Alimentaci</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C4 - Otros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C5 - Petroleras</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C6 - DIST%2EY MAYORISTAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C7 - CLIENTE BOLETA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Horario_Disponible__c</picklist>
+        <values>
+            <fullName>10%3A00 a 10%3A20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10%3A00 a 10%3A30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10%3A20 a 10%3A40</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10%3A30 a 11%3A00</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10%3A40 a 11%3A00</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11%3A00 a 11%3A20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11%3A00 a 11%3A30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11%3A20 a 11%3A40</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11%3A30 a 12%3A00</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11%3A40 a 12%3A00</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12%3A00 a 12%3A30</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry</picklist>
+        <values>
+            <fullName>Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apparel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Banking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biotechnology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemicals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entertainment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food %26 Beverage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machinery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not For Profit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recreation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecommunications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utilities</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>CCC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Campaña</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carozzi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catalogo web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chefworks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expocafe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foodservice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead CSM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead Meta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OpenDay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OpenDayIquique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OpenDayTemuco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proveedor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Terreno</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uscheese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web Contactanos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web Hablemos</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lead_Source__c</picklist>
+        <values>
+            <fullName>Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CCC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carozzi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catalogo web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chefworks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expocafe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foodservice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead CSM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead Meta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OpenDay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OpenDayIquique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OpenDayTemuco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Terreno</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uscheese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web Contactanos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web Hablemos</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Name</picklist>
+        <values>
+            <fullName>Dr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mrs%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ms%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prof%2E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Oficina_de_Venta__c</picklist>
+        <values>
+            <fullName>FS00 - Santiago Maulen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS02 - Coquimbo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS03 - Temuco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS04 - Concepción</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS05 - Antofagasta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS06 - Puerto Montt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS07 - Iquique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS08 - Curicó</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS09 - Calama</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS10 - Paine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS11 - Tienda Vitacura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS12 - Tienda Rendic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS13 - Tienda Calama</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSE1 - Bodegas Externas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSE2 - Operador Logístic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSE3 - Frigorífico Icestar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSEX - FS Express</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Pronouns</picklist>
+        <values>
+            <fullName>He%2FHim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>He%2FThey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Listed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>She%2FHer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>She%2FThey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>They%2FThem</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating</picklist>
+        <values>
+            <fullName>Cold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Regi_n__c</picklist>
+        <values>
+            <fullName>01 - Iquique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>02 - Antofagasta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>03 - Copiapó</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>04 - La Serena</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>05 - Valparaíso</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>06 - Rancagua</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>07 - Talca</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>08 - Concepción</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>09 - Temuco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10 - Puerto Montt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11 - Coyhaique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12 - Punta Arenas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>13 - Región Metropolitana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>14 - Los Ríos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15 - Arica</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Region_Web__c</picklist>
+        <values>
+            <fullName>Región Metropolitana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Región de Antofagasta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Región de Arica y Parinacota</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Región de Atacama</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Región de Aysén</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Región de Coquimbo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Región de La Araucanía</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Región de Los Lagos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Región de Los Ríos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Región de Magallanes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Región de O%E2%80%99Higgins</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Región de Tarapacá</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Región de Valparaíso</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Región del Biobío</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Región del Maule</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Región del Ñuble</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Region_de_Despacho__c</picklist>
+        <values>
+            <fullName>01 - Iquique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>02 - Antofagasta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>03 - Copiapó</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>04 - La Serena</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>05 - Valparaíso</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>06 - Rancagua</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>07 - Talca</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>08 - Concepción</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>09 - Temuco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10 - Puerto Montt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11 - Coyhaique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12 - Punta Arenas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>13 - Región Metropolitana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>14 - Los Ríos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15 - Arica</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sucursal__c</picklist>
+        <values>
+            <fullName>S001 - Suc Santiago</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S002 - Suc Coquimbo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S003 - Suc Temuco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S004 - Suc Concepción</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S005 - Suc Antofagasta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S006 - Suc Puerto Montt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S007 - Suc Iquique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S008 - Suc Curicó</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S009 - Suc Calama</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S015 - Suc Viña del Mar</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tipo_de_Contacto__c</picklist>
+        <values>
+            <fullName>Administrador</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chef</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comprador</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comprador Pedido por Voz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dueño</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finanzas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gerente General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gestión calidad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logística</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pagador</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Representante Legal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Usuario PIA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tipo_de_Empresa__c</picklist>
+        <values>
+            <fullName>Bares</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cadena de cine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cafeterías</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catering service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clubes sociales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clínicas y Hospitales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comedores institucionales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distribuidores</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heladerías</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hotel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Otro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panaderías</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pizzerías</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reposterías</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restaurant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sushi</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ya_es_Cliente__c</picklist>
+        <values>
+            <fullName>NO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Si</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Regi_n__c</fullName>
+    <label>Región</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>01 - Iquique</fullName>
+                <default>false</default>
+                <label>01 - Iquique</label>
+            </value>
+            <value>
+                <fullName>02 - Antofagasta</fullName>
+                <default>false</default>
+                <label>02 - Antofagasta</label>
+            </value>
+            <value>
+                <fullName>03 - Copiapó</fullName>
+                <default>false</default>
+                <label>03 - Copiapó</label>
+            </value>
+            <value>
+                <fullName>04 - La Serena</fullName>
+                <default>false</default>
+                <label>04 - La Serena</label>
+            </value>
+            <value>
+                <fullName>05 - Valparaíso</fullName>
+                <default>false</default>
+                <label>05 - Valparaíso</label>
+            </value>
+            <value>
+                <fullName>06 - Rancagua</fullName>
+                <default>false</default>
+                <label>06 - Rancagua</label>
+            </value>
+            <value>
+                <fullName>07 - Talca</fullName>
+                <default>false</default>
+                <label>07 - Talca</label>
+            </value>
+            <value>
+                <fullName>08 - Concepción</fullName>
+                <default>false</default>
+                <label>08 - Concepción</label>
+            </value>
+            <value>
+                <fullName>09 - Temuco</fullName>
+                <default>false</default>
+                <label>09 - Temuco</label>
+            </value>
+            <value>
+                <fullName>10 - Puerto Montt</fullName>
+                <default>false</default>
+                <label>10 - Puerto Montt</label>
+            </value>
+            <value>
+                <fullName>11 - Coyhaique</fullName>
+                <default>false</default>
+                <label>11 - Coyhaique</label>
+            </value>
+            <value>
+                <fullName>12 - Punta Arenas</fullName>
+                <default>false</default>
+                <label>12 - Punta Arenas</label>
+            </value>
+            <value>
+                <fullName>13 - Región Metropolitana</fullName>
+                <default>false</default>
+                <label>13 - Región Metropolitana</label>
+            </value>
+            <value>
+                <fullName>14 - Los Ríos</fullName>
+                <default>false</default>
+                <label>14 - Los Ríos</label>
+            </value>
+            <value>
+                <fullName>15 - Arica</fullName>
+                <default>false</default>
+                <label>15 - Arica</label>
+            </value>
+            <value>
+                <fullName>--None--</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>--None--</label>
+            </value>
+            <value>
+                <fullName>--Seleccione--</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>--Seleccione--</label>
+            </value>
+            <value>
+                <fullName>Region de Atacama</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Region de Atacama</label>
+            </value>
+            <value>
+                <fullName>Region de Los Rios</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Region de Los Rios</label>
+            </value>
+            <value>
+                <fullName>Región Metropolitana</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Región Metropolitana</label>
+            </value>
+            <value>
+                <fullName>Región de Antofagasta</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Región de Antofagasta</label>
+            </value>
+            <value>
+                <fullName>Región de Arica y Parinacota</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Región de Arica y Parinacota</label>
+            </value>
+            <value>
+                <fullName>Región de Atacama</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Región de Atacama</label>
+            </value>
+            <value>
+                <fullName>Región de Aysén</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Región de Aysén</label>
+            </value>
+            <value>
+                <fullName>Región de Coquimbo</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Región de Coquimbo</label>
+            </value>
+            <value>
+                <fullName>Región de La Araucanía</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Región de La Araucanía</label>
+            </value>
+            <value>
+                <fullName>Región de Los Lagos</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Región de Los Lagos</label>
+            </value>
+            <value>
+                <fullName>Región de Los Ríos</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Región de Los Ríos</label>
+            </value>
+            <value>
+                <fullName>Región de Magallanes</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Región de Magallanes</label>
+            </value>
+            <value>
+                <fullName>Región de O’Higgins</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Región de O’Higgins</label>
+            </value>
+            <value>
+                <fullName>Región de Tarapacá</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Región de Tarapacá</label>
+            </value>
+            <value>
+                <fullName>Región de Valparaíso</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Región de Valparaíso</label>
+            </value>
+            <value>
+                <fullName>Región del Biobío</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Región del Biobío</label>
+            </value>
+            <value>
+                <fullName>Región del Mau
+le</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Región del Mau
+le</label>
+            </value>
+            <value>
+                <fullName>Región del Maule</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Región del Maule</label>
+            </value>
+            <value>
+                <fullName>Región del Ñuble</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Región del Ñuble</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

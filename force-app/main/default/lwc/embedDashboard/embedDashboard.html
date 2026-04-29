@@ -1,0 +1,66 @@
+<template>
+    <div class="slds-box slds-theme_default slds-m-bottom_small">
+        <lightning-button
+            label="Recargar Dashboard"
+            onclick={handleReload}
+            disabled={loading}
+            class="slds-m-right_small">
+        </lightning-button>
+
+        <lightning-button
+            label="Abrir en Quicksight"
+            onclick={handleGoToUrl}
+            class="slds-m-right_small"
+            disabled={hasError}
+            title="No se puede abrir porque el dashboard no cargó correctamente">   
+        </lightning-button>
+
+        <lightning-combobox
+            name="dashboardSelect"
+            label="Seleccione un Dashboard"
+            placeholder="Seleccione un Dashboard"
+            value={selectedValue}
+            options={options}
+            onchange={handleSelectionChange}
+            disabled={hasError}>            
+        </lightning-combobox>
+    </div>
+
+<template if:true={loading}>
+    <div class="slds-box slds-m-bottom_small slds-grid slds-align_absolute-center"
+         style="background-color:#eaf5ee;">
+        <lightning-spinner
+            alternative-text="Cargando"
+            size="large"
+            class="slds-m-right_small">
+        </lightning-spinner>
+
+        <p class="slds-text-heading_small slds-text-title_bold" style="font-size: 25px; color:#000000;">
+            Cargando dashboard seleccionado…
+        </p>
+    </div>
+</template>
+
+    <template if:true={embedUrl}>
+        <iframe
+            src={embedUrl}
+            width="100%"
+            height="1200px"
+            frameborder="0">
+        </iframe>
+    </template>
+
+<template if:true={error}>
+    <div class="slds-notify slds-notify_alert slds-theme_error slds-m-bottom_small" role="alert">
+        <lightning-icon
+            icon-name="utility:error"
+            alternative-text="Error"
+            size="medium"
+            class="slds-m-right_small">
+        </lightning-icon>
+        <p class="slds-text-heading_small slds-text-title_bold" style="font-size: 15px;">
+            <span>{error}</span>
+        </p>
+    </div>
+</template>
+</template>

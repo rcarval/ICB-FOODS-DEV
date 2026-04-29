@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Problema nuevo</fullName>
+        <default>false</default>
+        <label>Problema nuevo</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Problema existente</fullName>
+        <default>false</default>
+        <label>Problema existente</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Funcionalidad compleja</fullName>
+        <default>false</default>
+        <label>Funcionalidad compleja</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Instrucciones no claras</fullName>
+        <default>false</default>
+        <label>Instrucciones no claras</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Se requiere entrenamiento de uso</fullName>
+        <default>false</default>
+        <label>Se requiere entrenamiento de uso</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Nuevo tema de base de conocimiento</fullName>
+        <default>false</default>
+        <label>Nuevo tema de base de conocimiento</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+</StandardValueSet>

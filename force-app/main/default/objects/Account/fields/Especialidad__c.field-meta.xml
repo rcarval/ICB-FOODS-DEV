@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Especialidad__c</fullName>
+    <label>Especialidad</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A0 - Carnes</fullName>
+                <default>false</default>
+                <label>A0 - Carnes</label>
+            </value>
+            <value>
+                <fullName>A1 - Pollo</fullName>
+                <default>false</default>
+                <label>A1 - Pollo</label>
+            </value>
+            <value>
+                <fullName>A2 - Hamburguesa</fullName>
+                <default>false</default>
+                <label>A2 - Hamburguesa</label>
+            </value>
+            <value>
+                <fullName>A3 - Sándwich y Hotdog</fullName>
+                <default>false</default>
+                <label>A3 - Sándwich y Hotdog</label>
+            </value>
+            <value>
+                <fullName>A4 - Pescados y Mariscos</fullName>
+                <default>false</default>
+                <label>A4 - Pescados y Mariscos</label>
+            </value>
+            <value>
+                <fullName>A5 - Pastelería</fullName>
+                <default>false</default>
+                <label>A5 - Pastelería</label>
+            </value>
+            <value>
+                <fullName>A6 - Panadería</fullName>
+                <default>false</default>
+                <label>A6 - Panadería</label>
+            </value>
+            <value>
+                <fullName>A7 - Empanadas</fullName>
+                <default>false</default>
+                <label>A7 - Empanadas</label>
+            </value>
+            <value>
+                <fullName>A8 - Pizza</fullName>
+                <default>false</default>
+                <label>A8 - Pizza</label>
+            </value>
+            <value>
+                <fullName>A9 - Cafetería</fullName>
+                <default>false</default>
+                <label>A9 - Cafetería</label>
+            </value>
+            <value>
+                <fullName>B0 - Heladería</fullName>
+                <default>false</default>
+                <label>B0 - Heladería</label>
+            </value>
+            <value>
+                <fullName>B1 - Pastas</fullName>
+                <default>false</default>
+                <label>B1 - Pastas</label>
+            </value>
+            <value>
+                <fullName>B2 - Internacional</fullName>
+                <default>false</default>
+                <label>B2 - Internacional</label>
+            </value>
+            <value>
+                <fullName>B3 - Peruano</fullName>
+                <default>false</default>
+                <label>B3 - Peruano</label>
+            </value>
+            <value>
+                <fullName>B4 - Español</fullName>
+                <default>false</default>
+                <label>B4 - Español</label>
+            </value>
+            <value>
+                <fullName>B5 - Americano</fullName>
+                <default>false</default>
+                <label>B5 - Americano</label>
+            </value>
+            <value>
+                <fullName>B6 - Chino</fullName>
+                <default>false</default>
+                <label>B6 - Chino</label>
+            </value>
+            <value>
+                <fullName>B7 - Sushi</fullName>
+                <default>false</default>
+                <label>B7 - Sushi</label>
+            </value>
+            <value>
+                <fullName>B8 - Almacén / Tienda</fullName>
+                <default>false</default>
+                <label>B8 - Almacén / Tienda</label>
+            </value>
+            <value>
+                <fullName>B9 - Naturista</fullName>
+                <default>false</default>
+                <label>B9 - Naturista</label>
+            </value>
+            <value>
+                <fullName>C0 - Hotel</fullName>
+                <default>false</default>
+                <label>C0 - Hotel</label>
+            </value>
+            <value>
+                <fullName>C1 - Banquetería</fullName>
+                <default>false</default>
+                <label>C1 - Banquetería</label>
+            </value>
+            <value>
+                <fullName>C2 - Comida Casera / Menú</fullName>
+                <default>false</default>
+                <label>C2 - Comida Casera / Menú</label>
+            </value>
+            <value>
+                <fullName>C3 - Servicios Alimentaci</fullName>
+                <default>false</default>
+                <label>C3 - Servicios Alimentación</label>
+            </value>
+            <value>
+                <fullName>C4 - Otros</fullName>
+                <default>false</default>
+                <label>C4 - Otros</label>
+            </value>
+            <value>
+                <fullName>C5 - Petroleras</fullName>
+                <default>false</default>
+                <label>C5 - Petroleras</label>
+            </value>
+            <value>
+                <fullName>C6 - DIST.Y MAYORISTAS</fullName>
+                <default>false</default>
+                <label>C6 - DIST.Y MAYORISTAS</label>
+            </value>
+            <value>
+                <fullName>C7 - CLIENTE BOLETA</fullName>
+                <default>false</default>
+                <label>C7 - CLIENTE BOLETA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

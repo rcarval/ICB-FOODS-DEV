@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tipo de Empresa --></label>
+    <name>Tipo_de_Empresa__c</name>
+    <picklistValues>
+        <masterLabel>Bares</masterLabel>
+        <translation><!-- Bares --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cadena de cine</masterLabel>
+        <translation><!-- Cadena de cine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cafeterías</masterLabel>
+        <translation><!-- Cafeterías --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Catering service</masterLabel>
+        <translation><!-- Catering service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clubes sociales</masterLabel>
+        <translation><!-- Clubes sociales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clínicas y Hospitales</masterLabel>
+        <translation><!-- Clínicas y Hospitales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Comedores institucionales</masterLabel>
+        <translation><!-- Comedores institucionales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Distribuidores</masterLabel>
+        <translation><!-- Distribuidores --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Heladerías</masterLabel>
+        <translation><!-- Heladerías --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hotel</masterLabel>
+        <translation><!-- Hotel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrias</masterLabel>
+        <translation><!-- Industrias --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Otro</masterLabel>
+        <translation><!-- Otro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Panaderías</masterLabel>
+        <translation><!-- Panaderías --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pizzerías</masterLabel>
+        <translation><!-- Pizzerías --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reposterías</masterLabel>
+        <translation><!-- Reposterías --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Restaurant</masterLabel>
+        <translation><!-- Restaurant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sushi</masterLabel>
+        <translation><!-- Sushi --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

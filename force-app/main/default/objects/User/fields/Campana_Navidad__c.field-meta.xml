@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campana_Navidad__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Campaña navideña, checkbox para saber si se leyó o no</description>
+    <label>Campana Navidad</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

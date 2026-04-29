@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Abre el flujo para subir un PDF y enviarlo a Firma Digital (TuFirma). Se ejecuta desde un registro de Quote.</description>
+    <flowDefinition>ICB_Subir_PDF_Firma_Digital</flowDefinition>
+    <label>Subir PDF Firma Digital</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

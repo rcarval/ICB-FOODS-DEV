@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Canal --></label>
+    <name>Gerencia__c</name>
+    <picklistValues>
+        <masterLabel>102 - Cadenas</masterLabel>
+        <translation><!-- 102 - Cadenas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>103 - Catering</masterLabel>
+        <translation><!-- 103 - Catering --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>105 - Institucional</masterLabel>
+        <translation><!-- 105 - Institucional --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>106 - Mayorista</masterLabel>
+        <translation><!-- 106 - Mayorista --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>107 - Personas</masterLabel>
+        <translation><!-- 107 - Personas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>112 - Industria</masterLabel>
+        <translation><!-- 112 - Industria --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>113 - Otros</masterLabel>
+        <translation><!-- 113 - Otros --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>115 - Punto a Punto</masterLabel>
+        <translation><!-- 115 - Punto a Punto --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

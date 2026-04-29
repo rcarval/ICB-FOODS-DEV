@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Domicilio_de_Cliente__c$Name</field>
+    </columns>
+    <columns>
+        <field>Domicilio_de_Cliente__c.Facturas__r$Name</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Ventas por SKU, por Cliente Domicilio</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Domicilios_con_Facturas__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Domicilio_de_Cliente__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

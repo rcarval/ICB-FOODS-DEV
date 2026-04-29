@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_Pasar_Completa_Manual</fullName>
+    <active>true</active>
+    <description>No permite que los asesores cambien el estado de la cotizacion a Completa manualmente</description>
+    <errorConditionFormula>AND(
+    ISPICKVAL(Status, &quot;Completa&quot;),
+				ISCHANGED(Status), 
+    PRIORVALUE(Status) &lt;&gt; &quot;Completa&quot;,
+    NOT(IsFlowUpdate__c) 				
+)</errorConditionFormula>
+    <errorMessage>No puede editar manualmente a Completa. Se modificará automáticamente cuando los descuentos hayan sido procesados.</errorMessage>
+</ValidationRule>

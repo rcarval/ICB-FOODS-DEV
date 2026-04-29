@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Provisión Agua --></label>
+    <name>Provisi_n_Agua__c</name>
+    <picklistValues>
+        <masterLabel>Autónoma</masterLabel>
+        <translation><!-- Autónoma --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Provisión red</masterLabel>
+        <translation><!-- Provisión red --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

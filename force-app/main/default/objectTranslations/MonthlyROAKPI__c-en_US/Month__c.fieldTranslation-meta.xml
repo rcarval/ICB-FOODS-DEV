@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Siempre debe ser el día 1 del mes correspondiente. --></help>
+    <label><!-- Mes --></label>
+    <name>Month__c</name>
+</CustomFieldTranslation>

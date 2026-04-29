@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Clientes nuevos que aparecieron por primera vez en el mes. --></help>
+    <label><!-- Nuevos --></label>
+    <name>Nuevos__c</name>
+</CustomFieldTranslation>
