@@ -8,45 +8,61 @@ public with sharing class ICB_CalloutAPI_SII {
 
     /** Constantes de Configuración */
     private static final String NAMED_CREDENTIAL = 'ICB_SII_API';
-    private static final String PATH_AUTORIZACION = '/sii/dte/v2/contribuyentes/{0}/autorizacion';
+    private static final String PATH_AUTORIZACION = '/api/v2/sii/contribuyentes/situacion_tributaria/tercero/{rut}';
     private static final Integer TIMEOUT_MS = 120000;
     private static final String LOG_PREFIX = '[ICB_SII]';
     private static final Integer LOG_BODY_MAX_LENGTH = 1000;
 
     /** Mapeamos la respuesta JSON */
-    public class AutorizacionResponseDto {
-        public DataDto data;
+    public class SituacionTributariaResponseDto {
+        public SituacionTributariaDataDto data;
     }
 
-    public class DataDto {
-        public Boolean autorizado;
-        public String direccion_regional;
+    public class SituacionTributariaDataDto {
+        public Long rut;
+        public String dv;
         public String razon_social;
-        public String rut;
-        public String software;
-        public List<DocumentoDto> documentos;
-        public ResolucionDto resolucion;
+        public Boolean inicio_actividades;
+        public String fecha_inicio_actividades;
+        public Boolean pro_pyme;
+        public Boolean moneda_extranjera;
+        public Boolean obligacion_dte;
+        public Boolean excepcion_dte;
+        public List<ActividadDto> actividades;
+        public List<DocumentoTimbradoDto> documentos_timbrados;
+        public ObservacionesDto observaciones;
     }
 
-    public class DocumentoDto {
-        public String autorizado;
-        public Integer codigo;
-        public String desautorizado;
-        public String descripcion;
+    public class ActividadDto {
+        public String codigo;
+        public String glosa;
+        public Integer categoria;
+        public Boolean afecta;
     }
 
-    public class ResolucionDto {
-        public String fecha;
-        public Integer numero;
+    public class DocumentoTimbradoDto {
+        public String documento;
+        public Integer ultimo_timbraje;
     }
 
+    public class ObservacionesDto {
+        public Boolean inconcurrente;
+        public Boolean suplantado;
+        public Boolean no_ubicado;
+        public Boolean termino_giro;
+        public Boolean domicilio_inexistente;
+        public Boolean actividad_esporadica;
+        public Boolean no_habido_domicilio;
+        public Boolean termino_giro_obligatorio;
+    }
+    
     /**
      * Realiza la consulta de estado de autorización al SII.
      * rut - RUT del contribuyente (formato 12345678-9)
-     * AutorizacionResponseDto con la información del servicio.
+     * SituacionTributariaResponseDto con la información del servicio.
      * ICB_CalloutSIIException en caso de error de negocio o conexión.
      */
-    public static AutorizacionResponseDto consultarEstadoAutorizacion(String rut) {
+    public static SituacionTributariaResponseDto consultarEstadoAutorizacion(String rut) {
         String origen = 'ICB_CalloutAPI_SII.consultarEstadoAutorizacion';
         logInfo('Iniciando consulta para RUT: ' + rut);
         
@@ -59,7 +75,7 @@ public with sharing class ICB_CalloutAPI_SII {
         
         // Construcción dinámica del endpoint 
         String endpoint = 'callout:' + NAMED_CREDENTIAL + String.format(PATH_AUTORIZACION, new List<String>{ rut });
-        endpoint += '?certificacion=1&formato=json';
+        endpoint = endpoint.replace('{rut}', rut);
         
         HttpRequest req = new HttpRequest();
         req.setEndpoint(endpoint);
@@ -76,7 +92,7 @@ public with sharing class ICB_CalloutAPI_SII {
             // 3. Validación de Respuesta Exitosa
             if (res.getStatusCode() == 200) {
                 logInfo('Petición exitosa recibida.');
-                AutorizacionResponseDto dto = (AutorizacionResponseDto) JSON.deserialize(res.getBody(), AutorizacionResponseDto.class);
+                SituacionTributariaResponseDto dto = (SituacionTributariaResponseDto) JSON.deserialize(res.getBody(), SituacionTributariaResponseDto.class);
                 
                 ICB_LogIntegracionService.insertarLogOutbound(origen, endpoint, 'GET', null, null, res.getStatusCode(), null, res.getBody(), true, null, System.currentTimeMillis() - startMs, rut);
                 return dto;

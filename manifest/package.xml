@@ -908,6 +908,7 @@
         <members>Quote.Cliente__c</members>
         <members>Quote.Contrato_Digital__c</members>
         <members>Quote.Costo_total__c</members>
+        <members>Quote.Eliminar_Campo__c</members>
         <members>Quote.Id_Cliente__c</members>
         <members>Quote.IsFlowUpdate__c</members>
         <members>Quote.Margen_de_Cotizacion__c</members>
@@ -1796,6 +1797,7 @@
         <members>LEAD_TRG_AfterUpdate</members>
         <members>LEAD_TRG_BeforeUpdate</members>
         <members>LEAD_TRG_Visitas_AfterUpdate</members>
+        <members>Lead_After_Update_Consulta_API_SII</members>
         <members>Lead_Tarea_Contactabilidad</members>
         <members>Lead_Tarea_contactabilidad_Asesor</members>
         <members>Lead_Validar_Datos_de_Lead</members>
@@ -1910,6 +1912,7 @@
         <members>LEAD_TRG_AfterUpdate</members>
         <members>LEAD_TRG_BeforeUpdate</members>
         <members>LEAD_TRG_Visitas_AfterUpdate</members>
+        <members>Lead_After_Update_Consulta_API_SII</members>
         <members>Lead_Tarea_Contactabilidad</members>
         <members>Lead_Tarea_contactabilidad_Asesor</members>
         <members>Lead_Validar_Datos_de_Lead</members>

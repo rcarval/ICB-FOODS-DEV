@@ -7185,6 +7185,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Quote.Eliminar_Campo__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Quote.Email</field>
         <readable>true</readable>
@@ -9296,6 +9301,10 @@
     <flowAccesses>
         <enabled>false</enabled>
         <flow>LEAD_TRG_Visitas_AfterUpdate</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Lead_After_Update_Consulta_API_SII</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
