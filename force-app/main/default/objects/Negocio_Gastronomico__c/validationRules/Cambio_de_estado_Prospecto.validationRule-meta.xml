@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cambio_de_estado_Prospecto</fullName>
+    <active>false</active>
+    <description>no se deberia cambiar el estado despues de haberlo pasado a prospecto</description>
+    <errorConditionFormula>AND(
+    ISPICKVAL(PRIORVALUE(Estado__c), &quot;Prospecto&quot;),
+    NOT(ISPICKVAL(Estado__c, &quot;Prospecto&quot;))
+)</errorConditionFormula>
+    <errorDisplayField>Estado__c</errorDisplayField>
+    <errorMessage>No se puede cambiar el estado después de haberlo pasado a &apos;Prospecto&apos;</errorMessage>
+</ValidationRule>

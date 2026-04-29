@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Muestras_Aprobaciones_Pendientes</fullName>
+    <columns>NAME</columns>
+    <columns>Cliente__c</columns>
+    <columns>Propietario_del_registro__c</columns>
+    <columns>Estado__c</columns>
+    <columns>Importe_total__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <label>Muestras - Aprobaciones Pendientes</label>
+</ListView>

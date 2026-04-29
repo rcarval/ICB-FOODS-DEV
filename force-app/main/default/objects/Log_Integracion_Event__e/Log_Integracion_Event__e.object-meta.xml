@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Evento para registrar logs de integración de forma asíncrona (evita DML entre callouts).</description>
+    <eventType>HighVolume</eventType>
+    <label>Log Integración Event</label>
+    <pluralLabel>Log Integración Events</pluralLabel>
+    <publishBehavior>PublishAfterCommit</publishBehavior>
+</CustomObject>

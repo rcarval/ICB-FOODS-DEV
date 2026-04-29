@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Regla_de_3_minutos</fullName>
+    <active>false</active>
+    <description>No permite la creación de Direcciones en menos de 3 minutos, tras la creación de las cuentas nuevas cuando llega el FS desde SAP</description>
+    <errorConditionFormula>(ISNEW() &amp;&amp; (NOW() - Cliente__r.CreatedDate ) * 1440 &lt; 3) &amp;&amp; NOT(ISNULL( Cliente_Despacho__c ))</errorConditionFormula>
+    <errorMessage>No se puede crear un registro antes de 3 minutos de creada la cuenta.</errorMessage>
+</ValidationRule>

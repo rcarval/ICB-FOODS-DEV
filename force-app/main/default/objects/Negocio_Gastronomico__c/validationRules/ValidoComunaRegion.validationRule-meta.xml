@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValidoComunaRegion</fullName>
+    <active>false</active>
+    <errorConditionFormula>and (or (isnull(   Comuna__c  ), isnull( text( Region__c  ))),
+not(isnull( Direccion__c )))</errorConditionFormula>
+    <errorDisplayField>Comuna__c</errorDisplayField>
+    <errorMessage>Debe ingresar Region y Comuna</errorMessage>
+</ValidationRule>

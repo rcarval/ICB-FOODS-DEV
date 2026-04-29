@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>validacion_centro_de_ab_paso_a_prospecto</fullName>
+    <active>false</active>
+    <description>centro de abastecimiento</description>
+    <errorConditionFormula>ISPICKVAL(  Estado__c , &quot;Prospecto&quot;)  &amp;&amp;  ISPICKVAL( Centro_de_Abastecimiento__c , &quot;&quot;)</errorConditionFormula>
+    <errorDisplayField>Centro_de_Abastecimiento__c</errorDisplayField>
+    <errorMessage>Completar el campo Centro de Abastecimiento para pasar a Prospecto</errorMessage>
+</ValidationRule>

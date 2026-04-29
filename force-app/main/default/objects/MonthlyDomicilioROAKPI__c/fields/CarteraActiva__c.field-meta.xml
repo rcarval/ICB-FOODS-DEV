@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CarteraActiva__c</fullName>
+    <description>Domicilios distintos con factura (domicilio informado) en los últimos 3 meses al cierre.</description>
+    <externalId>false</externalId>
+    <label>Cartera activa</label>
+    <precision>6</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

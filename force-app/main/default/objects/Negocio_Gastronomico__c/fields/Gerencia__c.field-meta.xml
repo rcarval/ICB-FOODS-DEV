@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Gerencia__c</fullName>
+    <label>Canal</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>102 - Cadenas</fullName>
+                <default>false</default>
+                <label>102 - Cadenas</label>
+            </value>
+            <value>
+                <fullName>103 - Catering</fullName>
+                <default>false</default>
+                <label>103 - Catering</label>
+            </value>
+            <value>
+                <fullName>105 - Institucional</fullName>
+                <default>false</default>
+                <label>105 - Institucional</label>
+            </value>
+            <value>
+                <fullName>106 - Mayorista</fullName>
+                <default>false</default>
+                <label>106 - Mayorista</label>
+            </value>
+            <value>
+                <fullName>107 - Personas</fullName>
+                <default>false</default>
+                <label>107 - Personas</label>
+            </value>
+            <value>
+                <fullName>112 - Industria</fullName>
+                <default>false</default>
+                <label>112 - Industria</label>
+            </value>
+            <value>
+                <fullName>113 - Otros</fullName>
+                <default>false</default>
+                <label>113 - Otros</label>
+            </value>
+            <value>
+                <fullName>115 - Punto a Punto</fullName>
+                <default>false</default>
+                <label>115 - Punto a Punto</label>
+            </value>
+            <value>
+                <fullName>Cadenas</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cadenas</label>
+            </value>
+            <value>
+                <fullName>Catering</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Catering</label>
+            </value>
+            <value>
+                <fullName>Industria</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Industria</label>
+            </value>
+            <value>
+                <fullName>Institucional</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Institucional</label>
+            </value>
+            <value>
+                <fullName>Mayorista</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Mayorista</label>
+            </value>
+            <value>
+                <fullName>Otros</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Otros</label>
+            </value>
+            <value>
+                <fullName>Personas</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Personas</label>
+            </value>
+            <value>
+                <fullName>Punto a Punto</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Punto a Punto</label>
+            </value>
+            <value>
+                <fullName>gerencia 1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>gerencia 1</label>
+            </value>
+            <value>
+                <fullName>gerencia 2</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>gerencia 2</label>
+            </value>
+            <value>
+                <fullName>gerencia 3</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>gerencia 3</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

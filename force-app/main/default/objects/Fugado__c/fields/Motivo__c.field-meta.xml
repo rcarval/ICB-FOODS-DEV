@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motivo__c</fullName>
+    <label>Motivo</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Precio elevado</fullName>
+                <default>false</default>
+                <label>Precio elevado</label>
+            </value>
+            <value>
+                <fullName>Fecha especial</fullName>
+                <default>false</default>
+                <label>Fecha especial</label>
+            </value>
+            <value>
+                <fullName>Calidad / insatisfacción con producto</fullName>
+                <default>false</default>
+                <label>Calidad / insatisfacción con producto</label>
+            </value>
+            <value>
+                <fullName>Cambio de proveedor o marca</fullName>
+                <default>false</default>
+                <label>Cambio de proveedor o marca</label>
+            </value>
+            <value>
+                <fullName>Baja demanda / cierre temporal</fullName>
+                <default>false</default>
+                <label>Baja demanda / cierre temporal</label>
+            </value>
+            <value>
+                <fullName>Producto descontinuado o sin stock</fullName>
+                <default>false</default>
+                <label>Producto descontinuado o sin stock</label>
+            </value>
+            <value>
+                <fullName>Promoción o compra puntual</fullName>
+                <default>false</default>
+                <label>Promoción o compra puntual</label>
+            </value>
+            <value>
+                <fullName>Otro</fullName>
+                <default>false</default>
+                <label>Otro</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValidoModif</fullName>
+    <active>false</active>
+    <errorConditionFormula>and( not(isblank(PRIORVALUE(  Domicilio_Adicional__Street__s  ))), ISCHANGED(   Domicilio_Adicional__Street__s   ))</errorConditionFormula>
+    <errorDisplayField>Domicilio_Adicional__Street__s</errorDisplayField>
+    <errorMessage>No se puede modificar el domicilio ingresado</errorMessage>
+</ValidationRule>

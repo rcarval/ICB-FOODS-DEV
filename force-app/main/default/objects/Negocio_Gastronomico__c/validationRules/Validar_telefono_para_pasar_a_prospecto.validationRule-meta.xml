@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validar_telefono_para_pasar_a_prospecto</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISPICKVAL(  Estado__c , &quot;Prospecto&quot;)  &amp;&amp;  ISBLANK( Telefono__c )</errorConditionFormula>
+    <errorDisplayField>Telefono__c</errorDisplayField>
+    <errorMessage>Completar el campo Telefono para pasar a Prospecto</errorMessage>
+</ValidationRule>

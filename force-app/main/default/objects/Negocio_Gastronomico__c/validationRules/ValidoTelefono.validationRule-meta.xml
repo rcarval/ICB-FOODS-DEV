@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValidoTelefono</fullName>
+    <active>false</active>
+    <errorConditionFormula>or(LEN(Telefono__c) &lt;&gt; 9, not(isnumber( Telefono__c )))</errorConditionFormula>
+    <errorDisplayField>Telefono__c</errorDisplayField>
+    <errorMessage>El teléfono debe tener 9 dígitos</errorMessage>
+</ValidationRule>

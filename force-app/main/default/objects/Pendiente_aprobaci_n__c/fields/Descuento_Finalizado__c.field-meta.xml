@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Descuento_Finalizado__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Campo auxiliar para determinar univocamente si el descuento debe seguir un proceso de aprobacion (false) o si ya no requiere mas aprobados (true)</description>
+    <label>Descuento Finalizado</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

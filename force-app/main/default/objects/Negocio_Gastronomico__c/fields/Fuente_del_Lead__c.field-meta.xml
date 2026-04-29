@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fuente_del_Lead__c</fullName>
+    <label>Fuente del Lead</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Web Hablemos</fullName>
+                <default>false</default>
+                <label>Web Hablemos</label>
+            </value>
+            <value>
+                <fullName>Web Contactanos</fullName>
+                <default>false</default>
+                <label>Web Contactanos</label>
+            </value>
+            <value>
+                <fullName>Catalogo web</fullName>
+                <default>false</default>
+                <label>Catalogo web</label>
+            </value>
+            <value>
+                <fullName>CCC</fullName>
+                <default>false</default>
+                <label>CCC</label>
+            </value>
+            <value>
+                <fullName>Terreno</fullName>
+                <default>false</default>
+                <label>Terreno</label>
+            </value>
+            <value>
+                <fullName>OpenDay</fullName>
+                <default>false</default>
+                <label>OpenDay</label>
+            </value>
+            <value>
+                <fullName>Lead CSM</fullName>
+                <default>false</default>
+                <label>Lead CSM</label>
+            </value>
+            <value>
+                <fullName>Expocafe</fullName>
+                <default>false</default>
+                <label>Expocafe</label>
+            </value>
+            <value>
+                <fullName>Chefworks</fullName>
+                <default>false</default>
+                <label>Chefworks</label>
+            </value>
+            <value>
+                <fullName>Uscheese</fullName>
+                <default>false</default>
+                <label>Uscheese</label>
+            </value>
+            <value>
+                <fullName>Campaña</fullName>
+                <default>false</default>
+                <label>Campaña</label>
+            </value>
+            <value>
+                <fullName>Carozzi</fullName>
+                <default>false</default>
+                <label>Carozzi</label>
+            </value>
+            <value>
+                <fullName>OpenDayTemuco</fullName>
+                <default>false</default>
+                <label>OpenDayTemuco</label>
+            </value>
+            <value>
+                <fullName>Proveedor</fullName>
+                <default>false</default>
+                <label>Proveedor</label>
+            </value>
+            <value>
+                <fullName>Lead Meta</fullName>
+                <default>false</default>
+                <label>Lead Meta</label>
+            </value>
+            <value>
+                <fullName>Foodservice</fullName>
+                <default>false</default>
+                <label>Foodservice</label>
+            </value>
+            <value>
+                <fullName>OpenDayIquique</fullName>
+                <default>false</default>
+                <label>OpenDayIquique</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

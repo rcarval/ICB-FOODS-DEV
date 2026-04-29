@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>obligatoriedadRegionComuna</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISBLANK(Comuna_Despacho__c) || ISBLANK(TEXT(Region__c))</errorConditionFormula>
+    <errorMessage>La región y la comuna son obligatorios para guardar el registro</errorMessage>
+</ValidationRule>

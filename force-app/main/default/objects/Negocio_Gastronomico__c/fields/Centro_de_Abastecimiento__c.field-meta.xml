@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Centro_de_Abastecimiento__c</fullName>
+    <label>Centro de Abastecimiento</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>FS00 - Santiago Maulen</fullName>
+                <default>false</default>
+                <label>FS00 - Santiago Maulen</label>
+            </value>
+            <value>
+                <fullName>FS02 - Coquimbo</fullName>
+                <default>false</default>
+                <label>FS02 - Coquimbo</label>
+            </value>
+            <value>
+                <fullName>FS03 - Temuco</fullName>
+                <default>false</default>
+                <label>FS03 - Temuco</label>
+            </value>
+            <value>
+                <fullName>FS04 - Concepción</fullName>
+                <default>false</default>
+                <label>FS04 - Concepción</label>
+            </value>
+            <value>
+                <fullName>FS05 - Antofagasta</fullName>
+                <default>false</default>
+                <label>FS05 - Antofagasta</label>
+            </value>
+            <value>
+                <fullName>FS06 - Puerto Montt</fullName>
+                <default>false</default>
+                <label>FS06 - Puerto Montt</label>
+            </value>
+            <value>
+                <fullName>FS07 - Iquique</fullName>
+                <default>false</default>
+                <label>FS07 - Iquique</label>
+            </value>
+            <value>
+                <fullName>FS08 - Curicó</fullName>
+                <default>false</default>
+                <label>FS08 - Curicó</label>
+            </value>
+            <value>
+                <fullName>FS09 - Calama</fullName>
+                <default>false</default>
+                <label>FS09 - Calama</label>
+            </value>
+            <value>
+                <fullName>FS10 - Paine</fullName>
+                <default>false</default>
+                <label>FS10 - Paine</label>
+            </value>
+            <value>
+                <fullName>FS11 - Tienda Vitacura</fullName>
+                <default>false</default>
+                <label>FS11 - Tienda Vitacura</label>
+            </value>
+            <value>
+                <fullName>FS12 - Tienda Rendic</fullName>
+                <default>false</default>
+                <label>FS12 - Tienda Rendic</label>
+            </value>
+            <value>
+                <fullName>FS13 - Tienda Calama</fullName>
+                <default>false</default>
+                <label>FS13 - Tienda Calama</label>
+            </value>
+            <value>
+                <fullName>FSE1 - Bodegas Externas</fullName>
+                <default>false</default>
+                <label>FSE1 - Bodegas Externas</label>
+            </value>
+            <value>
+                <fullName>FSE2 - Operador Logístico &quot;Loginsa&quot;</fullName>
+                <default>false</default>
+                <label>FSE2 - Operador Logístico &quot;Loginsa&quot;</label>
+            </value>
+            <value>
+                <fullName>FSE3 - Frigorífico Icestar</fullName>
+                <default>false</default>
+                <label>FSE3 - Frigorífico Icestar</label>
+            </value>
+            <value>
+                <fullName>FSEX - FS Express</fullName>
+                <default>false</default>
+                <label>FSEX - FS Express</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

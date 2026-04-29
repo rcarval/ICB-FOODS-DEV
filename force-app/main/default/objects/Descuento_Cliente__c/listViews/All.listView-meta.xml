@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Cliente__c</columns>
+    <columns>Codigo_de_Id_externo__c</columns>
+    <columns>Descuento_gestionado__c</columns>
+    <columns>Producto__c</columns>
+    <columns>Fecha_desde__c</columns>
+    <columns>Fecha_hasta__c</columns>
+    <columns>Precio_con_Descuento__c</columns>
+    <columns>TextoSKU__c</columns>
+    <columns>TextoUMV__c</columns>
+    <columns>Historico__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Codigo_de_Id_externo__c</field>
+        <operation>equals</operation>
+        <value>105045100</value>
+    </filters>
+    <label>All</label>
+</ListView>

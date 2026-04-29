@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UniqueKey__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>Clave única compuesta por OwnerId|YYYY-MM (ejemplo: &quot;005xxx|2024-12&quot;) para identificar unívocamente cada registro mensual por Owner. Usado para upsert.</description>
+    <externalId>true</externalId>
+    <inlineHelpText>Formato: {OwnerId}|{Año}-{Mes}. Ejemplo: 00558000000abcAA|2024-12</inlineHelpText>
+    <label>Clave única</label>
+    <length>255</length>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

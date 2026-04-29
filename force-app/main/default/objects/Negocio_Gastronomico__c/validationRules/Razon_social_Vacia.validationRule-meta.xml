@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Razon_social_Vacia</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISBLANK(Raz_n_Social__c) &amp;&amp; NOT(ISNEW())</errorConditionFormula>
+    <errorDisplayField>Raz_n_Social__c</errorDisplayField>
+    <errorMessage>La razón Social no debe estar vacío</errorMessage>
+</ValidationRule>

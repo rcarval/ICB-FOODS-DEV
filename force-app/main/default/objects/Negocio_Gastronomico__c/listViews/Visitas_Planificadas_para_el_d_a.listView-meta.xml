@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Visitas_Planificadas_para_el_d_a</fullName>
+    <columns>NAME</columns>
+    <columns>Estado__c</columns>
+    <columns>Fecha_Probable_de_Cierre__c</columns>
+    <columns>Nombre_de_contacto__c</columns>
+    <columns>Comuna__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Fecha_Probable_de_Visita__c</field>
+        <operation>equals</operation>
+        <value>TODAY</value>
+    </filters>
+    <label>Visitas Planificadas para el día</label>
+</ListView>

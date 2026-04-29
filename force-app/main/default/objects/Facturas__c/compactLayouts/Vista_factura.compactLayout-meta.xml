@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vista_factura</fullName>
+    <fields>Name</fields>
+    <fields>Folio_Documento__c</fields>
+    <fields>Fecha_de_Documento__c</fields>
+    <fields>numero_pedido__c</fields>
+    <fields>Sociedad__c</fields>
+    <label>Vista factura</label>
+</CompactLayout>

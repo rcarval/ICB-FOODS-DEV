@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Oficina_de_Venta__c</fullName>
+    <label>Oficina de Venta</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Oficina   1</fullName>
+                <default>false</default>
+                <label>Oficina   1</label>
+            </value>
+            <value>
+                <fullName>Oficina   2</fullName>
+                <default>false</default>
+                <label>Oficina   2</label>
+            </value>
+            <value>
+                <fullName>Oficina   3</fullName>
+                <default>false</default>
+                <label>Oficina   3</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

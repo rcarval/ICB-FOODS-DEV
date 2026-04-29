@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Estado__c</fullName>
+    <label>Estado</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Negocio Gastronomico</fullName>
+                <default>true</default>
+                <label>Negocio Gastronomico</label>
+            </value>
+            <value>
+                <fullName>Lead Contactado</fullName>
+                <default>false</default>
+                <label>Lead Contactado</label>
+            </value>
+            <value>
+                <fullName>Prospecto</fullName>
+                <default>false</default>
+                <label>Cliente Creado</label>
+            </value>
+            <value>
+                <fullName>Congelado</fullName>
+                <default>false</default>
+                <label>Congelado</label>
+            </value>
+            <value>
+                <fullName>Cerrado Perdido</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cerrado Perdido</label>
+            </value>
+            <value>
+                <fullName>Descubierto</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Descubierto</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NewAccountCount__c</fullName>
+    <description>Domicilios cuya primera factura (con domicilio informado) cae en el mes actual; mismo criterio temporal que nuevos clientes en cuenta.</description>
+    <externalId>false</externalId>
+    <label>Nuevos</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

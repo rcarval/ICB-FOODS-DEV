@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo_de_Empresa__c</fullName>
+    <label>Tipo de Empresa</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bares</fullName>
+                <default>false</default>
+                <label>Bares</label>
+            </value>
+            <value>
+                <fullName>Cadena de cine</fullName>
+                <default>false</default>
+                <label>Cadena de cine</label>
+            </value>
+            <value>
+                <fullName>Cafeterías</fullName>
+                <default>false</default>
+                <label>Cafeterías</label>
+            </value>
+            <value>
+                <fullName>Catering service</fullName>
+                <default>false</default>
+                <label>Catering service</label>
+            </value>
+            <value>
+                <fullName>Clínicas y Hospitales</fullName>
+                <default>false</default>
+                <label>Clínicas y Hospitales</label>
+            </value>
+            <value>
+                <fullName>Clubes sociales</fullName>
+                <default>false</default>
+                <label>Clubes sociales</label>
+            </value>
+            <value>
+                <fullName>Comedores institucionales</fullName>
+                <default>false</default>
+                <label>Comedores institucionales</label>
+            </value>
+            <value>
+                <fullName>Distribuidores</fullName>
+                <default>false</default>
+                <label>Distribuidores</label>
+            </value>
+            <value>
+                <fullName>Heladerías</fullName>
+                <default>false</default>
+                <label>Heladerías</label>
+            </value>
+            <value>
+                <fullName>Hotel</fullName>
+                <default>false</default>
+                <label>Hotel</label>
+            </value>
+            <value>
+                <fullName>Industrias</fullName>
+                <default>false</default>
+                <label>Industrias</label>
+            </value>
+            <value>
+                <fullName>Panaderías</fullName>
+                <default>false</default>
+                <label>Panaderías</label>
+            </value>
+            <value>
+                <fullName>Pizzerías</fullName>
+                <default>false</default>
+                <label>Pizzerías</label>
+            </value>
+            <value>
+                <fullName>Reposterías</fullName>
+                <default>false</default>
+                <label>Reposterías</label>
+            </value>
+            <value>
+                <fullName>Restaurant</fullName>
+                <default>false</default>
+                <label>Restaurant</label>
+            </value>
+            <value>
+                <fullName>Sushi</fullName>
+                <default>false</default>
+                <label>Sushi</label>
+            </value>
+            <value>
+                <fullName>Otro</fullName>
+                <default>false</default>
+                <label>Otro</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

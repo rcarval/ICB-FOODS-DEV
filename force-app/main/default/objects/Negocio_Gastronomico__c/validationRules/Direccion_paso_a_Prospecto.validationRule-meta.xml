@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Direccion_paso_a_Prospecto</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISPICKVAL( Estado__c , &quot;Prospecto&quot;) &amp;&amp; AND( ISBLANK(Direccion__City__s ),ISBLANK( Direccion__Street__s) , ISBLANK( Direccion__PostalCode__s ))</errorConditionFormula>
+    <errorDisplayField>Direccion__Street__s</errorDisplayField>
+    <errorMessage>Completar el campo Direccion para pasar a Prospecto</errorMessage>
+</ValidationRule>

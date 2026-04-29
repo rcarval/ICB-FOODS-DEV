@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Estado_Domicilio__c</fullName>
+    <label>Estado Domicilio</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cartera Activa</fullName>
+                <default>false</default>
+                <label>Cartera Activa</label>
+            </value>
+            <value>
+                <fullName>Retención</fullName>
+                <default>false</default>
+                <label>Retención</label>
+            </value>
+            <value>
+                <fullName>Fugados</fullName>
+                <default>false</default>
+                <label>Fugados</label>
+            </value>
+            <value>
+                <fullName>Nuevo</fullName>
+                <default>false</default>
+                <label>Nuevo</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

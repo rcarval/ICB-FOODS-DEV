@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>SKU__c</columns>
+    <columns>Detalle_de_producto__c</columns>
+    <columns>TextoUMV__c</columns>
+    <columns>Precio_de_lista__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>Cliente__c</columns>
+    <columns>Holding__c</columns>
+    <columns>Oficina_de_Ventas__c</columns>
+    <columns>TextHolding__c</columns>
+    <columns>Texto_Codigo_Cliente__c</columns>
+    <columns>Fecha_Vigencia_Hasta__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SKU__c</field>
+        <operation>equals</operation>
+        <value>104547030</value>
+    </filters>
+    <label>All</label>
+</ListView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_adicionales__c</fullName>
+    <label>Total adicionales</label>
+    <summarizedField>Adicional_M_quina_de_Caf__c.Precio__c</summarizedField>
+    <summaryForeignKey>Adicional_M_quina_de_Caf__c.M_quina_de_caf__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

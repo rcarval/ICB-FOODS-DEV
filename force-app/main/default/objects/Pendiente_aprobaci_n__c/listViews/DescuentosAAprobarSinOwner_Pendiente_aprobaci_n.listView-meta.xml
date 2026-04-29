@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DescuentosAAprobarSinOwner_Pendiente_aprobaci_n</fullName>
+    <columns>NAME</columns>
+    <columns>Nro_Solicitud__c</columns>
+    <columns>Cotizaci_n__c</columns>
+    <columns>Estado__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Queue</filterScope>
+    <label>Descuentos Procesados</label>
+    <queue>DescuentosAAprobarSinOwner</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

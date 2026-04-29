@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Relacion_Rappel_Descuento__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Permite consultar el rappel del cliente para poder verlo en la maestra para los descuentos</description>
+    <label>Relacion Rappel Descuento</label>
+    <referenceTo>Rappel__c</referenceTo>
+    <relationshipLabel>Descuentos Cliente</relationshipLabel>
+    <relationshipName>Descuentos_Cliente</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

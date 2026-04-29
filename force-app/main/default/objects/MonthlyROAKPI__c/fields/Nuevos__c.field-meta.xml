@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nuevos__c</fullName>
+    <description>Cantidad de clientes que facturaron por primera vez en el mes actual (no tenían facturas antes del mes actual).</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Clientes nuevos que aparecieron por primera vez en el mes.</inlineHelpText>
+    <label>Nuevos</label>
+    <precision>6</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

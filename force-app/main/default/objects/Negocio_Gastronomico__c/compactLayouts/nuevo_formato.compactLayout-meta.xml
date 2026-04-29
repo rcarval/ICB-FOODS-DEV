@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nuevo_formato</fullName>
+    <fields>Nombre_de_Fantasia__c</fields>
+    <fields>Name</fields>
+    <fields>Direccion__c</fields>
+    <fields>Email__c</fields>
+    <fields>Grupo_Cliente__c</fields>
+    <fields>Estado__c</fields>
+    <label>nuevo formato</label>
+</CompactLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Todos_los_Precios</fullName>
+    <columns>NAME</columns>
+    <columns>SKU__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SKU__c</field>
+        <operation>equals</operation>
+        <value>104547030</value>
+    </filters>
+    <label>Todos los Precios</label>
+</ListView>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Largo_domicilio</fullName>
+    <active>false</active>
+    <errorConditionFormula>LEN(Domicilio_Adicional__Street__s) &gt; 30</errorConditionFormula>
+    <errorDisplayField>Domicilio_Adicional__Street__s</errorDisplayField>
+    <errorMessage>Domicilio Adicional Dirección, no puede tener mas de 30 caracteres</errorMessage>
+</ValidationRule>

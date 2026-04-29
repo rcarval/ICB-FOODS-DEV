@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DuplicateName</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+    ISNEW(),
+    NOT(ISBLANK(Name)),
+    OR(
+        ISCHANGED(Name),
+        NOT(ISBLANK(Name))
+    ),
+    NOT(ISNULL(VLOOKUP($ObjectType.Unidad_de_Medida__c.Fields.Id, $ObjectType.Unidad_de_Medida__c.Fields.Name, Name)))
+)</errorConditionFormula>
+    <errorMessage>no se pueden crear registros duplicados.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Descuento_a_Aprobar_Compact_Layout</fullName>
+    <fields>Name</fields>
+    <fields>Cotizaci_n__c</fields>
+    <fields>Cliente__c</fields>
+    <fields>Estado_mediocampo__c</fields>
+    <fields>Estado_Subgerente__c</fields>
+    <fields>Producto__c</fields>
+    <fields>UMV__c</fields>
+    <label>Descuento a Aprobar Compact Layout</label>
+</CompactLayout>
